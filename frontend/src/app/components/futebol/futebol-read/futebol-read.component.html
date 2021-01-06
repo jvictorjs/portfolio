@@ -29,12 +29,14 @@
             <td mat-cell *matCellDef="let event">
                 <a (click)="navigateWithState()" class="edit">
                     <i class="material-icons">
-                        edit
+                        <!--edit-->
+                        <!--delete-->
+                        remove_red_eye
                     </i>
                 </a>
-                <a routerLink="/futebol/event/{{ event.id }}" [state]="{hello:'world'}" class="delete">
+                <a routerLink="/futebol/event/{{ event.id }}" [state]="{hello:'world'}" class="view">
                     <i class="material-icons">
-                        delete
+                        remove_red_eye
                     </i>
                 </a>
             </td>

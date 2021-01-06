@@ -8,6 +8,8 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { FutebolComponent } from './views/futebol/futebol.component';
 import { FutebolEventReadComponent } from './components/futebol/futebol-event-read/futebol-event-read.component';
+import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
+import { FiresafeComponent } from './views/firesafe/firesafe.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,14 @@ const routes: Routes = [
   {
     path: "futebol/event/:id",
     component: FutebolEventReadComponent
+  },
+  {
+    path: "controle-financeiro",
+    component: ControleFinanceiroComponent
+  },
+  {
+    path: "firesafe",
+    component: FiresafeComponent
   }
 ];
 

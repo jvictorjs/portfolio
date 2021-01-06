@@ -17,6 +17,10 @@ table {
     color: #e35e6b;
 }
 
+.view > i {
+    color: #0d3fe2;
+}
+
 .button {
     margin-top: 15px;
 }

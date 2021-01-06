@@ -1,0 +1,45 @@
+.home {
+    margin-bottom: 20px;
+}
+
+.home .title {
+    font-size: 2rem;
+    font-weight: light;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+    margin-top: 0px;
+}
+
+.certificate {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.mini-logo {
+    width: 1.1rem;
+    vertical-align: middle;
+}
+
+.print-image {
+    width: 15rem;
+    vertical-align: middle;
+    align-self: center;
+    border-width: 10;
+    border-color: black;
+}
+
+.center-horizontal {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
