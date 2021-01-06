@@ -3,7 +3,7 @@
 }
 
 .home .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: light;
     line-height: 1.2;
 }
@@ -31,6 +31,7 @@
     align-self: center;
     border-width: 10;
     border-color: black;
+    border-radius: 8px;
 }
 
 .center-horizontal {
@@ -42,4 +43,11 @@
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    border-style:none;
+    border-radius: 8px;
 }
