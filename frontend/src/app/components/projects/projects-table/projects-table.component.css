@@ -1,0 +1,99 @@
+.table-items-description {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.table-items-description .title {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.table-items-description .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.div-items-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.table-div {
+    border-radius: 10px;
+}
+
+.full-width-table {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  .platform_col {
+    font-size: 0.7rem;
+}
+
+.website_col {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.name_col {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.portfolio_link {
+    margin-right: 10px;
+}
+.portfolio_link > i{
+    color: #2656d9;
+}
+
+.delete > i {
+    color: #e35e6b;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-21 { font-size: 21px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.techs-column-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.techs-column-div > *{ /* "> *" significa que todo filho deste elemento terá */
+    margin-right: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.mini-logo {
+    width: 1.6rem;
+    vertical-align: middle;
+}

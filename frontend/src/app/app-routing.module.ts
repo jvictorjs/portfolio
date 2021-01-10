@@ -10,6 +10,7 @@ import { FutebolComponent } from './views/futebol/futebol.component';
 import { FutebolEventReadComponent } from './components/futebol/futebol-event-read/futebol-event-read.component';
 import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
 import { FiresafeComponent } from './views/firesafe/firesafe.component';
+import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: "firesafe",
     component: FiresafeComponent
+  },
+  {
+    path: "portfolio-full",
+    component: PortfolioFullComponent
   }
 ];
 

@@ -44,7 +44,9 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { FutebolEventReadComponent } from './components/futebol/futebol-event-read/futebol-event-read.component';
 import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
-import { FiresafeComponent } from './views/firesafe/firesafe.component'
+import { FiresafeComponent } from './views/firesafe/firesafe.component';
+import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
+import { ProjectsTableComponent } from './components/projects/projects-table/projects-table.component'
 
 registerLocaleData(localePt);
 
@@ -67,7 +69,9 @@ registerLocaleData(localePt);
     ProductDeleteComponent,
     FutebolEventReadComponent,
     ControleFinanceiroComponent,
-    FiresafeComponent
+    FiresafeComponent,
+    PortfolioFullComponent,
+    ProjectsTableComponent
   ],
   imports: [ // módulos
     BrowserModule,
