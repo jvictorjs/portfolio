@@ -1,6 +1,10 @@
 .header{
     display: flex;
     align-items: center;
+    z-index: 2;
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 
 .header a {
@@ -11,11 +15,11 @@
 }
 
 .header .logo {
-    max-height: 32px;   
+    max-height: 56px;   
 }
 
 .header .title-group {
-    padding-left: 25px;
+    padding-left: 33px;
 }
 
 .header .title-group i{

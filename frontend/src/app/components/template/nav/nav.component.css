@@ -1,7 +1,8 @@
 .sidenav {
+    z-index: 1;
     margin-top: 0px;
     background-color: #3f51b5;
-    width: 210px;
+    width: 220px;
     height: 100%;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -19,11 +20,12 @@
 }
 
 .content {
-    padding: 5px 16px 16px 16px;
+    padding: 16px 16px 16px 16px;
     background-color: #fff;
 }
 
 .container {
-    margin-top: 14px;
+    margin-top: 0px;
+    padding-top: 64px;
     background-color: #3f51b5;
 }

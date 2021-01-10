@@ -1,50 +1,64 @@
-.table-items-description {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.table-items-description .title {
-    font-size: 1.3rem;
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-.table-items-description .subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 0px;
-}
-
 .div-items-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    column-gap: 20px;
+}
+
+.card-col-description {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.card-col-description .title {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.card-col-description .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0px;
 }
 
 .table-div {
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
-.full-width-table {
+table {
     width: 100%;
-    border-radius: 10px;
-  }
+}
 
+.launchyear_col {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 5px;
+}
 
-  .platform_col {
+.platform_col {
     font-size: 0.7rem;
+    text-align: left;
+}
+
+.category_col {
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .website_col {
     font-size: 0.7rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .name_col {
     font-size: 0.9rem;
     font-weight: 500;
+    text-align: left;
 }
 
 .portfolio_link {
@@ -63,30 +77,16 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-21 { font-size: 21px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .techs-column-div {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     margin: 0 auto;
 }
 
 .techs-column-div > *{ /* "> *" significa que todo filho deste elemento terá */
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .hide {
@@ -96,4 +96,16 @@ a, a:hover, a:focus, a:active {
 .mini-logo {
     width: 1.6rem;
     vertical-align: middle;
+    transition: transform .3s;
 }
+
+.mini-logo:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.8);  
+}
+
+
+::ng-deep .mat-sort-header-container {
+    justify-content: center;
+  }
