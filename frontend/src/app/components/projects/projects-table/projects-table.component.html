@@ -35,9 +35,11 @@
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Name (click to see details)</th>
             <td mat-cell *matCellDef="let row" class="name_col">
-                <a routerLink="/{{ row.portfolio_link }}" class="portfolio_link">
-                    {{row.name}}
-                </a>
+                <div class="div-name">
+                    <a routerLink="/{{ row.portfolio_link }}">
+                        {{row.name}}
+                    </a>
+                </div>
             </td>
         </ng-container>
 
@@ -74,21 +76,11 @@
         <ng-container matColumnDef="website">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>website</th>
             <td mat-cell *matCellDef="let row" class="website_col">
-                <a href="https://{{row.website}}" target="_blank" class="portfolio_link">
-                    {{row.website}}
-                </a>
-            </td>
-        </ng-container>
-
-        <!-- portfolio_link Column -->
-        <ng-container matColumnDef="portfolio_link">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Details</th>
-            <td mat-cell *matCellDef="let row">
-                <a routerLink="/{{ row.portfolio_link }}" class="portfolio_link">
-                    <i class="material-icons">
-                        linkf
-                    </i>
-                </a>
+                <div class="div-portfolio_link">
+                    <a href="https://{{row.website}}" target="_blank">
+                        {{row.website}}
+                    </a>
+                </div>
             </td>
         </ng-container>
 

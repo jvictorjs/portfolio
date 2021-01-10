@@ -19,7 +19,7 @@ export class ProductService {
     this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: "right",
-      verticalPosition: "top",
+      verticalPosition: "bottom",
       panelClass: isError ? ['msg-error'] : ['msg-success']
     });
   }

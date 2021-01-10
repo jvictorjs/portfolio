@@ -20,10 +20,12 @@
   margin-right: auto;
   width: 30%;
   border-radius: 8px;
+  transition: transform .4s;
 }
 
 .certificate:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.6);  
+    transform: scale(1.4);  
+    border-radius: 8px;
 }

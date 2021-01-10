@@ -58,14 +58,29 @@ table {
 .name_col {
     font-size: 0.9rem;
     font-weight: 500;
-    text-align: left;
+    text-align: start;
 }
 
-.portfolio_link {
+.div-name {
     margin-right: 10px;
+    transition: transform .1s;
 }
-.portfolio_link > i{
-    color: #2656d9;
+
+.div-name:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.07);  
+}
+.div-portfolio_link {
+    margin-right: 10px;
+
+    transition: transform .3s;
+}
+
+.div-portfolio_link:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.4);  
 }
 
 .delete > i {

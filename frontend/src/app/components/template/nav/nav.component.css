@@ -29,3 +29,14 @@
     padding-top: 64px;
     background-color: #3f51b5;
 }
+
+.list-item-with-icon{
+  transition: transform .1001s;
+}
+
+.list-item-with-icon:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.07);  
+    border-radius: 8px;
+}

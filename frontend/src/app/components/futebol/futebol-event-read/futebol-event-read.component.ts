@@ -18,11 +18,11 @@ export class FutebolEventReadComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
   ) {
-    this.futebolService.showMessage('Este é um jogo...')
+    
   }
 
   ngOnInit(): void {
-    this.futebolService.showMessage('Carregando jogos')
+    this.futebolService.showLoadingMessage('Loading event...')
     const id = +this.route.snapshot.paramMap.get('id')
     this.eventId = id;
     this.route.data.subscribe(data => {
@@ -43,18 +43,18 @@ export class FutebolEventReadComponent implements OnInit {
       console.log('chegou evento = '+JSON.stringify(event))
       this.futebolService.event = event
       this.event =  this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
-      this.futebolService.showMessage('Evento atribuido')
+      this.futebolService.showMessage('Event loaded.')
       // console.log()
     })
 
   }
 
   updateEvents(): void {
-    this.futebolService.showMessage('Atualizando jogos')
+    this.futebolService.showLoadingMessage('Updating events list...')
     this.futebolService.read().subscribe(jogos => {
       this.futebolService.jogos = jogos
       this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; })=>x.id == this.eventId)
-      this.futebolService.showMessage('Jogos atualizados e evento atribuido')
+      this.futebolService.showMessage('Events list reloaded.')
     })
   }
 

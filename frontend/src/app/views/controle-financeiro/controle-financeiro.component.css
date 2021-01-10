@@ -26,6 +26,7 @@
     border-width: 10;
     border-color: black;
     border-radius: 8px;
+    transition: transform .3s;
 }
 
 .print-image:hover {
