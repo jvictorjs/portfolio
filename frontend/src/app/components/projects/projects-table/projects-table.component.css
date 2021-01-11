@@ -1,6 +1,17 @@
 .th {
     font-size: 0.9rem;
 }
+
+.th-align-center {
+    text-align: center;
+    padding-right: 10px;
+}
+
+::ng-deep .mat-sort-header-container {
+    display: flex;
+    justify-content: center;
+}
+
 .div-items-description {
     display: flex;
     flex-direction: row;
@@ -49,17 +60,17 @@ table {
 }
 
 .div-name:hover {
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(1.07);
     /* IE 9 */
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.07);
     /* Safari 3-8 */
-    transform: scale(1.07);
+    transform: scale(1.02);
 }
 
 .launchyear_col {
     font-size: 1rem;
-    text-align: left;
-    padding-left: 15px;
+    text-align: center;
+    padding: 0px 0px;
 }
 
 .platform_col {
@@ -93,9 +104,11 @@ table {
 }
 
 .website_col {
+    max-width: 182px;
     font-size: 0.7rem;
     font-weight: 600;
     text-align: center;
+    word-break: normal;
 }
 
 .div-portfolio_link {
@@ -104,11 +117,24 @@ table {
 }
 
 .div-portfolio_link:hover {
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(1.3);
     /* IE 9 */
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.3);
     /* Safari 3-8 */
-    transform: scale(1.4);
+    transform: scale(1.3);
+}
+
+.div-github_link {
+    display: flex;
+    justify-content: center;
+}
+
+.div-github_link:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
 }
 
 .delete>i {
@@ -145,6 +171,10 @@ a, a:hover, a:focus, a:active {
     vertical-align: middle;
 }
 
+.topmargin3px {
+    margin-top: 3px;
+}
+
 .mini-logo {
     width: 1.6rem;
     vertical-align: middle;
@@ -152,15 +182,11 @@ a, a:hover, a:focus, a:active {
 }
 
 .mini-logo:hover {
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(1.8);
     /* IE 9 */
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.8);
     /* Safari 3-8 */
     transform: scale(1.8);
-}
-
-::ng-deep .mat-sort-header-container {
-    justify-content: center;
 }
 
 /*
@@ -172,7 +198,7 @@ a, a:hover, a:focus, a:active {
     }
     */
 
-.platform_col .tooltiptext {
+.platform-content-cell .tooltiptext {
     font-size: 0.9rem;
     visibility: hidden;
     width: 162px;
@@ -184,10 +210,10 @@ a, a:hover, a:focus, a:active {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    margin: 26px 33px;
+    margin: 33px 133px;
 }
 
-.platform_col:hover .tooltiptext {
+.platform-content-cell:hover .tooltiptext {
     visibility: visible;
 }
 
@@ -210,9 +236,9 @@ a, a:hover, a:focus, a:active {
     visibility: visible;
 }
 
-.show > .tooltiptext {
+.tech-tool-show>.tooltiptext {
     visibility: hidden;
-    width: 155px;
+    width: 182px;
     background-color: rgba(111, 111, 111, 0.99);
     color: #fff;
     text-align: center;
@@ -221,9 +247,9 @@ a, a:hover, a:focus, a:active {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    margin: 42px -166px;
+    margin: 37px -202px;
 }
 
-.show:hover .tooltiptext {
+.tech-tool-show:hover .tooltiptext {
     visibility: visible;
 }

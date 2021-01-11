@@ -15,20 +15,14 @@
 
         <!-- Platform Column -->
         <ng-container matColumnDef="platform">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Platform</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th th-align-center">Platform</th>
             <td mat-cell *matCellDef="let row" class="platform_col tooltip">
-                <span class="tooltiptext">
-                    {{ getPlatformDescription(row.platform) }}</span>
                 <div class="platform-content-cell">
+                    <span class="tooltiptext">
+                        {{ getPlatformDescription(row.platform) }}</span>
                     <i class="material-icons md-24">
-                        {{row.platform_icon}}
+                        {{ getPlatformIcon(row.platform) }}
                     </i>
-                    <!--
-
-                        <div class="platform-text">
-                            {{row.platform}}
-                        </div>
-                    -->
                 </div>
             </td>
         </ng-container>
@@ -43,7 +37,7 @@
 
         <!-- category Column -->
         <ng-container matColumnDef="category">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Category</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th th-align-center">Category</th>
             <td mat-cell *matCellDef="let row" class="category_col">
                 <span class="tooltiptext">
                     {{getCategoryDescription(row.category)}}</span>
@@ -53,11 +47,11 @@
 
         <!-- website Column -->
         <ng-container matColumnDef="website">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Website</th>
+            <th mat-header-cell *matHeaderCellDef class="th th-align-center">Website</th>
             <td mat-cell *matCellDef="let row" class="website_col">
                 <div class="div-portfolio_link">
                     <a href="https://{{row.website}}" target="_blank">
-                        {{row.website}}
+                        {{getWebsiteText(row.website,row.website_text)}}
                     </a>
                 </div>
             </td>
@@ -65,10 +59,11 @@
 
         <!-- techs Column -->
         <ng-container matColumnDef="techs">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Techs</th>
+            <th mat-header-cell *matHeaderCellDef class="th th-align-center">Tech Tools</th>
+            <!-- mat-sort-header component removed -->
             <td mat-cell *matCellDef="let row">
                 <div class="techs-column-div">
-                    <div [ngClass]="row.angular_present">
+                    <div [ngClass]="row.angular">
                         <a href="https://angular.io/">
                             <img class="mini-logo" src="assets/img/angular-logo.svg" alt="ANGULAR_logo" />
                         </a>
@@ -76,41 +71,64 @@
                             your code and abilities to build apps for any deployment target. For web, mobile web, native
                             mobile and native desktop.</span>
                     </div>
-                    <div [ngClass]="row.reactNative_present">
+                    <div [ngClass]="row.reactNative">
                         <a href="https://reactnative.dev/">
                             <img class="mini-logo" src="assets/img/react_native_logo.png" alt="REACTNATIV_logo" />
                         </a>
                         <span class="tooltiptext">React Native - Create native apps for Android and iOS using
                             React</span>
                     </div>
-                    <div [ngClass]="row.telegramBot_present">
+                    <div [ngClass]="row.telegramBot_api">
                         <a href="https://core.telegram.org/bots/api">
                             <img class="mini-logo" src="assets/img/256px-Telegram_logo.png" alt="TELEGRAM_logo" />
                         </a>
-                        <span class="tooltiptext">The Telegram BOT API - Allows you to create and manage Chatbots - as
-                            we use it everyday, is just simple to interact with text messages and chat buttons.</span>
+                        <span class="tooltiptext">The Telegram Bot API - Allows you to create and manage Chatbots. Just
+                            simple to interact with text messages and chat buttons as
+                            we use it on a daily basis.</span>
                     </div>
-                    <div [ngClass]="row.googleSheet_present">
+                    <div [ngClass]="row.googleSheet">
                         <a href="https://sheets.google.com">
                             <img class="mini-logo" src="assets/img/google-sheets-logo.png" alt="SHEETS_logo" />
                         </a>
-                        <span class="tooltiptext">Google Sheets - Easy way to explore and organize data. With Google
-                            Apps Scripts integration you can automate your workflow and boost your productivity.</span>
+                        <span class="tooltiptext">Google Sheets - Easy way to explore and organize data. Integrated With
+                            Google
+                            Apps Scripts you can automate workflows and boost productivity.</span>
                     </div>
-                    <div [ngClass]="row.googleAppsScript_present">
+                    <div [ngClass]="row.googleAppsScript">
                         <a href="https://developers.google.com/apps-script">
                             <img class="mini-logo" src="assets/img/google-apps-script.svg" alt="GAS_logo" />
                         </a>
                         <span class="tooltiptext">Google Apps Script - A modern JavaScript cloud-based platform to build
-                            solutions integrating all Google Services with external APIs, and much more</span>
+                            solutions integrating all Google Services and external APIs.</span>
                     </div>
-                    <div [ngClass]="row.digitalOcean_present">
+                    <div [ngClass]="row.digitalOcean">
                         <a href="https://developers.google.com/apps-script">
                             <img class="mini-logo" src="assets/img/digitalocean-icon-1.svg" alt="DigitalOcean_logo" />
                         </a>
                         <span class="tooltiptext">Digital Ocean - One of the best cloud infraestructure provider in the
                             world.</span>
                     </div>
+                    <div [ngClass]="row.twitter_api">
+                        <a href="https://developer.twitter.com/en/docs/twitter-api">
+                            <img class="mini-logo topmargin3px" src="assets/img/twitter-logo-1.png"
+                                alt="Twitter_logo" />
+                        </a>
+                        <span class="tooltiptext">Twitter API - The Twitter API enables programmatic access to Twitter
+                            in unique and advanced ways. Use it to analyze, learn from, and interact with Tweets, Direct
+                            Messages, users, and other key Twitter resources.</span>
+                    </div>
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- website Column -->
+        <ng-container matColumnDef="github_link">
+            <th mat-header-cell *matHeaderCellDef class="th th-align-center">GitHub</th>
+            <td mat-cell *matCellDef="let row" class="github_link">
+                <div class="{{getGithubDivClass(row.github_link)}}">
+                    <a href="https://{{row.github_link}}" target="_blank">
+                        <img class="mini-logo-fixed" src="assets/img/github_logo.png" alt="GitHub_logo" />
+                    </a>
                 </div>
             </td>
         </ng-container>

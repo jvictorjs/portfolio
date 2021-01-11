@@ -28,92 +28,81 @@ export interface Project {
 }
     */
     {
-        name: 'Produtos Angular CRUD', launched_year: 2020,
-        platform: 'Web', platform_icon: 'desktop_windows',
-        category: '⭐️',
-        website: 'portfolio.jvictor.com.br/products', portfolio_link: 'products', techs: '#TG',
-        angular_present: 'show', reactNative_present: 'hide', telegramBot_present: 'hide', googleSheet_present: 'hide', 
-        googleAppsScript_present: 'hide', digitalOcean_present: 'hide'
+        name: 'Produtos Angular CRUD', launched_year: 2020, platform: 'Web', category: '⭐️',
+        website: 'portfolio.jvictor.com.br/products', website_text: '', portfolio_link: 'products',
+        github_link: 'github.com/jvictorhub/portfolio', techs: '#TG',
+        angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+        googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'Futebol Ao Vivo', launched_year: 2021,
-        platform: 'Web', platform_icon: 'desktop_windows',
-        category: '⭐️',
-        website: 'bolanarede.net.br', portfolio_link: 'link', techs: '#TG',
-        angular_present: 'show', reactNative_present: 'hide', telegramBot_present: 'hide', googleSheet_present: 'hide',
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Futebol Ao Vivo', launched_year: 2021, platform: 'Web', category: '⭐️',
+        website: 'bolanarede.net.br', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG',
+        angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'TremdGol APP', launched_year: 2020,
-        platform: 'Mobile', platform_icon: 'phone_android',
-        category: '⭐️⭐️⭐️',
-        website: '-', portfolio_link: '', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'show', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'show'
+        name: 'TremdGol APP', launched_year: 2020, platform: 'Mobile', category: '⭐️⭐️⭐️',
+        website: '-', website_text: '', portfolio_link: '',
+        github_link: 'github.com/jvictorhub/hero1', techs: '#TG',
+        angular: 'hide', reactNative: 'tech-tool-show', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'tech-tool-show', twitter_api: 'tech-tool-show'
     },
     {
-        name: 'Bolão Rússia 2018', launched_year: 2018,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️⭐️',
-        website: 't.me/ZezinhoBolaoBot', portfolio_link: '', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Bolão Rússia 2018', launched_year: 2018, platform: 'Telegram Chatbot', category: '⭐️⭐️',
+        website: 't.me/ZezinhoBolaoBot', website_text: '@ZezinhoBolaoBot', portfolio_link: '',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'TIPS', launched_year: 2020,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️⭐️',
-        website: 't.me/bolanaredetips', portfolio_link: '', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'TIPS', launched_year: 2020, platform: 'Telegram Chatbot', category: '⭐️⭐️',
+        website: 't.me/bolanaredetips', website_text: '', portfolio_link: '',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'tech-tool-show'
     },
     {
-        name: 'Prognósticos', launched_year: 2020,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️⭐️',
-        website: 't.me/', portfolio_link: 'link', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Prognósticos', launched_year: 2020, platform: 'Telegram Chatbot', category: '⭐️⭐️',
+        website: 't.me/', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'Bola na Rede', launched_year: 2018,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️⭐️',
-        website: 'bolanarede.net.br', portfolio_link: '', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Bola na Rede', launched_year: 2018, platform: 'Telegram Chatbot', category: '⭐️⭐️',
+        website: 'bolanarede.net.br', website_text: '', portfolio_link: '',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'tech-tool-show'
     },
     {
-        name: 'Controle Financeiro', launched_year: 2017,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️',
-        website: '-', portfolio_link: 'controle-financeiro', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Controle Financeiro', launched_year: 2017, platform: 'Telegram Chatbot', category: '⭐️',
+        website: '-', website_text: '', portfolio_link: 'controle-financeiro',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'FireSafe', launched_year: 2020,
-        platform: 'Mobile', platform_icon: 'phone_android',
-        category: '⭐️',
-        website: 'website', portfolio_link: 'link', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'show', telegramBot_present: 'hide', googleSheet_present: 'hide', 
-        googleAppsScript_present: 'hide', digitalOcean_present: 'hide'
+        name: 'FireSafe', launched_year: 2020, platform: 'Mobile', category: '⭐️',
+        website: '2020.spaceappschallenge.org/challenges/confront/spot-fire-3/teams/firesafe', website_text: '2020 Nasa Space Apps Challange - Firesafe Team', portfolio_link: 'link',
+        github_link: 'github.com/lacerdamarcelo/nasa_space_apps_2020', techs: '#TG',
+        angular: 'hide', reactNative: 'tech-tool-show', telegramBot_api: 'hide', googleSheet: 'hide',
+        googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'Agenda de Tarefas', launched_year: 2017,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️',
-        website: 't.me/', portfolio_link: 'link', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'Agenda de Tarefas', launched_year: 2017, platform: 'Telegram Chatbot', category: '⭐️',
+        website: 't.me/', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
-        name: 'The Portfolio Bot', launched_year: 2021,
-        platform: 'Telegram Chatbot', platform_icon: 'chat',
-        category: '⭐️',
-        website: 't.me/ThePortfolioBot', portfolio_link: 'link', techs: '#TG',
-        angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'hide', 
-        googleAppsScript_present: 'show', digitalOcean_present: 'hide'
+        name: 'The Portfolio Bot', launched_year: 2021, platform: 'Telegram Chatbot', category: '⭐️',
+        website: 't.me/ThePortfolioBot', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'hide',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     }
 ];
 

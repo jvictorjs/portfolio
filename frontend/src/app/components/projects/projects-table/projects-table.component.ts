@@ -30,7 +30,7 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
   dataSource: ProjectDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['name', 'platform', 'launched_year', 'category', 'website', 'techs'];
+  displayedColumns = ['name', 'platform', 'launched_year', 'category', 'website', 'techs', 'github_link'];
 
   ngOnInit() {
     this.dataSource = new ProjectDataSource();
@@ -63,6 +63,19 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
     }
   }
 
+  getPlatformIcon(platform: string): string {
+    switch (platform) {
+      case 'Web':
+        return 'desktop_windows'
+      case 'Mobile':
+        return 'phone_android'
+      case 'Telegram Chatbot':
+        return 'chat'
+      default:
+        return 'icon default'
+    }
+  }
+
   getCategoryDescription(category: string): string {
     switch (category) {
       case '⭐️':
@@ -81,6 +94,24 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
         console.log('category = ' + category)
         return 'category default'
         break;
+    }
+  }
+
+  getGithubDivClass(github_link: string): string {
+    switch (github_link) {
+      case '':
+        return 'hide'
+      default:
+        return 'div-github_link'
+    }
+  }
+
+  getWebsiteText(website: string, website_text: string): string {
+    switch (website_text) {
+      case '':
+        return website
+      default:
+        return website_text
     }
   }
 }
