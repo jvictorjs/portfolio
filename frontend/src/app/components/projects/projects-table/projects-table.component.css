@@ -1,13 +1,16 @@
+.th {
+    font-size: 0.9rem;
+}
 .div-items-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 20px 0px 0px 0px;
     column-gap: 20px;
 }
 
 .card-col-description {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border-radius: 8px;
     width: 100%;
 }
@@ -33,15 +36,54 @@ table {
     width: 100%;
 }
 
+.name_col {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.div-name {
+    margin-right: 10px;
+    transition: transform .1s;
+}
+
+.div-name:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.07);
+}
+
 .launchyear_col {
     font-size: 1rem;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .platform_col {
     font-size: 0.7rem;
     text-align: left;
+}
+
+.platform-content-cell {
+    font-size: 0.7rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.platform-content-cell>i {
+    margin: 0px 8px 0px 0px;
+    font-size: 2.1rem;
+}
+
+.platform-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    font-size: 0.7rem;
 }
 
 .category_col {
@@ -55,35 +97,20 @@ table {
     text-align: center;
 }
 
-.name_col {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: start;
-}
-
-.div-name {
-    margin-right: 10px;
-    transition: transform .1s;
-}
-
-.div-name:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.07);  
-}
 .div-portfolio_link {
     margin-right: 10px;
-
     transition: transform .3s;
 }
 
 .div-portfolio_link:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.4);  
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.4);
 }
 
-.delete > i {
+.delete>i {
     color: #e35e6b;
 }
 
@@ -92,7 +119,6 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-
 .techs-column-div {
     display: flex;
     flex-direction: row;
@@ -100,12 +126,22 @@ a, a:hover, a:focus, a:active {
     margin: 0 auto;
 }
 
-.techs-column-div > *{ /* "> *" significa que todo filho deste elemento terá */
+.techs-column-div>* {
+    /* "> *" significa que todo filho deste elemento terá */
     margin-right: 12px;
 }
 
 .hide {
     display: none;
+}
+
+.show {
+    visibility: visible;
+}
+
+.mini-logo-fixed {
+    width: 1.6rem;
+    vertical-align: middle;
 }
 
 .mini-logo {
@@ -115,12 +151,79 @@ a, a:hover, a:focus, a:active {
 }
 
 .mini-logo:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.8);  
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.8);
 }
-
 
 ::ng-deep .mat-sort-header-container {
     justify-content: center;
-  }
+}
+
+/*
+   TOOL TIP 
+   .tooltip {
+       position: relative;
+       display: inline-block;
+       border-bottom: 1px dotted black;
+    }
+    */
+
+.platform_col .tooltiptext {
+    font-size: 0.9rem;
+    visibility: hidden;
+    width: 155px;
+    background-color: rgba(111, 111, 111, 0.99);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin: 33px 33px;
+}
+
+.platform_col:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.category_col .tooltiptext {
+    font-size: 0.9rem;
+    visibility: hidden;
+    width: 155px;
+    background-color: rgba(111, 111, 111, 0.99);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin: 33px 33px;
+}
+
+.category_col:hover .tooltiptext {
+    visibility: visible;
+}
+
+.show > .tooltiptext {
+    visibility: hidden;
+    width: 155px;
+    background-color: rgba(111, 111, 111, 0.99);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin: 42px -166px;
+}
+
+.show:hover .tooltiptext {
+    visibility: visible;
+}

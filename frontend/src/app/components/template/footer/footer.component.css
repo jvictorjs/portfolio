@@ -1,21 +1,23 @@
 .footer {
     position: fixed;
-    bottom:0;
-
+    bottom: 0;
+    height: 48px;
     display: flex;
     justify-content: flex-end;
 }
 
-.footer > span {
+.footer>span {
     font-size: 1rem;
     font-weight: 300;
     transition: transform .2s;
 }
 
-.footer > span:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1);  
+.footer>span:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 .icon-heart-pulsing {
@@ -23,7 +25,9 @@
 }
 
 .icon-heart-pulsing:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
     transform: scale(1.4);
 }

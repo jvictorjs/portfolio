@@ -30,7 +30,7 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
   dataSource: ProjectDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['name','platform','launched_year','category','website','techs'];
+  displayedColumns = ['name', 'platform', 'launched_year', 'category', 'website', 'techs'];
 
   ngOnInit() {
     this.dataSource = new ProjectDataSource();
@@ -40,5 +40,47 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
+  }
+
+  getPlatformDescription(platform: string): string {
+    switch (platform) {
+      case 'Web':
+        console.log('platform = ' + platform)
+        return 'Web: accessible via web browser'
+        break;
+      case 'Mobile':
+        console.log('platform = ' + platform)
+        return 'Mobile: mobile phone application'
+        break;
+      case 'Telegram Chatbot':
+        console.log('platform = ' + platform)
+        return 'Telegram Chatbot: services available via instant messages and commands'
+        break;
+      default:
+        console.log('platform = ' + platform)
+        return 'description default'
+        break;
+    }
+  }
+
+  getCategoryDescription(category: string): string {
+    switch (category) {
+      case '⭐️':
+        console.log('category = ' + category)
+        return '⭐️ Basic app'
+        break;
+      case '⭐️⭐️':
+        console.log('category = ' + category)
+        return '⭐️⭐️ Modest app'
+        break;
+      case '⭐️⭐️⭐️':
+        console.log('category = ' + category)
+        return '⭐️⭐️⭐️ Advanced app'
+        break;
+      default:
+        console.log('category = ' + category)
+        return 'category default'
+        break;
+    }
   }
 }

@@ -55,7 +55,7 @@ export interface Project {
         name: 'Bolão Rússia 2018', launched_year: 2018,
         platform: 'Telegram Chatbot', platform_icon: 'chat',
         category: '⭐️⭐️',
-        website: 't.me/@ZezinhoBolaoBot', portfolio_link: '', techs: '#TG',
+        website: 't.me/ZezinhoBolaoBot', portfolio_link: '', techs: '#TG',
         angular_present: 'hide', reactNative_present: 'hide', telegramBot_present: 'show', googleSheet_present: 'show', 
         googleAppsScript_present: 'show', digitalOcean_present: 'hide'
     },

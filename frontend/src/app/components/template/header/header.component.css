@@ -15,7 +15,16 @@
 }
 
 .header .logo {
-    max-height: 56px;   
+    max-height: 48px;   
+    transition: transform .4s;
+}
+
+.header .logo:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.33);
 }
 
 .header .title{
