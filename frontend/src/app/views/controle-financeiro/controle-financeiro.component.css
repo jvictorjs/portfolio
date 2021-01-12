@@ -30,9 +30,11 @@
 }
 
 .print-image:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1);  
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 .center-horizontal {
@@ -46,9 +48,83 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+.icone>.tooltiptext {
+    visibility: hidden;
+    width: 262px;
+    background-color: rgba(111, 111, 111, 0.90);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin: 20px 15px;
+    font-size: 1rem;
+}
+
+.icone:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tech {
+    width: 50%;
+    transition: transform .1s;
+}
+
+.tech:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.01);
+}
+
+.tech>.tooltiptext {
+    visibility: hidden;
+    width: 369px;
+    background-color: rgba(111, 111, 111, 0.90);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    /* Position the tooltip */
+    position: above;
+    z-index: 9999;
+    margin: 20px 15px;
+    font-size: 1rem;
+    display: unset;
+}
+
+.tech:hover .tooltiptext {
+    visibility: visible;
+}
+
+::ng-deep .mat-tooltip {
+    font-size: 16px !important;
+    background-color: rgba(111, 111, 111, 0.90) !important;
+    /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
+}
+
+
+.div-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+    column-gap: 20px;
+}
+
+
+.div-columns > .home {
+    margin-bottom: 0px;
+    border-radius: 8px;
+    width: 100%;
+}
+
 iframe {
     margin: 0 auto;
     display: block;
-    border-style:none;
+    border-style: none;
     border-radius: 8px;
 }

@@ -1,3 +1,5 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from './../../components/template/header/header.service';
 
@@ -7,7 +9,7 @@ import { HeaderService } from './../../components/template/header/header.service
   styleUrls: ['./controle-financeiro.component.css']
 })
 export class ControleFinanceiroComponent implements OnInit {
-  
+
   constructor(private headerService: HeaderService) {
     headerService.headerData = {
       title: 'ChatBot para Controle de Gastos',

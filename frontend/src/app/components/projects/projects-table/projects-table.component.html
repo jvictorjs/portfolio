@@ -20,7 +20,8 @@
                 <div class="platform-content-cell">
                     <span class="tooltiptext">
                         {{ getPlatformDescription(row.platform) }}</span>
-                    <i class="material-icons md-24">
+                        <!-- material-icons OR material-icons-round OR material-icons-two-tone OR material-icons-outlined OR material-icons-sharp-->
+                    <i class="material-icons-round">
                         {{ getPlatformIcon(row.platform) }}
                     </i>
                 </div>
@@ -149,15 +150,15 @@
             Platform
         </mat-card-title>
         <mat-card-subtitle class="subtitle">
-            <i class="material-icons md-21 mini-logo-fixed">
+            <i class="material-icons-two-tone mini-logo-fixed">
                 desktop_windows
             </i>Web: accessible via web browser
             <br>
-            <i class="material-icons md-21 mini-logo-fixed">
+            <i class="material-icons-two-tone mini-logo-fixed">
                 phone_android
             </i>Mobile: mobile phone application
             <br>
-            <i class="material-icons md-21 mini-logo-fixed">
+            <i class="material-icons-two-tone mini-logo-fixed">
                 chat
             </i>Telegram Chatbot: services available via instant messages and commands
         </mat-card-subtitle>
