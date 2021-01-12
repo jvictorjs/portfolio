@@ -91,6 +91,13 @@ export interface Project {
         googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
     },
     {
+        name: 'Medicine Reminder', launched_year: 2017, platform: 'Telegram Chatbot', category: '⭐️',
+        website: 't.me/', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG',
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+    },
+    {
         name: 'Agenda de Tarefas', launched_year: 2017, platform: 'Telegram Chatbot', category: '⭐️',
         website: 't.me/', website_text: '', portfolio_link: 'link',
         github_link: '', techs: '#TG',

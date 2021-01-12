@@ -11,6 +11,7 @@ import { FutebolEventReadComponent } from './components/futebol/futebol-event-re
 import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
 import { FiresafeComponent } from './views/firesafe/firesafe.component';
 import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
+import { MyExperienceComponent } from './views/my-experience/my-experience.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: "portfolio-full",
     component: PortfolioFullComponent
+  },
+  {
+    path: "my-experience",
+    component: MyExperienceComponent
   }
 ];
 
