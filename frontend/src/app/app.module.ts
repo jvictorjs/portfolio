@@ -49,7 +49,8 @@ import { ControleFinanceiroComponent } from './views/controle-financeiro/control
 import { FiresafeComponent } from './views/firesafe/firesafe.component';
 import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
 import { ProjectsTableComponent } from './components/projects/projects-table/projects-table.component';
-import { MyExperienceComponent } from './views/my-experience/my-experience.component'
+import { MyExperienceComponent } from './views/my-experience/my-experience.component';
+import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component'
 
 registerLocaleData(localePt);
 
@@ -75,7 +76,8 @@ registerLocaleData(localePt);
     FiresafeComponent,
     PortfolioFullComponent,
     ProjectsTableComponent,
-    MyExperienceComponent
+    MyExperienceComponent,
+    JvictorStackComponent
   ],
   imports: [ // módulos
     BrowserModule,

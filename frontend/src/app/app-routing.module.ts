@@ -12,6 +12,7 @@ import { ControleFinanceiroComponent } from './views/controle-financeiro/control
 import { FiresafeComponent } from './views/firesafe/firesafe.component';
 import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
 import { MyExperienceComponent } from './views/my-experience/my-experience.component';
+import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: "my-experience",
     component: MyExperienceComponent
+  },
+  {
+    path: "jvictor-stack",
+    component: JvictorStackComponent
   }
 ];
 

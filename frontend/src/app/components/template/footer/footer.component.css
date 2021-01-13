@@ -1,13 +1,14 @@
 .footer {
     position: fixed;
     bottom: 0;
-    height: 48px;
+    height: 32px;
     display: flex;
     justify-content: flex-end;
 }
 
 .footer>span {
-    font-size: 1rem;
+    margin-top: 2px;
+    font-size: 0.85rem;
     font-weight: 300;
     transition: transform .2s;
 }
@@ -30,4 +31,57 @@
     -webkit-transform: scale(1.5);
     /* Safari 3-8 */
     transform: scale(1.4);
+}
+
+.pulse-heart {
+    animation: pulse-heart 2s infinite linear;
+    border-radius: 50%;
+}
+
+@keyframes pulse-heart {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    20% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+    40% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+    60% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+}
+
+/* #STACKOVERFLOW  https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+.pulse-ori {
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse-ori 2s infinite;
+}
+
+@keyframes pulse-ori {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }

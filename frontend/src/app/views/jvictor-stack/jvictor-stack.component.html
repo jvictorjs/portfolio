@@ -1,0 +1,189 @@
+<!--
+<mat-card class="home mat-elevation-z4">
+    <mat-card-title class="title">
+        O que é?
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Um ChatBot que registra gastos em uma planilha por meio de mensagens.
+    </mat-card-subtitle>
+</mat-card>
+
+    <div style="display: flex; flex-direction: row;justify-content: space-between; column-gap: 20px;">
+-->
+<div class="div-columns">
+    <mat-card class="home mat-elevation-z4">
+        <mat-card-title class="title">
+            Application and Data
+        </mat-card-title>
+        <div class="techs-column-div">
+            <div class="show">
+                <a href="https://angular.io/">
+                    <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" matTooltip="Angular - 
+                    Learn one way to build applications with Angular and reuse
+                    your code and abilities to build apps for any deployment target. For web, mobile web, native
+                    mobile and native desktop." alt="ANGULAR_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://reactnative.dev/">
+                    <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png" matTooltip="React Native - 
+                    Create native apps for Android and iOS using
+                    React" alt="REACTNATIV_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://core.telegram.org/bots/api">
+                    <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png" matTooltip="The Telegram Bot API - 
+                    Allows you to create and manage Chatbots. Just simple to interact with text messages and chat buttons as
+                    we use it on a daily basis." alt="TELEGRAM_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://sheets.google.com">
+                    <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png" matTooltip="Google Sheets - 
+                    Easy way to explore and organize data. Integrated With Google Apps Scripts you can automate workflows 
+                    and boost productivity." alt="SHEETS_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://developers.google.com/apps-script">
+                    <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" matTooltip="Google Apps Script - 
+                    A modern JavaScript cloud-based platform to build solutions integrating all Google Services and 
+                    external APIs." alt="GAS_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://developers.google.com/apps-script">
+                    <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg" matTooltip="Digital Ocean - 
+                    One of the best cloud infraestructure provider in the world." alt="DigitalOcean_logo" />
+                </a>
+            </div>
+            <div class="show">
+                <a href="https://developer.twitter.com/en/docs/twitter-api">
+                    <img class="mini-logo topmargin3px" src="assets/img/tech-logos/twitter-logo-1.png" matTooltip="Twitter API - 
+                    The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, 
+                    learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources."
+                        alt="Twitter_logo" />
+                </a>
+            </div>
+        </div>
+        <mat-card-subtitle class="subtitle">
+            <ul>
+                <li *myFor="let n em [
+                    'JS',
+                    'react',
+                    'HTML 5',
+                    'Axios',
+                    'Material design for Angular',
+                    'ANGULAR',
+                    'CSS 3',
+                    'TypeScript',
+                    'React Native',
+                    'Expo',
+                    'JSON Server',
+                    'Sqlite',
+                    'ExpressJS',
+                    'Knex.js'
+                    ]">
+                    {{ n }}</li>
+            </ul>
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="home mat-elevation-z4">
+        <mat-card-title class="title">
+            Infraestructure
+            <span class="icone">
+                <span class="tooltiptext">⭐️ basic app
+                    <br>⭐️⭐️ modest / intermediate app
+                    <br>⭐️⭐️⭐️ advanced app</span>
+                <span class="material-icons-two-tone md-21">
+                    info
+                </span>
+            </span>
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+            <ul>
+                <li *myFor="let n em [
+                'Node.js',
+                'Ubuntu',
+                'PM2',
+                'NGINX',
+                'Google Apps Script',
+                'Windows 10',
+                'DigitalOcean',
+                'Git',
+                'Vim',
+                'NPM',
+                'Certbot',
+                'Putty'
+                    ]">
+                    {{ n }}</li>
+            </ul>
+        </mat-card-subtitle>
+    </mat-card>
+</div>
+<div class="div-columns">
+    <mat-card class="home mat-elevation-z4">
+        <mat-card-title class="title">
+            Utilities
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+            <ul>
+                <li *myFor="let n em [
+                'Android Studio',
+                'Stackoverflow',
+                'Stackblitz',
+                'VScode',
+                'Insomina',
+                'Ntepadd++'
+                    ]">
+                    {{ n }}</li>
+            </ul>
+        </mat-card-subtitle>
+        <mat-card-subtitle class="subtitle">
+            Frontend:<br>
+            <div class="tech" matTooltip="The Telegram Bot API - Allows you to create and manage Chatbots. Just
+                        simple to interact with text messages and chat buttons as
+                        we use it on a daily basis.">
+                <a href="https://telegram.org/">
+                    <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png" alt="TG_logo" />
+                    Telegram (nativo)
+                </a>
+            </div>
+            <br>Backend:<br>
+            <div class="tech" matTooltip="Google Sheets - Easy way to explore and organize data. Integrated With
+                Google Apps Scripts you can automate workflows and boost productivity.">
+                <a href="https://sheets.google.com">
+                    <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png" alt="SHEETS_logo" />
+                    Google Sheet
+                </a>
+            </div>
+            <br>Infraestrutura:<br>
+            <div class="tech" matTooltip="Google Apps Script - A modern JavaScript cloud-based platform to build 
+                solutions integrating all Google Services and external APIs.">
+                <a href="https://developers.google.com/apps-script">
+                    <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
+                    Google Apps Scripts
+                </a>
+            </div>
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="home mat-elevation-z4 card-col-description">
+        <mat-card-title class="title">
+            Business Tools
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+            <ul>
+                <li *myFor="let n em [
+                'Discord',
+                'Google Meet',
+                'Google Drive',
+                'Gmail',
+                'Google Sheets',
+                'Telegram'
+                    ]">
+                    {{ n }}</li>
+            </ul>
+        </mat-card-subtitle>
+    </mat-card>
+</div>

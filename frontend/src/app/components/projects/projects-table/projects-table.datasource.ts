@@ -28,6 +28,13 @@ export interface Project {
 }
     */
     {
+        name: 'My Portfolio (this website)', launched_year: 2021, platform: 'Web', category: '⭐️⭐️',
+        website: 'portfolio.jvictor.com.br', website_text: '', portfolio_link: '',
+        github_link: 'github.com/jvictorhub/portfolio', techs: '#TG',
+        angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+        googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
+    },
+    {
         name: 'Produtos Angular CRUD', launched_year: 2020, platform: 'Web', category: '⭐️',
         website: 'portfolio.jvictor.com.br/products', website_text: '', portfolio_link: 'products',
         github_link: 'github.com/jvictorhub/portfolio', techs: '#TG',

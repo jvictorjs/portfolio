@@ -20,7 +20,7 @@
                 <div class="platform-content-cell">
                     <span class="tooltiptext">
                         {{ getPlatformDescription(row.platform) }}</span>
-                        <!-- material-icons OR material-icons-round OR material-icons-two-tone OR material-icons-outlined OR material-icons-sharp-->
+                    <!-- material-icons OR material-icons-round OR material-icons-two-tone OR material-icons-outlined OR material-icons-sharp-->
                     <i class="material-icons-round">
                         {{ getPlatformIcon(row.platform) }}
                     </i>
@@ -66,7 +66,7 @@
                 <div class="techs-column-div">
                     <div [ngClass]="row.angular">
                         <a href="https://angular.io/">
-                            <img class="mini-logo" src="assets/img/angular-logo.svg" alt="ANGULAR_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" alt="ANGULAR_logo" />
                         </a>
                         <span class="tooltiptext">Angular - Learn one way to build applications with Angular and reuse
                             your code and abilities to build apps for any deployment target. For web, mobile web, native
@@ -74,14 +74,16 @@
                     </div>
                     <div [ngClass]="row.reactNative">
                         <a href="https://reactnative.dev/">
-                            <img class="mini-logo" src="assets/img/react_native_logo.png" alt="REACTNATIV_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png"
+                                alt="REACTNATIV_logo" />
                         </a>
                         <span class="tooltiptext">React Native - Create native apps for Android and iOS using
                             React</span>
                     </div>
                     <div [ngClass]="row.telegramBot_api">
                         <a href="https://core.telegram.org/bots/api">
-                            <img class="mini-logo" src="assets/img/256px-Telegram_logo.png" alt="TELEGRAM_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png"
+                                alt="TELEGRAM_logo" />
                         </a>
                         <span class="tooltiptext">The Telegram Bot API - Allows you to create and manage Chatbots. Just
                             simple to interact with text messages and chat buttons as
@@ -89,7 +91,8 @@
                     </div>
                     <div [ngClass]="row.googleSheet">
                         <a href="https://sheets.google.com">
-                            <img class="mini-logo" src="assets/img/google-sheets-logo.png" alt="SHEETS_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png"
+                                alt="SHEETS_logo" />
                         </a>
                         <span class="tooltiptext">Google Sheets - Easy way to explore and organize data. Integrated With
                             Google
@@ -97,21 +100,22 @@
                     </div>
                     <div [ngClass]="row.googleAppsScript">
                         <a href="https://developers.google.com/apps-script">
-                            <img class="mini-logo" src="assets/img/google-apps-script.svg" alt="GAS_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
                         </a>
                         <span class="tooltiptext">Google Apps Script - A modern JavaScript cloud-based platform to build
                             solutions integrating all Google Services and external APIs.</span>
                     </div>
                     <div [ngClass]="row.digitalOcean">
                         <a href="https://developers.google.com/apps-script">
-                            <img class="mini-logo" src="assets/img/digitalocean-icon-1.svg" alt="DigitalOcean_logo" />
+                            <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                                alt="DigitalOcean_logo" />
                         </a>
                         <span class="tooltiptext">Digital Ocean - One of the best cloud infraestructure provider in the
                             world.</span>
                     </div>
                     <div [ngClass]="row.twitter_api">
                         <a href="https://developer.twitter.com/en/docs/twitter-api">
-                            <img class="mini-logo topmargin3px" src="assets/img/twitter-logo-1.png"
+                            <img class="mini-logo topmargin3px" src="assets/img/tech-logos/twitter-logo-1.png"
                                 alt="Twitter_logo" />
                         </a>
                         <span class="tooltiptext">Twitter API - The Twitter API enables programmatic access to Twitter
@@ -128,7 +132,7 @@
             <td mat-cell *matCellDef="let row" class="github_link">
                 <div class="{{getGithubDivClass(row.github_link)}}">
                     <a href="https://{{row.github_link}}" target="_blank">
-                        <img class="mini-logo-fixed" src="assets/img/github_logo.png" alt="GitHub_logo" />
+                        <img class="mini-logo-fixed" src="assets/img/tech-logos/github_logo.png" alt="GitHub_logo" />
                     </a>
                 </div>
             </td>
