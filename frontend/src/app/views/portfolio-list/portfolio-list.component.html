@@ -1,0 +1,607 @@
+<button mat-raised-button color="primary">
+    <a href="/portfolio-table">
+        <span class="material-icons md-24 v-middle">
+            table_view
+        </span>
+        switch to table view
+    </a>
+</button>
+
+<mat-card class="mat-elevation-z4 home">
+    <mat-card-title class="title">
+        Projects List
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        All projects listed above are active and working, altough some of them has restricted/private access.
+        There are some more to show, but these are the ones I'm most proud of. I use the majority of them everyday.
+        <br><br>
+        <i class="material-icons-two-tone mini-logo-fixed">
+            desktop_windows
+        </i>Web: accessible via web browser
+        <br>
+        <i class="material-icons-two-tone mini-logo-fixed">
+            phone_android
+        </i>Mobile: mobile phone application
+        <br>
+        <i class="material-icons-two-tone mini-logo-fixed">
+            chat
+        </i>Telegram Chatbot: services available via instant messages and commands
+    </mat-card-subtitle>
+    <mat-card-subtitle class="subtitle">
+
+
+
+
+    </mat-card-subtitle>
+</mat-card>
+
+
+<div class="div-project-mini-card-row ">
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons md-36 icon v-middle">
+                    health_and_safety
+                </i>
+                Medicine Reminder
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Medicine Reminder', launched_year: 2017, project_icon: 'health_and_safety', platform:
+                            'Telegram
+                            Chatbot',
+                            category: '⭐️',
+                            website: 't.me/', website_text: '', portfolio_link: 'link',
+                            github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <span matTooltip="{{BASIC_CAT}}">⭐️</span>
+            ●
+            <span> 2019 </span>
+            ●
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+            <br>
+            1 API
+            <div class="techs-column-div">
+
+                <div class="tech-tool-show">
+                    <a href="https://core.telegram.org/bots/api" matTooltip={{TELEGRAM_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png"
+                            alt="TELEGRAM_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://sheets.google.com" matTooltip={{GOOGLE_SHEETS_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png" alt="SHEETS_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://developers.google.com/apps-script" matTooltip={{GOOGLE_APPS_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
+                    </a>
+                </div>
+            </div>
+            <span style="text-align: center;">
+                A very useful chatbot that reminds you when it is time to take that pill.</span>
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons md-36 icon v-middle">
+                    sports_soccer
+                </i>
+                TremdGol APP
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'TremdGol APP', launched_year: 2020, project_icon: 'sports_soccer', platform: 'Mobile',
+                            category:
+                            '⭐️⭐️⭐️',
+                            website: '-', website_text: '', portfolio_link: '',
+                            github_link: 'github.com/jvictorhub/hero1', techs: '#TG', total_apis: 6, total_apis_owned: 3,
+                            angular: 'hide', reactNative: 'tech-tool-show', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'tech-tool-show', twitter_api:
+                            'tech-tool-show'
+                            <br> <br>
+                        -->
+
+            <span matTooltip="{{ADVANCED_CAT}}">⭐️⭐️⭐️</span>
+            ●
+            <span> 2020 </span>
+            ●
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{MOBILE_PLATFORM_DESCRIPTION}}">
+                phone_android
+            </i>Mobile
+            <br>
+            6 APIs
+            <br>
+            <div class="techs-column-div">
+                <div class="tech-tool-show">
+                    <a href="https://reactnative.dev/" matTooltip={{REACT_NATIVE_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png"
+                            alt="REACTNATIV_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://core.telegram.org/bots/api" matTooltip={{TELEGRAM_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png"
+                            alt="TELEGRAM_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://sheets.google.com" matTooltip={{GOOGLE_SHEETS_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png" alt="SHEETS_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://developers.google.com/apps-script" matTooltip={{GOOGLE_APPS_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://www.digitalocean.com/" matTooltip={{DIGITALOCEAN_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                            alt="DigitalOcean_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://developer.twitter.com/en/docs/twitter-api" matTooltip={{TWITTER_API_DESCRIPTION}}>
+                        <img class="mini-logo topmargin3px" src="assets/img/tech-logos/twitter-logo-1.png"
+                            alt="Twitter_logo" />
+                    </a>
+                </div>
+            </div>
+            <span style="text-align: center;">
+                A powerful mobile app that provides you a lot of statistics about live soccer events.</span>
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    sports_soccer
+                </i>
+                Bolão Rússia 2018
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Bolão Rússia 2018', launched_year: 2018, project_icon: 'sports_soccer', platform:
+                            'Telegram
+                            Chatbot',
+                            category: '⭐️⭐️',
+                            website: 't.me/ZezinhoBolaoBot', website_text: '@ZezinhoBolaoBot', portfolio_link: '',
+                            github_link: '', techs: '#TG', total_apis: 2, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+            (insert details)
+        </mat-card-subtitle>
+    </mat-card>
+</div>
+<div class="div-project-mini-card-row ">
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    sports_soccer
+                </i>
+                TIPS
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            
+                            name: 'TIPS', launched_year: 2020, project_icon: 'sports_soccer', platform: 'Telegram
+                            Chatbot',
+                            category:
+                            '⭐️⭐️',
+                            website: 't.me/bolanaredetips', website_text: '', portfolio_link: '',
+                            github_link: '', techs: '#TG', total_apis: 3, total_apis_owned: 1,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'tech-tool-show'
+                            <br> <br>
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    sports_soccer
+                </i>
+                Prognósticos
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Prognósticos', launched_year: 2020, project_icon: 'sports_soccer', platform:
+                            'Telegram
+                            Chatbot',
+                            category: '⭐️⭐️',
+                            website: 't.me/', website_text: '', portfolio_link: 'link',
+                            github_link: '', techs: '#TG', total_apis: 2, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    sports_soccer
+                </i>
+                Bola na Rede
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            
+                            name: 'Bola na Rede', launched_year: 2018, project_icon: 'sports_soccer', platform:
+                            'Telegram
+                            Chatbot',
+                            category: '⭐️⭐️',
+                            website: 'bolanarede.net.br', website_text: '', portfolio_link: '',
+                            github_link: '', techs: '#TG', total_apis: 5, total_apis_owned: 3,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'tech-tool-show', twitter_api:
+                            'tech-tool-show'
+                            <br> <br>
+                        -->
+
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+</div>
+<div class="div-project-mini-card-row ">
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    attach_money
+                </i>
+                Controle Financeiro
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Controle Financeiro', launched_year: 2017, project_icon: 'attach_money', platform:
+                            'Telegram
+                            Chatbot',
+                            category: '⭐️',
+                            website: '-', website_text: '', portfolio_link: 'controle-financeiro',
+                            github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/firesafe" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    local_fire_department
+                </i>
+                FireSafe
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+
+                            name: 'FireSafe', launched_year: 2020, project_icon: 'local_fire_department', platform:
+                            'Mobile',
+                            category:
+                            '⭐️',
+                            website: '2020.spaceappschallenge.org/challenges/confront/spot-fire-3/teams/firesafe',
+                            website_text:
+                        '2020
+                        Nasa
+                        Space Apps Challange - Firesafe Team', portfolio_link: 'link',
+                        github_link: 'github.com/lacerdamarcelo/nasa_space_apps_2020', techs: '#TG', total_apis: 1,
+                        total_apis_owned: 0,
+                        angular: 'hide', reactNative: 'tech-tool-show', telegramBot_api: 'hide', googleSheet: 'hide',
+                        googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
+                        <br> <br>
+                    -->
+
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    today
+                    <!-- event_note event_available today -->
+                </i>
+                Agenda de Tarefas
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Agenda de Tarefas', launched_year: 2017, project_icon: 'today', platform: 'Telegram
+                            Chatbot',
+                            category:
+                            '⭐️',
+                            website: 't.me/', website_text: '', portfolio_link: 'link',
+                            github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet:
+                            'tech-tool-show',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+</div>
+
+<div class="div-project-mini-card-row ">
+
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    desktop_windows
+                </i>
+                My Portfolio (this website)
+            </a>
+        </mat-card-title>
+        <a href="../assets/img/projects/screenshots/My-Portfolio-screenshot.png" target="_blank">
+            <img class="project-screenshot" src="assets/img/projects/screenshots/My-Portfolio-screenshot.png"
+                alt="certificate">
+        </a>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'My Portfolio (this website)', launched_year: 2021, project_icon: 'desktop_windows',
+                            platform:
+                            'Web',
+                            category: '⭐️⭐️',
+                            website: 'portfolio.jvictor.com.br', website_text: '', portfolio_link: '',
+                            github_link: 'github.com/jvictorhub/portfolio', techs: '#TG', total_apis: 2, total_apis_owned:
+                            2,
+                            angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+                            googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                        -->
+            <span matTooltip="{{MODEST_CAT}}">⭐️⭐️</span>
+            ●
+            <span> 2021 </span>
+            ●
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{WEB_PLATFORM_DESCRIPTION}}">
+                desktop_windows
+            </i>Web
+            <br>
+            2 APIs
+            ●
+            <a href="https://portfolio.jvictor.com.br" target="_blank">website</a>
+            ●
+
+            <a href="https://github.com/jvictorhub/portfolio" target="_blank" title="GitHub source code available">
+                <img class="mini-logo-github" src="assets/img/tech-logos/github_logo.png" alt="GitHub_logo" />
+            </a>
+
+            <div class="techs-column-div">
+                <div class="tech-tool-show">
+                    <a href="https://angular.io/" matTooltip={{ANGULAR_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" alt="ANGULAR_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://www.digitalocean.com/" matTooltip={{DIGITALOCEAN_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                            alt="DigitalOcean_logo" />
+                    </a>
+                </div>
+            </div>
+            <span style="text-align: center;">
+                A course project website built with Angular 11 and costumized to show my portfolio. The original project
+                is a simple web CRUD solution.</span>
+        </mat-card-subtitle>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    desktop_windows
+                </i>
+                Produtos Angular CRUD
+            </a>
+        </mat-card-title>
+        <a href="../assets/img/projects/screenshots/products-crud-screenshot.png" target="_blank">
+            <img class="project-screenshot" src="assets/img/projects/screenshots/products-crud-screenshot.png"
+                alt="products-crud-screenshot">
+        </a>
+        <mat-card-subtitle class="project-description">
+
+            <!--
+                            
+    name: 'Produtos Angular CRUD', launched_year: 2020, project_icon: 'desktop_windows', platform:
+    'Web',
+    category:
+    '⭐️',
+    website: 'portfolio.jvictor.com.br/products', website_text: '', portfolio_link: 'products',
+    github_link: 'github.com/jvictorhub/portfolio', techs: '#TG', total_apis: 1, total_apis_owned:
+    1,
+    angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+    googleAppsScript: 'hide', digitalOcean: 'hide', twitter_api: 'hide'
+    <br> <br>
+    
+-->
+            <span matTooltip="{{BASIC_CAT}}">⭐️</span>
+            ●
+            <span> 2020 </span>
+            ●
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{WEB_PLATFORM_DESCRIPTION}}">
+                desktop_windows
+            </i>Web
+            <br>
+            1 API
+            ●
+            <a href="https://portfolio.jvictor.com.br/products" target="_blank">website</a>
+            ●
+            <a href="https://github.com/jvictorhub/portfolio" target="_blank" title="GitHub source code available">
+                <img class="mini-logo-github" src="assets/img/tech-logos/github_logo.png" alt="GitHub_logo" />
+            </a>
+            <div class="techs-column-div">
+                <div class="tech-tool-show">
+                    <a href="https://angular.io/" matTooltip={{ANGULAR_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" alt="ANGULAR_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://www.digitalocean.com/" matTooltip={{DIGITALOCEAN_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                            alt="DigitalOcean_logo" />
+                    </a>
+                </div>
+            </div>
+            <span style="text-align: center;">
+                A course project website built with Angular 11: a simple web CRUD solution.</span>
+        </mat-card-subtitle>
+    </mat-card>
+
+
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    sports_soccer
+                    <!-- event_note event_available today -->
+                </i>
+                Live Soccer
+            </a>
+        </mat-card-title>
+        <a href="../assets/img/projects/screenshots/live-soccer-screenshot.png" target="_blank">
+            <img class="project-screenshot" src="assets/img/projects/screenshots/live-soccer-screenshot.png"
+                alt="certificate">
+        </a>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'Futebol Ao Vivo', launched_year: 2021, project_icon: 'sports_soccer', platform: 'Web',
+                            category:
+                            '⭐️',
+                            website: 'bolanarede.net.br', website_text: '', portfolio_link: 'link',
+                            github_link: '', techs: '#TG', total_apis: 2, total_apis_owned: 1,
+                            angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                            <br> <br>
+                            
+                        -->
+            <span matTooltip="{{MODEST_CAT}}">⭐️⭐️</span>
+            ●
+            <span> 2020 </span>
+            ●
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{WEB_PLATFORM_DESCRIPTION}}">
+                desktop_windows
+            </i>Web
+            <br>
+            2 API
+            ●
+            <a href="https://portfolio.jvictor.com.br/futebol" target="_blank">website</a>
+            ●
+            <a href="https://github.com/jvictorhub/portfolio" target="_blank" title="GitHub source code available">
+                <img class="mini-logo-github" src="assets/img/tech-logos/github_logo.png" alt="GitHub_logo" />
+            </a>
+            <div class="techs-column-div">
+                <div class="tech-tool-show">
+                    <a href="https://angular.io/" matTooltip={{ANGULAR_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" alt="ANGULAR_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://developers.google.com/apps-script" matTooltip={{GOOGLE_APPS_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
+                    </a>
+                </div>
+                <div class="tech-tool-show">
+                    <a href="https://www.digitalocean.com/" matTooltip={{DIGITALOCEAN_DESCRIPTION}}>
+                        <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                            alt="DigitalOcean_logo" />
+                    </a>
+                </div>
+            </div>
+            <span style="text-align: center;">
+                A website that shows statistics of live soccer events around the world.</span>
+        </mat-card-subtitle>
+    </mat-card>
+</div>
+
+<div class="div-project-mini-card-row ">
+    <mat-card class="mat-elevation-z4 div-project-mini-card">
+        <mat-card-title class="title">
+            <a routerLink="/controle-financeiro" class="list-item-with-icon">
+                <i class="material-icons icon md-36 v-middle">
+                    work
+                </i>
+                The Portfolio Bot
+            </a>
+        </mat-card-title>
+        <mat-card-subtitle class="project-description">
+            <!--
+                            
+                            name: 'The Portfolio Bot', launched_year: 2021, project_icon: 'work', platform: 'Telegram
+                            Chatbot',
+                            category:
+                            '⭐️',
+                            website: 't.me/ThePortfolioBot', website_text: '', portfolio_link: 'link',
+                            github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
+                            angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'hide',
+                            googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+                        -->
+            <i class="material-icons-two-tone mini-logo-fixed" matTooltip="{{TELEGRAM_PLATFORM_DESCRIPTION}}">
+                chat
+            </i>Chatbot
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z0 div-project-mini-card">
+
+    </mat-card>
+    <mat-card class="mat-elevation-z0 div-project-mini-card">
+
+    </mat-card>
+
+</div>

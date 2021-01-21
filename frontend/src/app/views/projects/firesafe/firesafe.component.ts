@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../components/template/header/header.service';
+import { HeaderService } from './../../../components/template/header/header.service';
 
 @Component({
   selector: 'app-firesafe',

@@ -1,7 +1,8 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../components/template/header/header.service';
+import { HeaderService } from './../../../components/template/header/header.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-controle-financeiro',
@@ -10,7 +11,7 @@ import { HeaderService } from './../../components/template/header/header.service
 })
 export class ControleFinanceiroComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
+  constructor(private headerService: HeaderService, private location: Location) {
     headerService.headerData = {
       title: 'ChatBot para Controle de Gastos',
       icon: 'attach_money',
@@ -21,4 +22,7 @@ export class ControleFinanceiroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigationGoBack() {
+    this.location.back();
+  }
 }

@@ -45,12 +45,14 @@ import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { FutebolEventReadComponent } from './components/futebol/futebol-event-read/futebol-event-read.component';
-import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
-import { FiresafeComponent } from './views/firesafe/firesafe.component';
-import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
+import { ControleFinanceiroComponent } from './views/projects/controle-financeiro/controle-financeiro.component';
+import { FiresafeComponent } from './views/projects/firesafe/firesafe.component';
+import { PortfolioTableComponent } from './views/portfolio-table/portfolio-table.component';
 import { ProjectsTableComponent } from './components/projects/projects-table/projects-table.component';
 import { MyExperienceComponent } from './views/my-experience/my-experience.component';
-import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component'
+import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component'
 
 registerLocaleData(localePt);
 
@@ -74,10 +76,12 @@ registerLocaleData(localePt);
     FutebolEventReadComponent,
     ControleFinanceiroComponent,
     FiresafeComponent,
-    PortfolioFullComponent,
+    PortfolioTableComponent,
     ProjectsTableComponent,
     MyExperienceComponent,
-    JvictorStackComponent
+    JvictorStackComponent,
+    ContactComponent,
+    PortfolioListComponent
   ],
   imports: [ // módulos
     BrowserModule,

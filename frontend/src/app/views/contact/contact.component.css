@@ -1,0 +1,30 @@
+.home {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.home .title {
+    font-size: 1.8rem;
+    font-weight: light;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+    margin-top: 0px;
+    color:black;
+}
+
+.mini-logo {
+    width: 2.6rem;
+    vertical-align: middle;
+    transition: transform .3s;
+}
+
+.mini-logo:hover {
+    -ms-transform: scale(1.8);
+    /* IE 9 */
+    -webkit-transform: scale(1.8);
+    /* Safari 3-8 */
+    transform: scale(1.8);
+}

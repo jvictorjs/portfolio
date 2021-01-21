@@ -21,6 +21,14 @@
     font-size: 0.77rem;
 }
 
+.div-complete-stack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-style: none;
+    max-width: 1440px;
+}
+
 .div-jvictor-stack-item {
     display: flex;
     justify-content: center;
@@ -84,7 +92,7 @@
     transition: transform .3s;
     height: 33px;
     margin-top: -13px;
-    animation: rotation 2s infinite;
+    animation: rotation 2s;
     /*animation: zoom-out 3s infinite; */
 }
 
@@ -144,7 +152,14 @@
     border-radius: 50%;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
-    animation: pulse 2s infinite linear;
+    animation: pulse 2s linear;
+}
+
+.pulse-mini {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse-mini 2s infinite linear;
 }
 
 @keyframes pulse {

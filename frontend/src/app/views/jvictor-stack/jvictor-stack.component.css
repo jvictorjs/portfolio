@@ -102,12 +102,20 @@ a, a:hover, a:focus, a:active {
     /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
 }
 
-.show {
-    visibility: visible;
+.tech-ballot {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: flex-start;
+}
+
+.tech-ballot-text {
+    margin: 10px;
 }
 
 .mini-logo {
-    width: 2.2rem;
+    width: 1.8rem;
+    margin: 6px 0px 0 0 ;
     vertical-align: middle;
     transition: transform .3s;
     border-radius: 8px;

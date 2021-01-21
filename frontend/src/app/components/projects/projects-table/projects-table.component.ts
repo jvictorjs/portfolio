@@ -30,7 +30,15 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
   dataSource: ProjectDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['name', 'platform', 'launched_year', 'category', 'website', 'techs', 'github_link'];
+  displayedColumns = ['name', 'platform', 'launched_year', 'total_apis', 'total_apis_owned', 'category', 'website', 'techs', 'github_link'];
+
+  ANGULAR_DESCRIPTION: string = "Angular - Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop."
+  REACT_NATIVE_DESCRIPTION: string = "React Native - Create native apps for Android and iOS using React"
+  TELEGRAM_DESCRIPTION: string = "The Telegram Bot API - Allows you to create and manage Chatbots. Just simple to interact with text messages and chat buttons as we use it on a daily basis."
+  GOOGLE_SHEETS_DESCRIPTION: string = "Google Sheets - Easy way to explore and organize data. Integrated With Google Apps Scripts you can automate workflows and boost productivity."
+  GOOGLE_APPS_DESCRIPTION: string = "Google Apps Script - A modern JavaScript cloud-based platform to build solutions integrating all Google Services and external APIs."
+  DIGITALOCEAN_DESCRIPTION: string = "Digital Ocean - One of the best cloud infraestructure provider in the world."
+  TWITTER_API_DESCRIPTION: string = "Twitter API - The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources."
 
   ngOnInit() {
     this.dataSource = new ProjectDataSource();
@@ -54,7 +62,7 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
         break;
       case 'Telegram Chatbot':
         console.log('platform = ' + platform)
-        return 'Telegram Chatbot: services available via instant messages and commands'
+        return 'Telegram Chatbot: services available via instant messages and commands. All my Telegram Bots are integrated with Google Apps Script and Google Sheet.'
         break;
       default:
         console.log('platform = ' + platform)
@@ -80,15 +88,15 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
     switch (category) {
       case '⭐️':
         console.log('category = ' + category)
-        return '⭐️ Basic app'
+        return '⭐️ Basic project'
         break;
       case '⭐️⭐️':
         console.log('category = ' + category)
-        return '⭐️⭐️ Modest app'
+        return '⭐️⭐️ Modest project'
         break;
       case '⭐️⭐️⭐️':
         console.log('category = ' + category)
-        return '⭐️⭐️⭐️ Advanced app'
+        return '⭐️⭐️⭐️ Advanced project'
         break;
       default:
         console.log('category = ' + category)

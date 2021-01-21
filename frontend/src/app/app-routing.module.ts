@@ -8,11 +8,13 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { FutebolComponent } from './views/futebol/futebol.component';
 import { FutebolEventReadComponent } from './components/futebol/futebol-event-read/futebol-event-read.component';
-import { ControleFinanceiroComponent } from './views/controle-financeiro/controle-financeiro.component';
-import { FiresafeComponent } from './views/firesafe/firesafe.component';
-import { PortfolioFullComponent } from './views/portfolio-full/portfolio-full.component';
+import { ControleFinanceiroComponent } from './views/projects/controle-financeiro/controle-financeiro.component';
+import { FiresafeComponent } from './views/projects/firesafe/firesafe.component';
+import { PortfolioTableComponent } from './views/portfolio-table/portfolio-table.component';
+import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component';
 import { MyExperienceComponent } from './views/my-experience/my-experience.component';
 import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -52,8 +54,12 @@ const routes: Routes = [
     component: FiresafeComponent
   },
   {
-    path: "portfolio-full",
-    component: PortfolioFullComponent
+    path: "portfolio-table",
+    component: PortfolioTableComponent
+  },
+  {
+    path: "portfolio-list",
+    component: PortfolioListComponent
   },
   {
     path: "my-experience",
@@ -62,6 +68,10 @@ const routes: Routes = [
   {
     path: "jvictor-stack",
     component: JvictorStackComponent
+  },
+  {
+    path: "contact",
+    component: ContactComponent
   }
 ];
 

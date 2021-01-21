@@ -1,111 +1,127 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" 
-    opened="true"
-    fixedInViewport="true" fixedTopGap="64"
-    disableClose="false"
-    fixedBottomGap="0"
-    position="start"
-    
-    >
-        <mat-nav-list class="nav-list">
-            <a mat-list-item routerLink="/" class="list-item-with-icon">
-                <i class="material-icons"> <!--https://material.io/resources/icons/?style=baseline-->
-                    home
-                </i>
-                Início
-            </a>
-            <a mat-list-item routerLink="/my-experience" class="list-item-with-icon">
-                <i class="material-icons"> 
-                    work <!-- work_outline work -->
-                </i>
-                My experience
-            </a>
-            <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon">
-                <i class="material-icons"> 
-                    settings_ethernet <!-- developer_mode work code -->
-                </i>
-                JVictor Stack
-            </a>
-            <a mat-list-item routerLink="/portfolio-full" class="list-item-with-icon">
-                <i class="material-icons"> 
-                    work <!-- work_outline work -->
-                </i>
-                Full Portfolio
-            </a>
-            <a mat-list-item routerLink="/controle-financeiro"class="list-item-with-icon">
-                <i class="material-icons icon">
-                    health_and_safety
-                </i>
-                Medicine Reminder
-            </a>
-            <a mat-list-item routerLink="/products"class="list-item-with-icon">
-                <i class="material-icons icon">
-                    storefront
-                </i>
-                Produtos CRUD
-            </a>
-            <a mat-list-item routerLink="/futebol"class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                Futebol Ao Vivo
-            </a>
-            <a mat-list-item routerLink="/futebol"class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                TremdGol APP
-            </a>
-            <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                Bolão Rússia 2018
-            </a>
-            <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                TIPS
-            </a>
-            <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                Prognósticos
-            </a>
-            <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
-                <i class="material-icons">
-                    sports_soccer
-                </i>
-                Bola na Rede
-            </a>
-            <a mat-list-item routerLink="/controle-financeiro" class="list-item-with-icon">
-                <i class="material-icons">
-                    attach_money
-                </i>
-                Controle Financeiro
-            </a>
-            <a mat-list-item routerLink="/firesafe" class="list-item-with-icon">
-                <i class="material-icons">
-                    local_fire_department
-                </i>
-                FireSafe
-            </a>
-            <a mat-list-item routerLink="/firesafe" class="list-item-with-icon">
-                <i class="material-icons">
-                    today <!-- event_note event_available today -->
-                </i>
-                Agenda de Tarefas
-            </a>
-            <br><br><br>
-        </mat-nav-list>
-    </mat-sidenav>
+    <mat-sidenav class="sidenav" mode="side" opened="true" fixedInViewport="true" fixedTopGap="64" disableClose="false"
+        fixedBottomGap="0" position="start">
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
+            <div style="display: flex; flex-direction: column; margin-top: 0px;">
+                <mat-nav-list class="nav-list">
+                    <a mat-list-item routerLink="/" class="list-item-with-icon">
+                        <i class="material-icons">
+                            <!--https://material.io/resources/icons/?style=baseline-->
+                            home
+                        </i>
+                        Home
+                    </a>
+                    <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon">
+                        <i class="material-icons">
+                            work
+                            <!-- work_outline work -->
+                        </i>
+                        Projects
+                    </a>
+                    <a mat-list-item routerLink="/my-experience" class="list-item-with-icon">
+                        <i class="material-icons">
+                            work
+                            <!-- work_outline work -->
+                        </i>
+                        My experience
+                    </a>
+                    <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon">
+                        <i class="material-icons">
+                            settings_ethernet
+                            <!-- developer_mode work code -->
+                        </i>
+                        JVictor Stack
+                    </a>
+                    <a mat-list-item routerLink="/products" class="list-item-with-icon">
+                        <i class="material-icons icon">
+                            storefront
+                        </i>
+                        Products CRUD
+                    </a>
+                    <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
+                        <i class="material-icons">
+                            sports_soccer
+                        </i>
+                        Live Soccer
+                    </a>
+                    <a mat-list-item routerLink="/contact" class="list-item-with-icon">
+                        <i class="material-icons">
+                            mail_outline
+                            <!-- contact_page perm_identity -->
+                        </i>
+                        Contact
+                    </a>
+                    <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;"></div>
+                    <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;">
 
+                        <div style="display: flex; justify-content: center; flex-direction: column;">
+
+                            <!-- 
+
+                                <div
+                                style="display: flex;justify-content: center; text-align: center;font-size: 1.8rem; color:black; font-weight: 800;margin: 0 0 10px 0;">
+                                <span class="red">J</span>Victor <br>
+                            </div>
+                        -->
+                            <div
+                                style="display: flex; justify-content: flex-start; flex-direction: column; margin-top: 0px;">
+                                <div
+                                    style="display: flex;justify-content: flex-end; text-align: center;font-size: 0.75rem; color:blanchedalmond; font-weight: 400; margin: 10px 70px 2px 0">
+                                    FULLSTACK
+                                </div>
+
+                                <div
+                                    style="display: flex;justify-content: flex-start; text-align: center;font-size: 0.85rem; color:blanchedalmond; font-weight: 700; margin: -10px 0 0 30px;">
+                                    J A V A S C R I P T
+                                </div>
+                                <div
+                                    style="display: flex;justify-content: flex-end; text-align: center;font-size: 1.0rem; color:blanchedalmond; font-weight: 500; margin: -5px 39px 15px 0">
+                                    DEVELOPER
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex;justify-content: center;">
+                            <a href="../assets/other/jvwr-resume-portfolio.pdf" target="_blank" title="My Resume">
+                                <span class="material-icons md-28 v-middle mini-logo"
+                                    style="color:black; margin:3px 13px 0 -12px">
+                                    text_snippet
+                                </span>
+                            </a>
+                            <a href="mailto:victorjtube@gmail.com" title="E-mail">
+                                <span class="material-icons md-28 v-middle mini-logo"
+                                    style="color:black; margin:3px">
+                                    mail
+                                </span>
+                            </a>
+                            <a href="https://github.com/jvictorhub" target="_blank"
+                                style="color:black; margin:6px 0 0 11px">
+                                <img class="mini-logo v-middle" src="assets/img/tech-logos/github_logo.png"
+                                    alt="GitHub_logo" title="Check out my projects on GitHub" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
+                                style="margin: 6px 0 0 5px;">
+                                <img class="mini-logo v-middle" src="assets/img/tech-logos/linkedin-logo.png"
+                                    alt="Linkedin_logo" title="Connect on Linkedin" />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg"
+                                title="My YouTube channel" target="_blank">
+                                <span class="material-icons md-26 v-middle mini-logo"
+                                    style="color:black; margin:4px 0 0 7px">
+                                    play_circle
+                                    <!-- video_library play_circle -->
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </mat-nav-list>
+            </div>
+        </div>
+    </mat-sidenav>
 
     <mat-sidenav-content class="content">
         <router-outlet>
-
         </router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

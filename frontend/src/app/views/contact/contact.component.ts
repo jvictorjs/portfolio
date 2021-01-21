@@ -2,17 +2,17 @@ import { HeaderService } from './../../components/template/header/header.service
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-futebol',
-  templateUrl: './futebol.component.html',
-  styleUrls: ['./futebol.component.css']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class FutebolComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor(private headerService: HeaderService) {
     headerService.headerData = {
-      title: 'Live Soccer Events',
-      icon: 'sports_soccer',
-      routeUrl: 'futebol'
+      title: 'Contact',
+      icon: 'mail_outline',
+      routeUrl: 'contact'
     }
   }
 

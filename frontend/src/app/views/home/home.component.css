@@ -21,6 +21,7 @@
   width: 30%;
   border-radius: 8px;
   transition: transform .4s;
+  max-width: 400px;
 }
 
 .certificate:hover {
