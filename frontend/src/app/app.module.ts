@@ -13,6 +13,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
@@ -89,6 +90,7 @@ registerLocaleData(localePt);
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatCheckboxModule,
     MatListModule,
     MatCardModule,
     MatButtonModule,

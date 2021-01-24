@@ -1,5 +1,85 @@
+.header {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.example-toolbar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.example-toolbar .title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.example-toolbar .title-group {
+    padding-left: 33px;
+    align-self: center;
+}
+
+.example-toolbar .title-group i {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.title-icon {
+    transition: transform .3s;
+}
+
+.title-icon:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+    /*
+    box-shadow: inset 0 0 1em gold, 0 0 1em red;
+    */
+}
+
+h1.example-app-name {
+    margin-left: 8px;
+}
+
+.example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+}
+
 .sidenav {
-    z-index: 1;
+    z-index: 3;
     margin-top: 0px;
     background-color: #3f51b5;
     width: 236px;
@@ -19,9 +99,14 @@
     padding-right: 10px;
 }
 
+.nav-list {
+    margin-top: 3px;
+}
+
 .content {
     padding: 16px 16px 16px 16px;
     background-color: #fff;
+    box-shadow: inset 0 0px 0.4em black, 0 0 0em red;
 }
 
 .container {
@@ -44,13 +129,20 @@
     border-radius: 8px;
 }
 
+.showme {
+    display: none;
+}
+
+.showhim:hover .showme {
+    display: block;
+}
+
 .mini-logo-fixed {
     display: inline-block;
     margin: 0px 10px 0px 10px;
     width: 1.3rem;
     vertical-align: middle;
 }
-
 
 .mini-logo {
     display: inline-block;
@@ -66,4 +158,78 @@
     -webkit-transform: scale(1.5);
     /* Safari 3-8 */
     transform: scale(1.5);
+}
+
+.icon-heart-pulsing {
+    transition: transform .4s;
+}
+
+.icon-heart-pulsing:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.4);
+}
+
+.pulse-heart {
+    animation: pulse-heart 2s linear;
+    border-radius: 50%;
+    margin: 0 -10px 0 3px;
+}
+
+.pulse-heart:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.4);
+}
+
+@keyframes pulse-heart {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    20% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+    40% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+    60% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.);
+    }
+    100% {
+        transform: scale(0.90);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+}
+
+/* #STACKOVERFLOW  https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
+
+.pulse-ori {
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse-ori 2s infinite;
+}
+
+@keyframes pulse-ori {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }

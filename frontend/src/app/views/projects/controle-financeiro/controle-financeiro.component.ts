@@ -1,7 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../../components/template/header/header.service';
+import { HeaderService } from './../../../components/template/nav/nav.service';
 import { Location } from '@angular/common';
 
 @Component({

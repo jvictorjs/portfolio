@@ -1,127 +1,238 @@
-<mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" opened="true" fixedInViewport="true" fixedTopGap="64" disableClose="false"
-        fixedBottomGap="0" position="start">
-        <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
-            <div style="display: flex; flex-direction: column; margin-top: 0px;">
-                <mat-nav-list class="nav-list">
-                    <a mat-list-item routerLink="/" class="list-item-with-icon">
-                        <i class="material-icons">
-                            <!--https://material.io/resources/icons/?style=baseline-->
-                            home
-                        </i>
-                        Home
-                    </a>
-                    <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon">
-                        <i class="material-icons">
-                            work
-                            <!-- work_outline work -->
-                        </i>
-                        Projects
-                    </a>
-                    <a mat-list-item routerLink="/my-experience" class="list-item-with-icon">
-                        <i class="material-icons">
-                            work
-                            <!-- work_outline work -->
-                        </i>
-                        My experience
-                    </a>
-                    <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon">
-                        <i class="material-icons">
-                            settings_ethernet
-                            <!-- developer_mode work code -->
-                        </i>
-                        JVictor Stack
-                    </a>
-                    <a mat-list-item routerLink="/products" class="list-item-with-icon">
-                        <i class="material-icons icon">
-                            storefront
-                        </i>
-                        Products CRUD
-                    </a>
-                    <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
-                        <i class="material-icons">
-                            sports_soccer
-                        </i>
-                        Live Soccer
-                    </a>
-                    <a mat-list-item routerLink="/contact" class="list-item-with-icon">
-                        <i class="material-icons">
-                            mail_outline
-                            <!-- contact_page perm_identity -->
-                        </i>
-                        Contact
-                    </a>
-                    <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;"></div>
+<div class="example-container mat-elevation-z10" [class.example-is-mobile]="mobileQuery.matches">
+
+
+    <mat-toolbar color="primary" class="example-toolbar mat-elevation-z10">
+        <button mat-icon-button (click)="sidenav.toggle()"><i class="material-icons">menu</i></button>
+        <div style="width: 250px; border: none;">
+
+            <div class="showhim">
+                <h1 class="example-app-name">
+                    <strong style="color:white;">
+                        <span class="red">J</span>Victor </strong>
+                    <!-- STACKOVERFLOW https://stackoverflow.com/questions/5210033/using-only-css-show-div-on-hover-over-a -->
+                </h1>
+                <div class="showme">
                     <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;">
+                        <div
+                            style="display: flex; justify-content: center; flex-direction: column;border: none;width: 235px; margin: 22px -18px">
 
-                        <div style="display: flex; justify-content: center; flex-direction: column;">
-
-                            <!-- 
-
-                                <div
-                                style="display: flex;justify-content: center; text-align: center;font-size: 1.8rem; color:black; font-weight: 800;margin: 0 0 10px 0;">
-                                <span class="red">J</span>Victor <br>
-                            </div>
-                        -->
                             <div
-                                style="display: flex; justify-content: flex-start; flex-direction: column; margin-top: 0px;">
-                                <div
-                                    style="display: flex;justify-content: flex-end; text-align: center;font-size: 0.75rem; color:blanchedalmond; font-weight: 400; margin: 10px 70px 2px 0">
-                                    FULLSTACK
-                                </div>
-
-                                <div
-                                    style="display: flex;justify-content: flex-start; text-align: center;font-size: 0.85rem; color:blanchedalmond; font-weight: 700; margin: -10px 0 0 30px;">
-                                    J A V A S C R I P T
-                                </div>
-                                <div
-                                    style="display: flex;justify-content: flex-end; text-align: center;font-size: 1.0rem; color:blanchedalmond; font-weight: 500; margin: -5px 39px 15px 0">
-                                    DEVELOPER
-                                </div>
+                                style="display: flex;justify-content: flex-end; text-align: center;font-size: 0.75rem; color:blanchedalmond; font-weight: 400; margin: 30px 70px 2px 0;border: none;">
+                                FULLSTACK
                             </div>
-                        </div>
-                        
-                        <div style="display: flex;justify-content: center;">
-                            <a href="../assets/other/jvwr-resume-portfolio.pdf" target="_blank" title="My Resume">
-                                <span class="material-icons md-28 v-middle mini-logo"
-                                    style="color:black; margin:3px 13px 0 -12px">
-                                    text_snippet
-                                </span>
-                            </a>
-                            <a href="mailto:victorjtube@gmail.com" title="E-mail">
-                                <span class="material-icons md-28 v-middle mini-logo"
-                                    style="color:black; margin:3px">
-                                    mail
-                                </span>
-                            </a>
-                            <a href="https://github.com/jvictorhub" target="_blank"
-                                style="color:black; margin:6px 0 0 11px">
-                                <img class="mini-logo v-middle" src="assets/img/tech-logos/github_logo.png"
-                                    alt="GitHub_logo" title="Check out my projects on GitHub" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
-                                style="margin: 6px 0 0 5px;">
-                                <img class="mini-logo v-middle" src="assets/img/tech-logos/linkedin-logo.png"
-                                    alt="Linkedin_logo" title="Connect on Linkedin" />
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg"
-                                title="My YouTube channel" target="_blank">
-                                <span class="material-icons md-26 v-middle mini-logo"
-                                    style="color:black; margin:4px 0 0 7px">
-                                    play_circle
-                                    <!-- video_library play_circle -->
-                                </span>
-                            </a>
+
+                            <div
+                                style="display: flex;justify-content: flex-start; text-align: center;font-size: 0.85rem; color:blanchedalmond; font-weight: 700; margin: -22px 0 -3px 30px;border: none;">
+                                J A V A S C R I P T
+                            </div>
+                            <div
+                                style="display: flex;justify-content: flex-end; text-align: center;font-size: 1.0rem; color:blanchedalmond; font-weight: 500; margin: -15px 39px 15px 0; border:none;">
+                                DEVELOPER
+                            </div>
                         </div>
                     </div>
-                    <br><br><br>
-                </mat-nav-list>
+                </div>
             </div>
         </div>
-    </mat-sidenav>
+        <div class="title">
+            <span class="title-group">
+                <a routerLink="{{ routeUrl }}">
+                    {{ title }}
+                    <i class="material-icons md-32 title-icon">
+                        {{ icon }}
+                    </i>
+                </a>
+            </span>
+        </div>
 
-    <mat-sidenav-content class="content">
-        <router-outlet>
-        </router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+    </mat-toolbar>
+
+    <!--
+    <mat-sidenav-container class="container">
+        <!-- opened="true" 
+        mode="side" 
+        fixedInViewport="true" 
+        
+        <button md-raised-button="md-raised-button" color="primary" (click)="sidenav.toggle()">Open Sidenav</button>
+        <mat-sidenav #sidenav class="sidenav" [(opened)]="opened" (opened)="events.push('open!')"
+        (closed)="events.push('close!')" [fixedInViewport]="true" [mode]="mobileQuery.matches ? 'over' : 'side'"
+        fixedTopGap="56" disableClose="false" fixedBottomGap="0" position="start">
+    -->
+
+
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav class="sidenav mat-elevation-z10" #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'"
+            [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" [(opened)]="opened">
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
+                <div style="display: flex; flex-direction: column; margin-top: 0px;">
+                    <mat-nav-list class="nav-list">
+                        <a mat-list-item routerLink="/" class="list-item-with-icon">
+                            <i class="material-icons">
+                                <!--https://material.io/resources/icons/?style=baseline-->
+                                home
+                            </i>
+                            Home
+                        </a>
+                        <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon">
+                            <i class="material-icons">
+                                work
+                                <!-- work_outline work -->
+                            </i>
+                            Projects
+                        </a>
+                        <a mat-list-item routerLink="/my-experience" class="list-item-with-icon">
+                            <i class="material-icons">
+                                work
+                                <!-- work_outline work -->
+                            </i>
+                            My experience
+                        </a>
+                        <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon">
+                            <i class="material-icons">
+                                settings_ethernet
+                                <!-- developer_mode work code -->
+                            </i>
+                            JVictor Stack
+                        </a>
+                        <a mat-list-item routerLink="/products" class="list-item-with-icon">
+                            <i class="material-icons icon">
+                                storefront
+                            </i>
+                            Products CRUD
+                        </a>
+                        <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
+                            <i class="material-icons">
+                                sports_soccer
+                            </i>
+                            Live Soccer
+                        </a>
+                        <a mat-list-item routerLink="/contact" class="list-item-with-icon">
+                            <i class="material-icons">
+                                mail_outline
+                                <!-- contact_page perm_identity -->
+                            </i>
+                            Contact
+                        </a>
+                        <div
+                            style="display: flex;justify-content: center; flex-direction: column;height: 55px; align-content: center; text-align: center;">
+
+                        </div>
+                        <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;">
+                            <div class="showhim">
+                                <div
+                                    style="display: flex; justify-content: center; flex-direction: column;border: none;width: 235px;">
+                                    <div
+                                        style="display: flex; justify-content: flex-start; flex-direction: column; margin-top: 0px;border: none;">
+                                        <div
+                                            style="display: flex;justify-content: flex-end; text-align: center;font-size: 0.75rem; color:blanchedalmond; font-weight: 400; margin: 10px 70px 2px 0;border: none;">
+                                            FULLSTACK
+                                        </div>
+
+                                        <div
+                                            style="display: flex;justify-content: flex-start; text-align: center;font-size: 0.85rem; color:blanchedalmond; font-weight: 700; margin: -10px 0 0 30px;border: none;">
+                                            J A V A S C R I P T
+                                        </div>
+                                        <div
+                                            style="display: flex;justify-content: flex-end; text-align: center;font-size: 1.0rem; color:blanchedalmond; font-weight: 500; margin: -5px 39px 15px 0;border: none;">
+                                            DEVELOPER
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showme">
+                                    <div
+                                        style="display: flex; flex-direction: column; justify-content: center; align-content: center; text-align: center; margin-bottom: 22px;">
+                                        <span style="font-weight: 600; margin: 0 0 0 10px;">
+
+                                            Developed with
+                                            <i class="material-icons v-middle pulse-heart" appRed>
+                                                favorite
+                                            </i>
+                                            by <strong><span class="red">J</span>Victor </strong>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            style="display: flex;justify-content: center; flex-direction: column;height: 30px; align-content: center; text-align: center;">
+
+
+                            <div style="display: flex;justify-content: center;">
+                                <a href="../assets/other/my-resume-portfolio.pdf" target="_blank" title="My Resume">
+                                    <span class="material-icons md-28 v-middle mini-logo"
+                                        style="color:black; margin:3px 13px 0 -12px">
+                                        text_snippet
+                                    </span>
+                                </a>
+                                <a href="mailto:victorjtube@gmail.com" title="E-mail">
+                                    <span class="material-icons md-28 v-middle mini-logo"
+                                        style="color:black; margin:3px">
+                                        mail
+                                    </span>
+                                </a>
+                                <a href="https://github.com/jvictorhub" target="_blank"
+                                    style="color:black; margin:6px 0 0 11px">
+                                    <img class="mini-logo v-middle" src="assets/img/tech-logos/github_logo.png"
+                                        alt="GitHub_logo" title="Check out my projects on GitHub" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
+                                    style="margin: 6px 0 0 5px;">
+                                    <img class="mini-logo v-middle" src="assets/img/tech-logos/linkedin-logo.png"
+                                        alt="Linkedin_logo" title="Connect on Linkedin" />
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg"
+                                    title="My YouTube channel" target="_blank">
+                                    <span class="material-icons md-26 v-middle mini-logo"
+                                        style="color:black; margin:4px 0 0 7px">
+                                        play_circle
+                                        <!-- video_library play_circle -->
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </mat-nav-list>
+                </div>
+            </div>
+            <!--
+    <app-footer>Componente App</app-footer>
+
+-->
+
+
+        </mat-sidenav>
+
+
+        <mat-sidenav-content class="content">
+            <!--
+
+                <p>
+                    <mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox>
+                </p>
+                <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+            -->
+            <!-- 
+                STACKOVERFLOW https://stackoverflow.com/questions/4646708/css-how-to-get-scrollbars-for-div-inside-container-of-fixed-height
+                STACKOVERFLOW https://stackoverflow.com/questions/9811465/scrollable-div-inside-container/9811527
+                <div style="box-shadow: inset 0 0 0.4em black, 0 0 0em red;padding: 5px 5px 5px 5px;"></div>
+                <div id="div1" style="height: 80%;position: fixed;"></div>
+                
+                <div style="box-shadow: inset 0 0 0.4em black, 0 0 0em red;padding: 5px 0px 0px 0px; display: flex;">
+                    <div id="div1" style="display:flex;height: 100%;position: fixed; width: 100%;">
+                        <div id="div2" style="display:flex;height: 100%;overflow:auto;border:1px solid red;">
+                            
+                            
+                            <div style="box-shadow: inset 0.0em 0.0em 0.4em black, 0 0 0em red;margin: -16px 0px -10px -16px; padding: 3px;">
+                                <div style="box-shadow: inset 0 0 0.0em black, 0 0 0em red; height: 100%; overflow-y: auto; padding: 16px;">
+                                </div>
+                            </div>
+                        -->
+
+            <router-outlet>
+            </router-outlet>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</div>
