@@ -15,6 +15,9 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit(): void {
+    if (this.mobileQuery.matches) {
+      this.opened = false;
+    } 
   }
 
 
@@ -26,6 +29,7 @@ export class NavComponent implements OnInit {
 
   constructor(private HeaderService: HeaderService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 700px)');
+
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -35,8 +39,22 @@ export class NavComponent implements OnInit {
   }
 
 
+  ifMobileAndClosesSideNav(): void {
+    if (this.mobileQuery.matches) {
+      this.opened = false;
+    } 
+    console.log('clicou ')
+    console.log('this.mobileQuery.matches = '+this.mobileQuery.matches)
+    console.log('this.opened = '+this.opened)
+  }
+
 
   get title(): string {
+    if (this.mobileQuery.matches) {
+      this.opened = false;
+    } else {
+      this.opened = true;
+    }
     return this.HeaderService.headerData.title
   }
 

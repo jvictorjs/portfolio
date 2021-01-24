@@ -66,6 +66,7 @@
             <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
                 <div style="display: flex; flex-direction: column; margin-top: 0px;">
                     <mat-nav-list class="nav-list">
+                        <!-- STACKOVERFLOW https://stackoverflow.com/questions/43808809/close-angular-material-sidenav-on-any-button-click-inside -->
                         <a mat-list-item routerLink="/" class="list-item-with-icon">
                             <i class="material-icons">
                                 <!--https://material.io/resources/icons/?style=baseline-->
@@ -73,40 +74,46 @@
                             </i>
                             Home
                         </a>
-                        <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
                                 work
                                 <!-- work_outline work -->
                             </i>
                             Projects
                         </a>
-                        <a mat-list-item routerLink="/my-experience" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/my-experience" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
                                 work
                                 <!-- work_outline work -->
                             </i>
                             My experience
                         </a>
-                        <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
                                 settings_ethernet
                                 <!-- developer_mode work code -->
                             </i>
                             JVictor Stack
                         </a>
-                        <a mat-list-item routerLink="/products" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/products" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons icon">
                                 storefront
                             </i>
                             Products CRUD
                         </a>
-                        <a mat-list-item routerLink="/futebol" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/futebol" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
                                 sports_soccer
                             </i>
                             Live Soccer
                         </a>
-                        <a mat-list-item routerLink="/contact" class="list-item-with-icon">
+                        <a mat-list-item routerLink="/contact" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
                                 mail_outline
                                 <!-- contact_page perm_identity -->
