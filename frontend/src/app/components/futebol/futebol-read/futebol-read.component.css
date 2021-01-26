@@ -41,9 +41,10 @@ i:hover {
 .team-logo {
     width: 1.3rem;
     transition: transform 0.3s;
+    vertical-align: middle;
 }
 
-.team-logo:hover{
+.team-logo:hover {
     -ms-transform: scale(1.8);
     /* IE 9 */
     -webkit-transform: scale(1.8);
