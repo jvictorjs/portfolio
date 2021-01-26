@@ -1,6 +1,8 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { HeaderService } from './nav.service'
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { faYoutube, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFileAlt, faFutbol } from '@fortawesome/free-solid-svg-icons';
 
 @Component({  // DECORATOR é o @
   selector: 'app-nav',
@@ -8,6 +10,13 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+
+  faYoutube = faYoutube
+  faLinkedin = faLinkedin
+  faGithub = faGithub
+  faEnvelope = faEnvelope
+  faFileAlt = faFileAlt
+  faFutbol = faFutbol
 
   events: string[] = [];
   opened: boolean = true;
@@ -17,7 +26,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     if (this.mobileQuery.matches) {
       this.opened = false;
-    } 
+    }
   }
 
 
@@ -42,10 +51,10 @@ export class NavComponent implements OnInit {
   ifMobileAndClosesSideNav(): void {
     if (this.mobileQuery.matches) {
       this.opened = false;
-    } 
+    }
     console.log('clicou ')
-    console.log('this.mobileQuery.matches = '+this.mobileQuery.matches)
-    console.log('this.opened = '+this.opened)
+    console.log('this.mobileQuery.matches = ' + this.mobileQuery.matches)
+    console.log('this.opened = ' + this.opened)
   }
 
 

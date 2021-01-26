@@ -10,7 +10,7 @@ import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 export class FutebolReadComponent implements OnInit {
 
   jogos: any = { id: 0, response: { botVersion: 0, result: { loopMsgText: '', inPlayEventsBSF_eventViewInfos: [] } } };
-  displayedColumns = ['id', 'clock', 'country','league', 'event', 'action']
+  displayedColumns = ['clock', 'country','league', 'event', 'action']
 
   constructor(
     private futebolService: FutebolService,

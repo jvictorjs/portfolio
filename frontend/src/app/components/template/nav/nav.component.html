@@ -90,6 +90,14 @@
                             </i>
                             My experience
                         </a>
+                        <a mat-list-item routerLink="/resume" class="list-item-with-icon"
+                            (click)="mobileQuery.matches === false || sidenav.close()">
+                            <i class="material-icons">
+                                text_snippet
+                                <!-- work_outline work -->
+                            </i>
+                            Resume
+                        </a>
                         <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
                             <i class="material-icons">
@@ -107,9 +115,13 @@
                         </a>
                         <a mat-list-item routerLink="/futebol" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <fa-icon [icon]="faFutbol" size="sm" class="material-icons v-middle mini-logo"
+                                style="color: white;margin:-2px 11px 0 2px"></fa-icon>
+                                <!--
+                                    <i class="material-icons icon">
                                 sports_soccer
                             </i>
+                                -->
                             Live Soccer
                         </a>
                         <a mat-list-item routerLink="/contact" class="list-item-with-icon"
@@ -167,35 +179,45 @@
 
 
                             <div style="display: flex;justify-content: center;">
-                                <a href="../assets/other/my-resume-portfolio.pdf" target="_blank" title="My Resume">
+                                <!-- 
+                                    STACKOVERFLOW https://support.google.com/a/users/answer/9308985?hl=pt-BR
+                                    <a href="../assets/other/my-resume-portfolio.pdf" target="_blank" title="My Resume">
+                                -->
+                                <a href="https://docs.google.com/document/d/1woTip6s9ZMGvgO4MqPY5oOt_YyTA4Wi4dEVZVvftaB8/export?format=pdf"
+                                    title="Download my Resume">
                                     <span class="material-icons md-28 v-middle mini-logo"
-                                        style="color:black; margin:3px 13px 0 -12px">
+                                        style="color:black; margin:3px 4px 0 0px">
                                         text_snippet
+                                        <!-- picture_as_pdf work-->
                                     </span>
                                 </a>
                                 <a href="mailto:victorjtube@gmail.com" title="E-mail">
-                                    <span class="material-icons md-28 v-middle mini-logo"
-                                        style="color:black; margin:3px">
-                                        mail
-                                    </span>
+                                    <fa-icon [icon]="faEnvelope" size="1x" class="material-icons v-middle mini-logo"
+                                        style="color: black;margin:2px 0 0 15px"></fa-icon>
                                 </a>
                                 <a href="https://github.com/jvictorhub" target="_blank"
-                                    style="color:black; margin:6px 0 0 11px">
-                                    <img class="mini-logo v-middle" src="assets/img/tech-logos/github_logo.png"
-                                        alt="GitHub_logo" title="Check out my projects on GitHub" />
+                                    title="Check out my projects on GitHub">
+                                    <fa-icon [icon]="faGithub" size="1x" class="material-icons v-middle mini-logo"
+                                        style="color: black;margin:2px 2px 0 16px"></fa-icon>
                                 </a>
                                 <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
-                                    style="margin: 6px 0 0 5px;">
-                                    <img class="mini-logo v-middle" src="assets/img/tech-logos/linkedin-logo.png"
-                                        alt="Linkedin_logo" title="Connect on Linkedin" />
+                                    title="Connect on Linkedin">
+                                    <fa-icon [icon]="faLinkedin" size="1x" class="material-icons v-middle mini-logo"
+                                        style="color: black;margin:2px 0 0 15px"></fa-icon>
                                 </a>
+                                <!-- STACKOVERFLOW
+    https://github.com/FortAwesome/angular-fontawesome
+   <fa-icon [icon]="faArrowAltCircleDown" size="1x"></fa-icon>
+   size = xs sm lg 2x 3x 4x 10x
+
+   STACKOVERFLOW
+   https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color
+-->
                                 <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg"
                                     title="My YouTube channel" target="_blank">
-                                    <span class="material-icons md-26 v-middle mini-logo"
-                                        style="color:black; margin:4px 0 0 7px">
-                                        play_circle
-                                        <!-- video_library play_circle -->
-                                    </span>
+                                    <fa-icon [icon]="faYoutube" size="1x" class="material-icons v-middle mini-logo"
+                                        style="color: black;margin:2px 0 0 15px"></fa-icon>
+
                                 </a>
                             </div>
                         </div>

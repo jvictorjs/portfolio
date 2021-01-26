@@ -53,7 +53,9 @@ import { ProjectsTableComponent } from './components/projects/projects-table/pro
 import { MyExperienceComponent } from './views/my-experience/my-experience.component';
 import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
 import { ContactComponent } from './views/contact/contact.component';
-import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component'
+import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component';
+import { ResumeComponent } from './views/resume/resume.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 registerLocaleData(localePt);
 
@@ -82,7 +84,8 @@ registerLocaleData(localePt);
     MyExperienceComponent,
     JvictorStackComponent,
     ContactComponent,
-    PortfolioListComponent
+    PortfolioListComponent,
+    ResumeComponent
   ],
   imports: [ // módulos
     BrowserModule,
@@ -102,7 +105,8 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FontAwesomeModule
   ],
   providers: [{
     provide: LOCALE_ID,

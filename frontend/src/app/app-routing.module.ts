@@ -15,6 +15,7 @@ import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.co
 import { MyExperienceComponent } from './views/my-experience/my-experience.component';
 import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { ResumeComponent } from './views/resume/resume.component';
 
 const routes: Routes = [
   {
@@ -72,6 +73,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "resume",
+    component: ResumeComponent
   }
 ];
 
