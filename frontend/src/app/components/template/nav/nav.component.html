@@ -63,9 +63,9 @@
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
         <mat-sidenav class="sidenav mat-elevation-z10" #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'"
             [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" [(opened)]="opened">
-            <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 95%;">
                 <div style="display: flex; flex-direction: column; margin-top: 0px;">
-                    <mat-nav-list class="nav-list">
+                    <mat-nav-list class="nav-list" style="border: none;">
                         <!-- STACKOVERFLOW https://stackoverflow.com/questions/43808809/close-angular-material-sidenav-on-any-button-click-inside -->
                         <a mat-list-item routerLink="/" class="list-item-with-icon">
                             <i class="material-icons">
@@ -183,7 +183,7 @@
                                     STACKOVERFLOW https://support.google.com/a/users/answer/9308985?hl=pt-BR
                                     <a href="../assets/other/my-resume-portfolio.pdf" target="_blank" title="My Resume">
                                 -->
-                                <a href="https://docs.google.com/document/d/1woTip6s9ZMGvgO4MqPY5oOt_YyTA4Wi4dEVZVvftaB8/export?format=pdf"
+                                <a href="https://docs.google.com/document/d/1fjIjyxVRkpjsxL__w8ieoDN3uL-UDQrAffatmLpPTyw/export?format=pdf"
                                     title="Download my Resume">
                                     <span class="material-icons md-28 v-middle mini-logo"
                                         style="color:black; margin:3px 4px 0 0px">
