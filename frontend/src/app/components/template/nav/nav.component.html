@@ -65,71 +65,73 @@
             [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" [(opened)]="opened">
             <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 95%;">
                 <div style="display: flex; flex-direction: column; margin-top: 0px;">
-                    <mat-nav-list class="nav-list" style="border: none;">
+                    <mat-nav-list class="nav-list">
                         <!-- STACKOVERFLOW https://stackoverflow.com/questions/43808809/close-angular-material-sidenav-on-any-button-click-inside -->
                         <a mat-list-item routerLink="/" class="list-item-with-icon">
-                            <i class="material-icons">
+                            <!-- STACKOVERFLOW https://stackoverflow.com/questions/49176479/angular-incorrect-margin-left-applied-to-sidenav-content -->
+                            <mat-icon mat-list-icon class="material-icons">
                                 <!--https://material.io/resources/icons/?style=baseline-->
                                 home
-                            </i>
+                            </mat-icon>
                             Home
                         </a>
                         <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <mat-icon mat-list-icon class="material-icons">
                                 work
                                 <!-- work_outline work -->
-                            </i>
+                            </mat-icon>
                             Projects
                         </a>
                         <a mat-list-item routerLink="/my-experience" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <mat-icon mat-list-icon class="material-icons">
                                 work
                                 <!-- work_outline work -->
-                            </i>
+                            </mat-icon>
                             My experience
                         </a>
                         <a mat-list-item routerLink="/resume" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <mat-icon mat-list-icon class="material-icons">
                                 text_snippet
                                 <!-- work_outline work -->
-                            </i>
+                            </mat-icon>
                             Resume
                         </a>
                         <a mat-list-item routerLink="/jvictor-stack" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <mat-icon mat-list-icon class="material-icons">
                                 settings_ethernet
                                 <!-- developer_mode work code -->
-                            </i>
+                            </mat-icon>
                             JVictor Stack
                         </a>
                         <a mat-list-item routerLink="/products" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons icon">
+                            <mat-icon mat-list-icon class="material-icons icon">
                                 storefront
-                            </i>
+                            </mat-icon>
                             Products CRUD
                         </a>
                         <a mat-list-item routerLink="/futebol" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
                             <fa-icon [icon]="faFutbol" size="sm" class="material-icons v-middle mini-logo"
-                                style="color: white;margin:-2px 11px 0 2px"></fa-icon>
-                                <!--
-                                    <i class="material-icons icon">
-                                sports_soccer
-                            </i>
-                                -->
+                            style="color: white;margin:-2px 11px 0 2px"></fa-icon>
+                            <!--
+                                <mat-icon mat-list-icon class="material-icons icon">
+                                    sports_soccer
+                                </mat-icon>
+                            -->
                             Live Soccer
                         </a>
                         <a mat-list-item routerLink="/contact" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
-                            <i class="material-icons">
+                            <mat-icon mat-list-icon class="material-icons">
                                 mail_outline
                                 <!-- contact_page perm_identity -->
-                            </i>
+                            </mat-icon>
+
                             Contact
                         </a>
                         <div
@@ -206,13 +208,13 @@
                                         style="color: black;margin:2px 0 0 15px"></fa-icon>
                                 </a>
                                 <!-- STACKOVERFLOW
-    https://github.com/FortAwesome/angular-fontawesome
-   <fa-icon [icon]="faArrowAltCircleDown" size="1x"></fa-icon>
-   size = xs sm lg 2x 3x 4x 10x
+                              https://github.com/FortAwesome/angular-fontawesome
+                                <fa-icon [icon]="faArrowAltCircleDown" size="1x"></fa-icon>
+                                size = xs sm lg 2x 3x 4x 10x
 
-   STACKOVERFLOW
-   https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color
--->
+                                STACKOVERFLOW
+                                https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color
+                                -->
                                 <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg"
                                     title="My YouTube channel" target="_blank">
                                     <fa-icon [icon]="faYoutube" size="1x" class="material-icons v-middle mini-logo"
