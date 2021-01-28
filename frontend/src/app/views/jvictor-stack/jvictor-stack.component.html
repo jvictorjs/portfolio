@@ -26,8 +26,8 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" matTooltip="JavaScript - 
-                            JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language 
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" matTooltip="JavaScript (JS) - 
+                            A lightweight, interpreted, or just-in-time compiled programming language 
                             with first-class functions. While it is most well-known as the scripting language for Web pages,
                             many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. 
                             JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting 
@@ -36,7 +36,7 @@
                                     JavaScript
                                 </span>
                                 <img class="mini-logo" src="assets/img/tech-logos/javascript-logo.png"
-                                    alt="ANGULAR_logo" />
+                                    alt="JavaScript_logo" />
                             </a>
                         </div>
                     </div>
@@ -46,8 +46,16 @@
                             <span class="tech-ballot-text">
                                 HTML 5
                             </span>
-                            <fa-icon [icon]="faHtml5" size="lg" class="material-icons v-middle mini-logo"
-                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            <!-- STACKOVERFLOW
+                              https://github.com/FortAwesome/angular-fontawesome
+                                <fa-icon [icon]="faArrowAltCircleDown" size="1x"></fa-icon>
+                                size = xs sm lg 2x 3x 4x 10x
+
+                                STACKOVERFLOW
+                                https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color
+                                -->
+                            <fa-icon [icon]="faHtml5" size="lg" class="material-icons v-middle mini-logo font-awe-icon">
+                            </fa-icon>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -56,32 +64,35 @@
                             <span class="tech-ballot-text">
                                 CSS 3
                             </span>
-                            <fa-icon [icon]="faCss3" size="lg" class="material-icons v-middle mini-logo"
-                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            <fa-icon [icon]="faCss3" size="lg" class="material-icons v-middle mini-logo font-awe-icon">
+                            </fa-icon>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                React
-                            </span>
+                            <a href="https://reactjs.org/" matTooltip="React  - 
+                            Makes it painless to create interactive UIs. 
+                            Design simple views for each state in your application, 
+                            and React will efficiently update and render just the right 
+                            components when your data changes.">
+                                <span class="tech-ballot-text">
+                                    React
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png"
+                                    alt="REACT_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Axios
-                            </span>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-ballot">
-                            <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Material design for Angular
-                            </span>
+                            <a href="https://github.com/axios/axios" matTooltip="Axios - 
+                            Promise based HTTP client for the browser and node.js." alt="Axios_logo">
+                                <span class="tech-ballot-text">
+                                    Axios
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -92,7 +103,7 @@
                             your code and abilities to build apps for any deployment target. For web, mobile web, native
                             mobile and native desktop." alt="ANGULAR_logo">
                                 <span class="tech-ballot-text">
-                                    ANGULAR
+                                    Angular
                                 </span>
                                 <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" />
                             </a>
@@ -123,17 +134,32 @@
                                     TypeScript
                                 </span>
                                 <img class="mini-logo" src="assets/img/tech-logos/typescript-logo.png"
-                                    alt="ANGULAR_logo" />
+                                    alt="TypeScript_logo" />
                             </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <a href="https://reactnative.dev/">
-                                <span class="tech-ballot-text" matTooltip="React Native - 
-                                Create native apps for Android and iOS using
-                                React">
+                            <a href="https://material.angular.io/"
+                                matTooltip="Material design for Angular - 
+                            Internationalized and accessible components for everyone. Well tested to ensure performance and reliability."
+                                alt="ANGULAR_logo">
+                                <span class="tech-ballot-text">
+                                    Angular Material
+                                </span>
+                                <img class="mini-logo" style="color: black;"
+                                    src="assets/img/tech-logos/angular-material-logo.svg" alt="Angular_material_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://reactnative.dev/" matTooltip="React Native - 
+                            Create native apps for Android and iOS using
+                            React">
+                                <span class="tech-ballot-text">
                                     React Native
                                 </span>
                                 <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png"
@@ -144,45 +170,71 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Expo
-                            </span>
-
+                            <a href="https://expo.io/" matTooltip="Expo - 
+                            A framework and a platform for universal React applications. 
+                            It is a set of tools and services built around React Native and native 
+                            platforms that help you develop, build, deploy, and quickly iterate on iOS, 
+                            Android, and web apps from the same JavaScript/TypeScript codebase.">
+                                <span class="tech-ballot-text">
+                                    Expo
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/expo-logo.svg" alt="Expo_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                JSON Server
-                            </span>
-
+                            <a href="https://www.npmjs.com/package/json-server" matTooltip="JSON Server - 
+                            Created with <3 for front-end developers who need a quick back-end for prototyping and mocking.
+                            Get a full REST API with zero coding in less than 30 seconds.">
+                                <span class="tech-ballot-text">
+                                    JSON Server
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Sqlite
-                            </span>
-
+                            <a href="https://www.sqlite.org/" matTooltip="SQLite - 
+                            SQLite is a C-language library that implements a small, fast, 
+                            self-contained, high-reliability, full-featured, SQL database engine. 
+                            SQLite is the most used database engine in the world. SQLite is built into 
+                            all mobile phones and most computers and comes bundled inside countless other 
+                            applications that people use every day.">
+                                <span class="tech-ballot-text">
+                                    SQLite
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/sqlite-logo.png" alt="SQLite_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                ExpressJS
-                            </span>
-
+                            <a href="https://expressjs.com/" matTooltip="ExpressJS - 
+                            Fast, unopinionated, minimalist web framework for Node.js.
+                            Express is a minimal and flexible Node.js web application framework that provides a robust
+                            set of features for web and mobile applications.
+                            Express is a project of the OpenJS Foundation.">
+                                <span class="tech-ballot-text">
+                                    ExpressJS
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Knex.js
-                            </span>
+                            <a href="http://knexjs.org/" matTooltip="Knex.js - 
+                            A 'batteries included' SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3,
+                            Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use.
+                            Knex is available for use under the MIT software license.">
+                                <span class="tech-ballot-text">
+                                    Knex.js
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item-empty">empty</div>
@@ -208,14 +260,13 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Node.js
-                            </span>
-                            <a href="https://nodejs.org/">
-                                <img class="mini-logo" src="assets/img/tech-logos/nodejs-logo.png" matTooltip="Node.js - 
-                                Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven
-                                 JavaScript runtime, Node.js is designed to build scalable network applications. "
-                                    alt="ANGULAR_logo" />
+                            <a href="https://nodejs.org/" matTooltip="Node.js - 
+                            Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven
+                             JavaScript runtime, Node.js is designed to build scalable network applications. ">
+                                <span class="tech-ballot-text">
+                                    Node.js
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/nodejs-logo.png" alt="Node-js_logo" />
                             </a>
                         </div>
                     </div>
@@ -228,27 +279,51 @@
                                 <span class="tech-ballot-text">
                                     Ubuntu
                                 </span>
-                                <fa-icon [icon]="faUbuntu" size="lg" class="material-icons v-middle mini-logo"
-                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                                <fa-icon [icon]="faUbuntu" size="lg"
+                                    class="material-icons v-middle mini-logo font-awe-icon">
+                                </fa-icon>
                             </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                PM2
-                            </span>
-
+                            <a href="https://pm2.keymetrics.io/" matTooltip="PM2 - 
+                            A daemon process manager that will help you manage and keep your application online 24/7">
+                                <span class="tech-ballot-text">
+                                    PM2
+                                </span>
+                                <img class="mini-logo" style="width: 2.3rem;" src="assets/img/tech-logos/pm2-logo.png"
+                                    alt="PM2_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                NGINX
-                            </span>
-
+                            <a href="https://nginx.org/en/" matTooltip="NGINX - 
+                            is an HTTP and reverse proxy server, a mail proxy server, and a generic
+                            TCP/UDP proxy server, originally written by Igor Sysoev.">
+                                <span class="tech-ballot-text">
+                                    NGINX
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/nginx-logo.svg" alt="NGINX_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://www.nginx.com/products/nginx-amplify/" matTooltip="NGINX Amplify - 
+                            A free, SaaS based monitoring tool for NGINX Open Source and NGINX Plus. 
+                            With NGINX Amplify you can monitor performance, keep track of infrastructure assets, 
+                            and improve configuration with static analysis.">
+                                <span class="tech-ballot-text">
+                                    NGINX Amplify
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/nginx-amplify-logo.svg"
+                                    alt="NGINX_amplify_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -268,10 +343,15 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Windows 10
-                            </span>
-
+                            <a href="https://www.microsoft.com/en-us/windows"
+                                matTooltip="Windows 10 - 
+                            A series of operating systems developed by Microsoft and released as part of its Windows NT family of operating systems.">
+                                <span class="tech-ballot-text">
+                                    Windows 10
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/windows10-logo.png"
+                                    alt="Windows10_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -318,37 +398,58 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Vim
-                            </span>
-
+                            <a href="https://www.vim.org/" matTooltip="Vim - 
+                            Vim is a highly configurable text editor built to make creating and 
+                            changing any kind of text very efficient. It is included as 'vi' 
+                            with most UNIX systems and with Apple OS X.">
+                                <span class="tech-ballot-text">
+                                    Vim
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/vim32x32.gif" alt="Vim_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                NPM
-                            </span>
-
+                            <div class="tech-ballot">
+                                <div class="blob"></div>
+                                <a href="https://www.npmjs.com/" matTooltip="NPM - 
+                                A package manager for the JavaScript programming language.">
+                                    <span class="tech-ballot-text">
+                                        NPM
+                                    </span>
+                                    <img class="mini-logo" style="width: 2.3rem;"
+                                        src="assets/img/tech-logos/npm-logo.png" alt="NPM_logo" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Certbot
-                            </span>
-
+                            <a href="https://certbot.eff.org/" matTooltip="Certbot - 
+                            Certbot is a free, open source software tool for automatically using Let’s Encrypt
+                             certificates on manually-administrated websites to enable HTTPS.">
+                                <span class="tech-ballot-text">
+                                    Certbot
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/certbot-logo.png" alt="Vim_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Putty
-                            </span>
-
+                            <a href="https://www.putty.org/" matTooltip="PuTTy - 
+                            PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows
+                             platform. PuTTY is open source software that is available with source code and is developed 
+                             and supported by a group of volunteers.">
+                                <span class="tech-ballot-text">
+                                    PuTTy
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/putty-logo.png" alt="Vim_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item-empty">empty</div>
@@ -374,15 +475,18 @@
                 Utilities
             </mat-card-title>
             <mat-card-subtitle class="subtitle">
-
                 <div class="tech-container">
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Android Studio
-                            </span>
-
+                            <a href="https://developer.android.com/studio" matTooltip="Android Studio - 
+                            Provides the fastest tools for building apps on every type of Android device.">
+                                <span class="tech-ballot-text">
+                                    Android Studio
+                                </span>
+                                <img class="mini-logo" style="width: 2.7rem; margin-left: -10px;"
+                                    src="assets/img/tech-logos/android-studio-logo.png" alt="AndroidStudio_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
@@ -394,8 +498,13 @@
                                 <span class="tech-ballot-text">
                                     Stack Overflow
                                 </span>
-                                <fa-icon [icon]="faStackOverflow" size="lg" class="material-icons v-middle mini-logo"
-                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                                <!--
+                                <fa-icon [icon]="faStackOverflow" size="lg"
+                                class="material-icons v-middle mini-logo font-awe-icon">
+                            </fa-icon>
+                             -->
+                                <img class="mini-logo" style="width: 2.3rem; margin-left: -7px;"
+                                    src="assets/img/tech-logos/stack-overflow-logo.png" alt="Stack_Overflow_logo" />
                             </a>
 
                         </div>
@@ -409,8 +518,9 @@
                                 <span class="tech-ballot-text">
                                     StackBlitz
                                 </span>
+                                <img class="mini-logo" style="width: 1.5rem;"
+                                    src="assets/img/tech-logos/stackblitz-logo.svg" alt="StackBlitz_logo" />
                             </a>
-
                         </div>
                     </div>
                     <div class="tech-item">
@@ -424,8 +534,9 @@
                                 <span class="tech-ballot-text">
                                     Codepen
                                 </span>
-                                <fa-icon [icon]="faCodepen" size="lg" class="material-icons v-middle mini-logo"
-                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                                <fa-icon [icon]="faCodepen" size="lg"
+                                    class="material-icons v-middle mini-logo font-awe-icon">
+                                </fa-icon>
                             </a>
                         </div>
                     </div>
@@ -447,28 +558,37 @@
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                <a href="https://insomnia.rest/">
-                                    Insomina
-                                </a>
-                            </span>
-
+                            <a href="https://insomnia.rest/" matTooltip="Insomnia - 
+                            The Desktop API client for REST, GraphQL and gRPC. Make requests, inspect responses.">
+                                <span class="tech-ballot-text">
+                                    Insomnia
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/insomnia-logo.svg"
+                                    alt="Insomnia_logo" />
+                            </a>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Notepadd++
-                            </span>
+                            <a href="https://notepad-plus-plus.org/"
+                                matTooltip="Notepad++ - 
+                            Notepad++ is a free source code editor and Notepad replacement that supports several languages. ">
+                                <span class="tech-ballot-text">
+                                    Notepadd++
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/npp-logo.svg" alt="Notepad++_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
                             <span class="tech-ballot-text">
-                                <a href="http://css3generator.com/">CSS3 Generator</a>
+                                <a href="http://css3generator.com/" matTooltip="CSS3 Generator - 
+                                A website that helps you with CSS3 elements.">CSS3
+                                    Generator</a>
                             </span>
 
                         </div>
@@ -498,35 +618,49 @@
                             <span class="tech-ballot-text">
                                 Discord
                             </span>
-                            <fa-icon [icon]="faDiscord" size="lg" class="material-icons v-middle mini-logo"
-                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            <fa-icon [icon]="faDiscord" size="lg"
+                                class="material-icons v-middle mini-logo font-awe-icon">
+                            </fa-icon>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Google Meet
-                            </span>
-
+                            <a href="https://meet.google.com" matTooltip="Google Meet - 
+                            a video-communication service developed by Google.[1] It is one of two apps that
+                             constitute the replacement for Google Hangouts, the other being Google Chat.">
+                                <span class="tech-ballot-text">
+                                    Google Meet
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/google-meet-logo.png"
+                                    alt="Google_Meet_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Google Drive
-                            </span>
-
+                            <a href="https://drive.google.com" matTooltip="Google Drive - 
+                                A file storage and synchronization service developed by Google">
+                                <span class="tech-ballot-text">
+                                    Google Drive
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/google-drive-logo.png"
+                                    alt="Google_drive_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-ballot">
                             <div class="blob"></div>
-                            <span class="tech-ballot-text">
-                                Gmail
-                            </span>
-
+                            <a href="https://mail.google.com"
+                                matTooltip="Gmail - 
+                            a free e-mail service that is run by Google. It can be accessed on the web, by POP3, or by IMAP. ">
+                                <span class="tech-ballot-text">
+                                    Gmail
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/gmail-logo.png" alt="Gmail_logo" />
+                            </a>
                         </div>
                     </div>
                     <div class="tech-item">

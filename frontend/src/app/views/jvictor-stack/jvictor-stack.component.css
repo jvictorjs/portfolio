@@ -26,11 +26,13 @@
     font-size: 1.5rem;
     font-weight: light;
     line-height: 1.2;
+    margin: 0 0 10px;
 }
 
 .home .subtitle {
     font-size: 1.1rem;
-    margin-top: 0px;
+    margin: 0px 0 -50px;
+    border: none;
 }
 
 .center-horizontal {
@@ -103,7 +105,7 @@ a, a:hover, a:focus, a:active {
     margin: 0px 0px 0 0;
     vertical-align: middle;
     transition: transform .3s;
-    border-radius: 8px;
+    border-radius: 2px;
 }
 
 .mini-logo:hover {
@@ -224,12 +226,13 @@ https://css-tricks.com/filling-space-last-row-flexbox/
     row-gap: 5px;
     margin: 0px 22px 0 10px;
     align-items: center;
+    border: none;
 }
 
 .tech-item {
     flex-grow: 1;
     flex-basis: 212px;
-    height: 50px;
+    height: 46px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -265,4 +268,9 @@ https://css-tricks.com/filling-space-last-row-flexbox/
     width: 6px;
     border: none;
     z-index: 10;
+}
+
+.font-awe-icon {
+    color: black;
+    margin: -2px 11px 0 2px
 }

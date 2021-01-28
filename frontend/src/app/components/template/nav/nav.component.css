@@ -118,6 +118,8 @@ h1.example-app-name {
 .list-item-with-icon {
     height: 100px;
     transition: transform .1001s;
+    border: none;
+    align-items: center;
 }
 
 .list-item-with-icon:hover {
@@ -240,4 +242,8 @@ h1.example-app-name {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+}
+
+.side-nav-icon {
+    margin: 0 3px 0 0;
 }
