@@ -10,454 +10,566 @@
 
     <div style="display: flex; flex-direction: row;justify-content: space-between; column-gap: 20px;">
 -->
-<div class="div-columns">
-    <mat-card class="home mat-elevation-z4">
-        <mat-card-title class="title">
-            Application and Data
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
+
+<div class="container">
+    <div class="item">
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                Application and Data
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                <!-- 
+
+                    <div class="techs-container">
+                 -->
+                <div class="tech-container">
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" matTooltip="JavaScript - 
+                            JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language 
+                            with first-class functions. While it is most well-known as the scripting language for Web pages,
+                            many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. 
+                            JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting 
+                            object-oriented, imperative, and declarative (e.g. functional programming) styles.">
                                 <span class="tech-ballot-text">
                                     JavaScript
                                 </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    HTML 5
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    CSS 3
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    React
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Axios
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Material design for Angular
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo" src="assets/img/tech-logos/javascript-logo.png"
+                                    alt="ANGULAR_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                HTML 5
+                            </span>
+                            <fa-icon [icon]="faHtml5" size="lg" class="material-icons v-middle mini-logo"
+                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                CSS 3
+                            </span>
+                            <fa-icon [icon]="faCss3" size="lg" class="material-icons v-middle mini-logo"
+                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                React
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Axios
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Material design for Angular
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://angular.io/" matTooltip="Angular - 
+                            Learn one way to build applications with Angular and reuse
+                            your code and abilities to build apps for any deployment target. For web, mobile web, native
+                            mobile and native desktop." alt="ANGULAR_logo">
                                 <span class="tech-ballot-text">
                                     ANGULAR
                                 </span>
-                                <a href="https://angular.io/">
-                                    <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" matTooltip="Angular - 
-                                        Learn one way to build applications with Angular and reuse
-                                        your code and abilities to build apps for any deployment target. For web, mobile web, native
-                                        mobile and native desktop." alt="ANGULAR_logo" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo" src="assets/img/tech-logos/angular-logo.svg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://developer.twitter.com/en/docs/twitter-api"
+                                matTooltip="Twitter API - 
+                            The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, 
+                            learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources.">
                                 <span class="tech-ballot-text">
                                     Twitter API
                                 </span>
-                                <a href="https://developer.twitter.com/en/docs/twitter-api">
-                                    <img class="mini-logo topmargin3px v-middle"
-                                        src="assets/img/tech-logos/twitter-logo-1.png"
-                                        matTooltip="Twitter API - 
-                                The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, 
-                                learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources." alt="Twitter_logo" />
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo v-middle" src="assets/img/tech-logos/twitter-logo-1.png"
+                                    alt="Twitter_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://www.typescriptlang.org/"
+                                matTooltip="TypeScript - TypeScript is an open-source language which builds on JavaScript, 
+                            one of the world’s most used tools, by adding static type definitions. All valid JavaScript code is also TypeScript code.                                ">
                                 <span class="tech-ballot-text">
                                     TypeScript
                                 </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
+                                <img class="mini-logo" src="assets/img/tech-logos/typescript-logo.png"
+                                    alt="ANGULAR_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://reactnative.dev/">
+                                <span class="tech-ballot-text" matTooltip="React Native - 
+                                Create native apps for Android and iOS using
+                                React">
                                     React Native
                                 </span>
-                                <a href="https://reactnative.dev/">
-                                    <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png" matTooltip="React Native - 
-                    Create native apps for Android and iOS using
-                    React" alt="REACTNATIV_logo" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Expo
-                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/react_native_logo.png"
+                                    alt="REACTNATIV_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Expo
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    JSON Server
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                JSON Server
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Sqlite
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Sqlite
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    ExpressJS
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                ExpressJS
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Knex.js
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Knex.js
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
 
-                            </div>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </mat-card-subtitle>
-    </mat-card>
-    <mat-card class="home mat-elevation-z4">
-        <mat-card-title class="title">
-            Infrastructure
-            <span class="icone">
-                <span class="tooltiptext">⭐️ basic app
-                    <br>⭐️⭐️ modest / intermediate app
-                    <br>⭐️⭐️⭐️ advanced app</span>
-                <span class="material-icons-two-tone md-21">
-                    info
-                </span>
-            </span>
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Node.js
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div class="item">
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                Infrastructure
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                <div class="tech-container">
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Node.js
+                            </span>
+                            <a href="https://nodejs.org/">
+                                <img class="mini-logo" src="assets/img/tech-logos/nodejs-logo.png" matTooltip="Node.js - 
+                                Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. As an asynchronous event-driven
+                                 JavaScript runtime, Node.js is designed to build scalable network applications. "
+                                    alt="ANGULAR_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://ubuntu.com/"
+                                matTooltip="Ubuntu - 
+                            A Linux distribution based on Debian and composed mostly of free and open-source software.">
                                 <span class="tech-ballot-text">
                                     Ubuntu
                                 </span>
+                                <fa-icon [icon]="faUbuntu" size="lg" class="material-icons v-middle mini-logo"
+                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                PM2
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    PM2
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                NGINX
+                            </span>
 
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    NGINX
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://developers.google.com/apps-script" matTooltip="Google Apps Script - 
+                            A modern JavaScript cloud-based platform to build solutions integrating all Google Services and 
+                            external APIs.">
                                 <span class="tech-ballot-text">
                                     Google Apps Script
                                 </span>
-                                <a href="https://developers.google.com/apps-script">
-                                    <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg"
-                                        matTooltip="Google Apps Script - 
-                                        A modern JavaScript cloud-based platform to build solutions integrating all Google Services and 
-                                        external APIs." alt="GAS_logo" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Windows 10
-                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg"
+                                    alt="GAS_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Windows 10
+                            </span>
 
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://www.digitalocean.com/" matTooltip="Digital Ocean - 
+                            One of the best cloud infraestructure provider in the world.">
                                 <span class="tech-ballot-text">
                                     DigitalOcean
                                 </span>
-                                <a href="https://developers.google.com/apps-script">
-                                    <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
-                                        matTooltip="Digital Ocean - 
-                    One of the best cloud infraestructure provider in the world." alt="DigitalOcean_logo" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo" src="assets/img/tech-logos/digitalocean-icon-1.svg"
+                                    alt="DigitalOcean_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://git-scm.com/" matTooltip="Git - 
+                            Git is a free and open source distributed version control system
+                             designed to handle everything from small to very large projects 
+                             with speed and efficiency.">
                                 <span class="tech-ballot-text">
                                     Git
                                 </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo" src="assets/img/tech-logos/git-logo.png" alt="Git_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://github.com/" matTooltip="GitHub - 
+                            A provider of Internet hosting for software development and version control using Git. 
+                            It offers the distributed version control and source code management (SCM) 
+                            functionality of Git, plus its own features">
                                 <span class="tech-ballot-text">
-                                    Vim
+                                    GitHub
                                 </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/github-logo.png" alt="GitHub_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Vim
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    NPM
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                NPM
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Certbot
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Certbot
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Putty
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Putty
+                            </span>
 
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
                 </div>
-            </div>
-        </mat-card-subtitle>
-    </mat-card>
+            </mat-card-subtitle>
+        </mat-card>
+
+    </div>
 </div>
-<div class="div-columns">
-    <mat-card class="home mat-elevation-z4">
-        <mat-card-title class="title">
-            Utilities
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Android Studio
-                                </span>
+<div style="height: 40px;">
+</div>
+<div class="container">
+    <div class="item">
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                Utilities
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Stackoverflow
-                                </span>
+                <div class="tech-container">
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Android Studio
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://stackoverflow.com/"
+                                matTooltip="Stack Overflow - 
+                                Stack Overflow is a question and answer site for professional and enthusiast programmers.">
                                 <span class="tech-ballot-text">
-                                    <a href="https://stackblitz.com/">
-                                        Stackblitz
-                                    </a>
+                                    Stack Overflow
                                 </span>
+                                <fa-icon [icon]="faStackOverflow" size="lg" class="material-icons v-middle mini-logo"
+                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            </a>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://stackblitz.com/" matTooltip="StackBlitz - 
+                            The online code editor for web apps. Powered by Visual Studio Code. - StackBlitz
+                            ">
                                 <span class="tech-ballot-text">
-                                    <a href="https://codepen.io/jvictorhub/pen/KKgGByE">
-                                        Codepen
-                                    </a>
+                                    StackBlitz
                                 </span>
+                            </a>
 
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://codepen.io/jvictorhub/pen/KKgGByE" matTooltip="
+                            Codepen - 
+                            At its heart, it allows you to write code in the browser, 
+                            and see the results of it as you build. A useful and 
+                            liberating online code editor for developers of any skill.">
+                                <span class="tech-ballot-text">
+                                    Codepen
+                                </span>
+                                <fa-icon [icon]="faCodepen" size="lg" class="material-icons v-middle mini-logo"
+                                    style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://code.visualstudio.com/" matTooltip="Visual Studio Code - 
+                            a free source-code editor made by Microsoft for Windows, Linux and macOS.
+                            Features include support for debugging, syntax highlighting, 
+                            intelligent code completion, snippets, code refactoring, and embedded Git.">
+                                <span class="tech-ballot-text">
+                                    VSCode
+                                </span>
+                                <img class="mini-logo" src="assets/img/tech-logos/vs-code-logo.svg" alt="VSCode_logo" />
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                <a href="https://insomnia.rest/">
+                                    Insomina
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Notepadd++
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                <a href="http://css3generator.com/">CSS3 Generator</a>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
                 </div>
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    VScode
-                                </span>
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
+    <div class="item">
+        <mat-card class="home mat-elevation-z4 card-col-description">
+            <mat-card-title class="title">
+                Business Tools
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                <div class="tech-container">
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Discord
+                            </span>
+                            <fa-icon [icon]="faDiscord" size="lg" class="material-icons v-middle mini-logo"
+                                style="color: black;margin:-2px 11px 0 2px"></fa-icon>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Google Meet
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    <a href="https://insomnia.rest/">
-                                        Insomina
-                                    </a>
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Google Drive
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Notepadd++
-                                </span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <span class="tech-ballot-text">
+                                Gmail
+                            </span>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    <a href="http://css3generator.com/">CSS3 Generator</a>
-                                </span>
-
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </mat-card-subtitle>
-    </mat-card>
-    <mat-card class="home mat-elevation-z4 card-col-description">
-        <mat-card-title class="title">
-            Business Tools
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Discord
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Google Meet
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Google Drive
-                                </span>
-
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 50%;">
-                    <ul>
-                        <li>
-                            <div class="tech-ballot">
-                                <span class="tech-ballot-text">
-                                    Gmail
-                                </span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://core.telegram.org/bots/api" matTooltip="The Telegram Bot API - 
+                            Allows you to create and manage Chatbots. Just simple to interact with text messages and chat buttons as
+                            we use it on a daily basis.">
                                 <span class="tech-ballot-text">
                                     Telegram
                                 </span>
-                                <a href="https://core.telegram.org/bots/api">
-                                    <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png"
-                                        matTooltip="The Telegram Bot API - 
-                                    Allows you to create and manage Chatbots. Just simple to interact with text messages and chat buttons as
-                                    we use it on a daily basis." alt="TELEGRAM_logo" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tech-ballot">
+                                <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png"
+                                    alt="TELEGRAM_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-ballot">
+                            <div class="blob"></div>
+                            <a href="https://sheets.google.com" matTooltip="Google Sheets - 
+                            Easy way to explore and organize data. Integrated With Google Apps Scripts you can automate workflows 
+                            and boost productivity.">
                                 <span class="tech-ballot-text">
                                     Google Sheets
                                 </span>
-                                <a href="https://sheets.google.com">
-                                    <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png"
-                                        matTooltip="Google Sheets - 
-                                    Easy way to explore and organize data. Integrated With Google Apps Scripts you can automate workflows 
-                                    and boost productivity." alt="SHEETS_logo" />
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                                <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png"
+                                    alt="SHEETS_logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
+                    <div class="tech-item-empty">empty</div>
                 </div>
-            </div>
-        </mat-card-subtitle>
-    </mat-card>
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
 </div>
+<br>
+<br>
+<br>

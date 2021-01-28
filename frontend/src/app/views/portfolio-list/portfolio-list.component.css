@@ -33,6 +33,7 @@ td {
     width: 20%;
 }
 
+/* OLD
 .div-project-mini-card-row {
     display: flex;
     flex-direction: row;
@@ -40,11 +41,14 @@ td {
     margin: 20px 0px 18px 0px;
     column-gap: 20px;
 }
+*/
 
 .div-project-mini-card {
     margin-bottom: 0px;
     border-radius: 8px;
     width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
 }
 
 .div-project-mini-card .title {
@@ -132,6 +136,7 @@ td {
 
 .techs-column-div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     margin: 10px 0 10px;
@@ -144,4 +149,56 @@ td {
 
 .topmargin3px {
     margin-top: 3px;
+}
+
+/* https://www.vinta.com.br/blog/2017/responsive-layout-flexbox */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: -10px 22px 0 -10px;
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 480px;
+    margin: 10px;
+    border: none;
+}
+
+.item:empty {
+    height: 0;
+    margin: -10px 0 -10px 0;
+}
+
+.item-empty {
+    flex-grow: 1;
+    flex-basis: 480px;
+    font-size: 0.01rem;
+    line-height: 0.01rem;
+    margin: 10px;
+    height: 0;
+    color: transparent;
+    margin: -20px 10px -20px 10px;
+}
+
+.icone>.tooltiptext {
+    visibility: hidden;
+    width: 262px;
+    background-color: rgba(111, 111, 111, 0.90);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin: 20px 15px;
+    font-size: 1rem;
+}
+
+.icone:hover .tooltiptext {
+    visibility: visible;
 }
