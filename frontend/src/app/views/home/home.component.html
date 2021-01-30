@@ -1,12 +1,21 @@
 <div style="display: flex; justify-content: center; margin: 15px 15px 20px 15px;">
-    <div style="display: flex; flex-direction: column; justify-content: center; 
-        align-items: center; align-content: center; border: none; text-align: center;">
+    <!-- 
+        STACKOVERFLOW https://www.geeksforgeeks.org/how-to-display-spinner-on-the-screen-till-the-data-from-the-api-loads-using-angular-8/
+     
+        STACKOVERFLOW https://projects.lukehaas.me/css-loaders/
+    -->
+    <div
+        style="display: flex; align-items: center; justify-content: center; height: 75px; border: none;">
+        <div class="loader" id="loadingQuote"></div> <!-- loader src/styles.css-->
+    </div>
+    <div id="quote" style="display: flex; flex-direction: column; align-items: flex-end;
+        border: none; text-align: end; text-align: center;">
         <span style="font-size: 2.1rem; line-height: 2.3rem;" (click)="getNewRandomQuote()"
             title="Click to get another quote...">
             <i>"{{quote.quote}}"</i>
         </span>
         <br>
-        <span style="align-self: flex-end; margin:-10px 20px 5px 0; font-size: 1rem; font-weight: 300; border:none;">
+        <span style="display:flex; flex-direction: column; align-items: flex-end; text-align: end; margin:5px 20px 5px 0; font-size: 1rem; font-weight: 300; border:none;">
             <a href="https://www.google.com/search?q={{quote.author}}" target="_blank">
                 {{quote.author}}
             </a>

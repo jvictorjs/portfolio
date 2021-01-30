@@ -18,13 +18,14 @@ export class FutebolEventReadComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
   ) {
-    
+
   }
 
   ngOnInit(): void {
     this.futebolService.showLoadingMessage('Loading event...')
     const id = +this.route.snapshot.paramMap.get('id')
     this.eventId = id;
+    this.showLoader()
     this.route.data.subscribe(data => {
       console.log('data = ' + JSON.stringify(data))
     })
@@ -40,20 +41,33 @@ export class FutebolEventReadComponent implements OnInit {
     }
     */
     this.futebolService.readById(id).subscribe(event => {
-      console.log('chegou evento = '+JSON.stringify(event))
+      console.log('chegou evento = ' + JSON.stringify(event))
       this.futebolService.event = event
-      this.event =  this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
+      this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
       this.futebolService.showMessage('Event loaded.')
+      this.hideLoader()
       // console.log()
     })
 
+  }
+
+  hideLoader(): void {
+    // Setting display of spinner element to none 
+    document.getElementById('loadingEventComponent').style.display = 'none';
+    document.getElementById('eventComponent').style.display = 'inline';
+  }
+
+  showLoader(): void {
+    // Setting display of spinner element to inline 
+    document.getElementById('loadingEventComponent').style.display = 'inline';
+    document.getElementById('eventComponent').style.display = 'none';
   }
 
   updateEvents(): void {
     this.futebolService.showLoadingMessage('Updating events list...')
     this.futebolService.read().subscribe(jogos => {
       this.futebolService.jogos = jogos
-      this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; })=>x.id == this.eventId)
+      this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; }) => x.id == this.eventId)
       this.futebolService.showMessage('Events list reloaded.')
     })
   }
@@ -62,7 +76,7 @@ export class FutebolEventReadComponent implements OnInit {
     this.futebolService.consolaTotalEvents();
   }
 
-  atribuirJogo(): void{
-    this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; })=>x.id == this.eventId)
+  atribuirJogo(): void {
+    this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; }) => x.id == this.eventId)
   }
 }
