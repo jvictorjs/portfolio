@@ -1,3 +1,18 @@
+<div style="display: flex; justify-content: center; margin: 15px 15px 20px 15px;">
+    <div style="display: flex; flex-direction: column; justify-content: center; 
+        align-items: center; align-content: center; border: none; text-align: center;">
+        <span style="font-size: 2.1rem; line-height: 2.3rem;" (click)="getNewRandomQuote()"
+            title="Click to get another quote...">
+            <i>"{{quote.quote}}"</i>
+        </span>
+        <br>
+        <span style="align-self: flex-end; margin:-10px 20px 5px 0; font-size: 1rem; font-weight: 300; border:none;">
+            <a href="https://www.google.com/search?q={{quote.author}}" target="_blank">
+                {{quote.author}}
+            </a>
+        </span>
+    </div>
+</div>
 <mat-card class="home mat-elevation-z4">
     <mat-card-title class="title">
         Welcome!
@@ -5,7 +20,8 @@
     <mat-card-subtitle class="subtitle">
         This is a course project website built with Angular 11 and <b>entirely costumized to show my portfolio</b>.
         <br>
-        The original project is a simple web CRUD solution. Click <a href="https://bolanarede.net.br/products" target="_blank">
+        The original project is a simple web CRUD solution. Click <a href="https://bolanarede.net.br/products"
+            target="_blank">
             here</a> to see the exactly result of the course.
         <!-- Sistema para exemplificar a construção de um cadastro em Angular (CRUD). -->
     </mat-card-subtitle>
@@ -34,10 +50,12 @@
 </mat-card>
 <mat-card class="home mat-elevation-z4">
     <mat-card-subtitle class="subtitle">
-    Web application built with <b>ANGULAR</b>, a framework running over <b>NODE.JS</b>, using
+        Web application built with <b>ANGULAR</b>, a framework running over <b>NODE.JS</b>, using
         <b>TYPESCRIPT,
-            HTML </b>and<b> CSS</b>. In addition, used <a href="https://fontawesome.com/license"><b>FONT AWESOME</b></a> for some icons.
-        Hosted in a Linux <b>UBUNTU</b> dedicated server at <b>DIGITALOCEAN</b> cloud infraestructure. Version control by 
+            HTML </b>and<b> CSS</b>. In addition, used <a href="https://fontawesome.com/license"><b>FONT AWESOME</b></a>
+        for some icons.
+        Hosted in a Linux <b>UBUNTU</b> dedicated server at <b>DIGITALOCEAN</b> cloud infraestructure. Version control
+        by
         <b>GIT</b> and
         <b>GITHUB</b>. Backend running over <b>JSON SERVER</b>. Package management with <b>NPM</b>. Reverse proxy with
         <b>NGINX</b>, SSL certification with <b>CERTBOT</b> and Linux process management with <b>PM2</b>.
