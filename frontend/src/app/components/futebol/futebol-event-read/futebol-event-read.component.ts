@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class FutebolEventReadComponent implements OnInit {
 
   jogos: any = { botVersion: 0, result: { loopMsgText: '', inPlayEventsBSF_eventViewInfos: [] } };
-  event: any = { id: 0 }
+  event: any = { id: 0, league: { id: 0, name: '', cc: '' }, }
   eventId = 0;
 
   constructor(
@@ -40,10 +40,23 @@ export class FutebolEventReadComponent implements OnInit {
       })
     }
     */
+
+    /*
     this.futebolService.readById(id).subscribe(event => {
       console.log('chegou evento = ' + JSON.stringify(event))
       this.futebolService.event = event
       this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
+      this.futebolService.showMessage('Event loaded.')
+      this.hideLoader()
+      // console.log()
+    })
+    */
+
+    this.futebolService.readById_cached(id).subscribe(event => { // cached direct from google apps scripts
+      console.log('chegou evento = ' + JSON.stringify(event))
+      this.futebolService.event = event
+      // this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
+      this.event = event
       this.futebolService.showMessage('Event loaded.')
       this.hideLoader()
       // console.log()

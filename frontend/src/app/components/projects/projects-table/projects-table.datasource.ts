@@ -117,6 +117,13 @@ export interface Project {
         github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
         angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'hide',
         googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
+    },
+    {
+        name: 'The Quotes Bot', launched_year: 2021, project_icon: 'work', platform: 'Telegram Chatbot', category: '⭐️',
+        website: 't.me/TheQuotesRobot', website_text: '', portfolio_link: 'link',
+        github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
+        angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'hide',
+        googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     }
 ];
 
