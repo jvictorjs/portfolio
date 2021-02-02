@@ -43,13 +43,13 @@ export class FutebolService {
 
   read(): Observable<Object> {
     this.jogos = this.http.get<Object>(this.baseUrl)
-    console.log('jogos serão coletados', true);
+    console.log('events will be collected', true);
     return this.jogos
   }
 
 
   readById(id: number): Observable<Object> {
-    console.log('vai consultar jogo com o id = ' + id)
+    console.log('collecting event with id = ' + id)
     console.log(this.baseUrl2 + '&eventId=' + id)
     return this.http.get<Object>(this.baseUrl2 + '&eventId=' + id)
     // console.log('this.jogos.result.inPlayEventsBSF_eventViewInfos.length = ' + this.jogos.result.inPlayEventsBSF_eventViewInfos.length)
@@ -59,7 +59,7 @@ export class FutebolService {
 
   readById_cached(id: number): Observable<Object> {
     console.log('readById_cached --- START')
-    console.log('vai consultar jogo com o id = ' + id)
+    console.log('collecting event with id  = ' + id)
     console.log(this.baseUrl2 + '&eventId=' + id + '&cached=true')
     return this.http.get<Object>(this.baseUrl2 + '&eventId=' + id + '&cached=true')
     // console.log('this.jogos.result.inPlayEventsBSF_eventViewInfos.length = ' + this.jogos.result.inPlayEventsBSF_eventViewInfos.length)

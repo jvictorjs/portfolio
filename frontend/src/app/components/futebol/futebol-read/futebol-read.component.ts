@@ -22,11 +22,11 @@ export class FutebolReadComponent implements OnInit {
   ngOnInit(): void {
 
     if (this.jogos.response.botVersion === 0) {
-      console.log('this.jogos.response.botVersion === 0, coletando jogos...')
+      console.log('this.jogos.response.botVersion === 0, loading events...')
       this.futebolService.read().subscribe(jogos => {
         this.jogos = jogos
         this.futebolService.jogos = jogos
-        this.futebolService.showMessage('Jogos carregados')
+        this.futebolService.showMessage('Events loaded.')
         if (this.jogos.response.result.inPlayEventsBSF_eventViewInfos.length === 0) {
           this.futebolService.showMessage('No live events.')
           // this.futebolService.showMessage('Sem jogos ao vivo no momento.')

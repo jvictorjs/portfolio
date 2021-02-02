@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FutebolService } from './../futebol.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-futebol-event-read',
@@ -17,8 +18,12 @@ export class FutebolEventReadComponent implements OnInit {
     private futebolService: FutebolService,
     private router: Router,
     private route: ActivatedRoute,
-  ) {
+    private location: Location) {
 
+  }
+
+  navigationGoBack() {
+    this.location.back();
   }
 
   ngOnInit(): void {
