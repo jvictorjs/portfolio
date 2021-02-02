@@ -20,7 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HomeComponent } from './views/home/home.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
 
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
@@ -33,7 +33,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
-import { FutebolComponent } from './views/futebol/futebol.component';
+import { FutebolComponent } from './views/simple-demos/futebol/futebol.component';
 import { FutebolReadComponent } from './components/futebol/futebol-read/futebol-read.component';
 
 import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
@@ -55,7 +55,8 @@ import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.compo
 import { ContactComponent } from './views/contact/contact.component';
 import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component';
 import { ResumeComponent } from './views/resume/resume.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component'
 
 registerLocaleData(localePt);
 
@@ -85,7 +86,8 @@ registerLocaleData(localePt);
     JvictorStackComponent,
     ContactComponent,
     PortfolioListComponent,
-    ResumeComponent
+    ResumeComponent,
+    SimpleDemosComponent
   ],
   imports: [ // módulos
     BrowserModule,

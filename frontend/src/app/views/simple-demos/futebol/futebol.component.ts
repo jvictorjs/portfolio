@@ -1,5 +1,6 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { HeaderService } from '../../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-futebol',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FutebolComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
+  constructor(private headerService: HeaderService, private location: Location) {
     headerService.headerData = {
       title: 'Live Soccer Events',
       icon: 'sports_soccer',
@@ -19,4 +20,7 @@ export class FutebolComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigationGoBack() {
+    this.location.back();
+  }
 }

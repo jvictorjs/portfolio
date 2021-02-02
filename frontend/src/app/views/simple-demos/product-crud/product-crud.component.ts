@@ -1,6 +1,7 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { HeaderService } from '../../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-product-crud',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router'
 })
 export class ProductCrudComponent implements OnInit {
 
-  constructor(private router: Router, private headerService: HeaderService) {
+  constructor(private router: Router, private headerService: HeaderService, private location: Location) {
     headerService.headerData = {
       title: 'Products CRUD',
       icon: 'storefront',
@@ -22,5 +23,9 @@ export class ProductCrudComponent implements OnInit {
 
   navigateToProductCreate(): void {
     this.router.navigate(['/products/create'])
+  }
+
+  navigationGoBack() {
+    this.location.back();
   }
 }

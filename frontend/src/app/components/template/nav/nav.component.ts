@@ -16,12 +16,9 @@ export class NavComponent implements OnInit {
   faGithub = faGithub
   faEnvelope = faEnvelope
   faFileAlt = faFileAlt
-  faFutbol = faFutbol
 
   events: string[] = [];
   opened: boolean = true;
-
-
 
   ngOnInit(): void {
     if (this.mobileQuery.matches) {
