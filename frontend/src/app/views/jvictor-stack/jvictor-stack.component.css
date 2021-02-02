@@ -96,7 +96,7 @@ a, a:hover, a:focus, a:active {
 
 .tech-ballot-text {
     vertical-align: middle;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 5px 10px 10px;
     border: none;
 }
 
@@ -231,7 +231,7 @@ https://css-tricks.com/filling-space-last-row-flexbox/
 
 .tech-item {
     flex-grow: 1;
-    flex-basis: 212px;
+    flex-basis: 218px;
     height: 46px;
     display: flex;
     flex-direction: row;
@@ -249,7 +249,7 @@ https://css-tricks.com/filling-space-last-row-flexbox/
 
 .tech-item-empty {
     flex-grow: 1;
-    flex-basis: 212px;
+    flex-basis: 218px;
     /*
     */
     font-size: 0.01rem;
