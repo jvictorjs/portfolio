@@ -20,7 +20,7 @@ export class FutebolService {
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
-      duration: 10000,
+      duration: 5000,
       horizontalPosition: "center",
       verticalPosition: "bottom",
       panelClass: isError ? ['msg-error'] : ['msg-success']

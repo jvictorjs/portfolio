@@ -12,6 +12,9 @@ export class FutebolReadComponent implements OnInit {
   jogos: any = { id: 0, response: { botVersion: 0, result: { loopMsgText: '', inPlayEventsBSF_eventViewInfos: [] } } };
   displayedColumns = ['country', 'league', 'clock', 'event', 'action']
 
+  // STACKOVERFLOW https://stackoverflow.com/questions/37116619/angular-2-setinterval-keep-running-on-other-component
+  intervalId: any;
+
   constructor(
     private futebolService: FutebolService,
     private router: Router,
@@ -23,16 +26,31 @@ export class FutebolReadComponent implements OnInit {
 
     if (this.jogos.response.botVersion === 0) {
       console.log('this.jogos.response.botVersion === 0, loading events...')
-      this.futebolService.read().subscribe(jogos => {
-        this.jogos = jogos
-        this.futebolService.jogos = jogos
-        this.futebolService.showMessage('Events loaded.')
-        if (this.jogos.response.result.inPlayEventsBSF_eventViewInfos.length === 0) {
-          this.futebolService.showMessage('No live events.')
-          // this.futebolService.showMessage('Sem jogos ao vivo no momento.')
-        }
-      })
+      this.loadEvents()
     }
+
+    this.intervalId = setInterval(() => {
+      this.loadEvents();
+    }, 30000);
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+  loadEvents(): void {
+    console.log('auto refresh - loading events...');
+    this.futebolService.read().subscribe(jogos => {
+      this.jogos = jogos
+      this.futebolService.jogos = jogos
+      this.futebolService.showMessage('Events loaded.')
+      if (this.jogos.response.result.inPlayEventsBSF_eventViewInfos.length === 0) {
+        this.futebolService.showMessage('No live events.')
+        // this.futebolService.showMessage('Sem jogos ao vivo no momento.')
+      }
+    })
   }
 
   navigateWithState(): void {
