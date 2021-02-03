@@ -3,29 +3,50 @@
         You can find me here
     </mat-card-title>
     <mat-card-subtitle class="subtitle">
-        <div style="display: flex;justify-content: center;column-gap: 50px;">
-            <a href="mailto:victorjtube@gmail.com" title="E-mail" >
-                <span class="material-icons md-54 v-middle mini-logo">
-                    mail
-                </span>
-            </a>
-            <a href="https://github.com/jvictorhub" target="_blank" style="margin-top: 6px;">
-                <img class="mini-logo" src="assets/img/tech-logos/github-logo.png" alt="GitHub_logo"
-                    title="Check out my projects on GitHub" />
-            </a>
 
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
-                style="margin-top: 6px;">
-                <img class="mini-logo" src="assets/img/tech-logos/linkedin-logo.png" alt="Linkedin_logo"
-                    title="Connect on Linkedin" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg" title="My YouTube channel"
-                target="_blank">
-                <span class="material-icons md-54 v-middle mini-logo" style="color:black; margin:0px 0 0 0px">
-                    play_circle
-                    <!-- video_library play_circle -->
-                </span>
-            </a>
+        <div
+            style="display: flex;justify-content: center; flex-direction: column;height: 30px; align-content: center; text-align: center;">
+            <div style="display: flex;justify-content: center;">
+                <!-- 
+                STACKOVERFLOW https://support.google.com/a/users/answer/9308985?hl=en
+                <a href="../assets/other/my-resume-portfolio.pdf" target="_blank" title="My Resume">
+            -->
+                <a href="https://docs.google.com/document/d/1fjIjyxVRkpjsxL__w8ieoDN3uL-UDQrAffatmLpPTyw/export?format=pdf"
+                    title="Download my Resume">
+                    <span class="material-icons md-48 v-middle mini-logo" style="color:black; margin:3px 18px 0 0px">
+                        text_snippet
+                        <!-- picture_as_pdf work-->
+                    </span>
+                </a>
+                <a href="mailto:victorjtube@gmail.com" title="E-mail">
+                    <span class="material-icons md-54 v-middle mini-logo" style="margin: 0 13px 0  0;">
+                        mail
+                    </span>
+                </a>
+                <a href="https://github.com/jvictorhub" target="_blank" title="Check out my projects on GitHub">
+                    <fa-icon [icon]="faGithub" size="2x" class="material-icons v-middle mini-logo"
+                        style="color: black;margin:2px 12px 0 16px"></fa-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-ramos-6570a21b7/" target="_blank"
+                    title="Connect on Linkedin">
+                    <fa-icon [icon]="faLinkedin" size="2x" class="material-icons v-middle mini-logo"
+                        style="color: black;margin:2px 5px 0 15px"></fa-icon>
+                </a>
+                <!-- STACKOVERFLOW
+          https://github.com/FortAwesome/angular-fontawesome
+            <fa-icon [icon]="faArrowAltCircleDown" size="1x"></fa-icon>
+            size = xs sm lg 2x 3x 4x 10x
+
+            STACKOVERFLOW
+            https://stackoverflow.com/questions/14474452/can-i-change-the-color-of-font-awesomes-icon-color
+            -->
+                <a href="https://www.youtube.com/channel/UCXtXm6Uew48cx3Ne-YGF6tg" title="My YouTube channel"
+                    target="_blank">
+                    <fa-icon [icon]="faYoutube" size="2x" class="material-icons v-middle mini-logo"
+                        style="color: black;margin:2px 0 0 15px"></fa-icon>
+
+                </a>
+            </div>
         </div>
     </mat-card-subtitle>
 </mat-card>
