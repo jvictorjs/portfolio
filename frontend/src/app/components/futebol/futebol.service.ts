@@ -70,4 +70,5 @@ export class FutebolService {
   consolaTotalEvents(): void {
     console.log('this.jogos.response.result.inPlayEventsBSF_eventViewInfos.length = ' + this.jogos.response.result.inPlayEventsBSF_eventViewInfos.length)
   }
+
 }

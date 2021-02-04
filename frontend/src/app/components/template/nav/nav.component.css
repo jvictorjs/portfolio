@@ -18,11 +18,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    border: none;
 }
 
 .example-toolbar .title-group {
     padding-left: 33px;
     align-self: center;
+    border: none;
+    margin-right: 3%;
 }
 
 .example-toolbar .title-group i {

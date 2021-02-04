@@ -2,6 +2,15 @@ button {
     margin-bottom: 20px;
 }
 
+.project-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    border: none;
+    margin-bottom: 20px;
+}
+
 .home {
     margin-bottom: 20px;
     border-radius: 8px;
@@ -20,6 +29,11 @@ button {
 
 .mini-logo {
     width: 1.1rem;
+    vertical-align: middle;
+}
+
+.mini-logo-fixed {
+    width: 1.6rem;
     vertical-align: middle;
 }
 
@@ -110,17 +124,15 @@ a, a:hover, a:focus, a:active {
     /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
 }
 
-
 .div-columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     column-gap: 20px;
 }
 
-
-.div-columns > .home {
+.div-columns>.home {
     margin-bottom: 0px;
     border-radius: 8px;
     width: 100%;

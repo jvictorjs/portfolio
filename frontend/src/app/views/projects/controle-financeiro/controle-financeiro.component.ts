@@ -11,9 +11,25 @@ import { Location } from '@angular/common';
 })
 export class ControleFinanceiroComponent implements OnInit {
 
+  project_ptbr = {
+    platform: 'Telegram Chatbot',
+    platform_icon: 'chat',
+    status: 'Em Produção',
+    access: 'Privado',
+    access_icon: 'lock'
+  }
+
+  project_en = {
+    platform: 'Telegram Chatbot',
+    platform_icon: 'chat',
+    status: 'Production',
+    access: 'Private',
+    access_icon: 'lock'
+  }
+
   constructor(private headerService: HeaderService, private location: Location) {
     headerService.headerData = {
-      title: 'ChatBot para Controle de Gastos',
+      title: 'Controle Financeiro',
       icon: 'attach_money',
       routeUrl: 'controle-financeiro'
     }

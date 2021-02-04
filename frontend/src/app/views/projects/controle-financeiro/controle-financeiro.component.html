@@ -7,162 +7,270 @@
     </span>
     Back to Projects
 </button>
-<mat-card class="home mat-elevation-z4">
-    <a class="center-horizontal" href="../assets/img/Screenshot_20210105-230631_Telegram.jpg" target="_blank">
-        <img class="print-image" src="assets/img/Screenshot_20210105-230631_Telegram.jpg" alt="PRINT_gastos_logo" />
-    </a>
-</mat-card>
+<div style="display: flex; justify-content: center;">
+    <div class="project-content">
+
+        <mat-card class="home mat-elevation-z4">
+            <a class="center-horizontal" href="../assets/img/Screenshot_20210105-230631_Telegram.jpg" target="_blank">
+                <img class="print-image" src="assets/img/Screenshot_20210105-230631_Telegram.jpg"
+                    alt="PRINT_gastos_logo" />
+            </a>
+        </mat-card>
 
 
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title">
-        O que é?
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Um ChatBot que registra gastos em uma planilha por meio de mensagens.
-    </mat-card-subtitle>
-</mat-card>
-<!--
 
-    <div style="display: flex; flex-direction: row;justify-content: space-between; column-gap: 20px;">
--->
-<div class="div-columns">
-    <mat-card class="home mat-elevation-z4">
-        <mat-card-title class="title">
-            Lançamento
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            2017
-        </mat-card-subtitle>
-    </mat-card>
+        <div class="div-columns">
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    O que é?
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    Um ChatBot que registra gastos em uma planilha por meio de mensagens.
+                </mat-card-subtitle>
+            </mat-card>
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    Access
+                    <span class="icone">
+                        <span class="tooltiptext">
+                            <span class="tooltiptext">
+                                <i class="material-icons-two-tone mini-logo-fixed">
+                                    lock
+                                </i>Private: on demand solution, not for public.
+                                <br>
+                                <br>
+                                <i class="material-icons-two-tone mini-logo-fixed">
+                                    vpn_key
+                                </i>Restricted: requires permission.
+                                <br>
+                                <br>
+                                <i class="material-icons-two-tone mini-logo-fixed">
+                                    public
+                                </i>Public: anyone can sign up or sign in not required.
+                            </span>
+                        </span>
+                        <span class="material-icons-two-tone md-21">
+                            info
+                        </span>
+                    </span>
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    <i class="material-icons-two-tone mini-logo-fixed">
+                        {{project_en.access_icon}}
+                    </i>
+                    {{project_en.access}}
+                </mat-card-subtitle>
+            </mat-card>
+        </div>
 
-    <mat-card class="home mat-elevation-z4 card-col-description">
-        <!-- 
+        <div class="div-columns">
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    Platform
+                    <span class="icone">
+                        <span class="tooltiptext">
+                            <i class="material-icons-two-tone mini-logo-fixed">
+                                desktop_windows
+                            </i>Web: accessible via web browser
+                            <br>
+                            <br>
+                            <i class="material-icons-two-tone mini-logo-fixed">
+                                phone_android
+                            </i>Mobile: mobile phone application
+                            <br>
+                            <br>
+                            <i class="material-icons-two-tone mini-logo-fixed">
+                                chat
+                            </i>Telegram Chatbot: services available via instant messages and commands
+                        </span>
+                        <span class="material-icons-two-tone md-21">
+                            info
+                        </span>
+                    </span>
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    <i class="material-icons-two-tone mini-logo-fixed">
+                        {{project_en.platform_icon}}
+                    </i>
+                    {{project_en.platform}}
+                </mat-card-subtitle>
+            </mat-card>
+
+            <mat-card class="home mat-elevation-z4 card-col-description">
+                <!-- 
                 ⭐️ basic project
                 <br>⭐️⭐️ modest / intermediate project
                 <br>⭐️⭐️⭐️ advanced project
             -->
-        <mat-card-title class="title">
-            Categoria
-            <span class="icone">
-                <span class="tooltiptext">⭐️ basic project
-                    <br>⭐️⭐️ modest / intermediate project
-                    <br>⭐️⭐️⭐️ advanced project</span>
-                <span class="material-icons-two-tone md-21">
-                    info
-                </span>
-            </span>
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            ⭐️ basic project
-        </mat-card-subtitle>
-    </mat-card>
-</div>
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title">
-        Descrição
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Aplicação web desenvolvida em <b>JAVASCRIPT</b>. Hospedado gratuitamente no serviço de nuvem <b>GOOGLE APPS
-            SCRIPT</b>
-        como webhook de um <b>TELEGRAM BOT</b>. A segurança é garantida pelo <b>GOOGLE</b> a <b>TELEGRAM BOT API</b>
-        com
-        uso de <b>TOKENS</b> e
-        <b>HTTPS</b>. O backend guarda informações em <b>GOOGLE SHEETS</b>.
-    </mat-card-subtitle>
-</mat-card>
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title">
-        História
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Eu e minha irmã registrávamos gastos com despesas em conjunto em um <i>grupo no Telegram</i>. O processo era
-        manual,
-        com mensagens para registrar as despesas do mês. A cada novo mês era preciso somar os gastos e fazer um
-        relatório. Assim que descobri a funcionalidade de chatbot do Telegram e fiz meu primeiro Bot, tive a ideia
-        de
-        usa-lo para coletar as informações e gerar o relatório mensal automaticamente.
-    </mat-card-subtitle>
-</mat-card>
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title">
-        Desafios
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        <ul>
-            <li *myFor="let n em [
+                <mat-card-title class="title">
+                    Status
+                    <span class="icone">
+                        <span class="tooltiptext">
+                            0 - Ideia<br>
+                            1 - Em andamento/desenvolvimento<br>
+                            2 - Beta (prototipo funcional)<br>
+                            3 - Em produção (pronto)<br>
+                        </span>
+                        <span class="material-icons-two-tone md-21">
+                            info
+                        </span>
+                    </span>
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    {{project_en.status}}
+                </mat-card-subtitle>
+            </mat-card>
+        </div>
+
+        <div class="div-columns">
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    Lançamento
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    2017
+                </mat-card-subtitle>
+            </mat-card>
+
+            <mat-card class="home mat-elevation-z4 card-col-description">
+                <!-- 
+                ⭐️ basic project
+                <br>⭐️⭐️ modest / intermediate project
+                <br>⭐️⭐️⭐️ advanced project
+            -->
+                <mat-card-title class="title">
+                    Categoria
+                    <span class="icone">
+                        <span class="tooltiptext">⭐️ basic project
+                            <br>⭐️⭐️ modest / intermediate project
+                            <br>⭐️⭐️⭐️ advanced project</span>
+                        <span class="material-icons-two-tone md-21">
+                            info
+                        </span>
+                    </span>
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    ⭐️ basic project
+                </mat-card-subtitle>
+            </mat-card>
+        </div>
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                Descrição
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                Aplicação web desenvolvida em <b>JAVASCRIPT</b>. Hospedado gratuitamente no serviço de nuvem
+                <b>GOOGLE
+                    APPS
+                    SCRIPT</b>
+                como webhook de um <b>TELEGRAM BOT</b>. A segurança é garantida pelo <b>GOOGLE</b> a <b>TELEGRAM BOT
+                    API</b>
+                com
+                uso de <b>TOKENS</b> e
+                <b>HTTPS</b>. O backend guarda informações em <b>GOOGLE SHEETS</b>.
+            </mat-card-subtitle>
+        </mat-card>
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                História
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                Eu e minha irmã registrávamos gastos com despesas em conjunto em um <i>grupo no Telegram</i>. O
+                processo
+                era
+                manual,
+                com mensagens para registrar as despesas do mês. A cada novo mês era preciso somar os gastos e fazer
+                um
+                relatório. Assim que descobri a funcionalidade de chatbot do Telegram e fiz meu primeiro Bot, tive a
+                ideia
+                de
+                usa-lo para coletar as informações e gerar o relatório mensal automaticamente.
+            </mat-card-subtitle>
+        </mat-card>
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                Desafios
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                <ul>
+                    <li *myFor="let n em [
             'aprender a programar em JavaScript',
             'aprender a manipular JSON' ,
                 'aprender a utilizar Web APIs',
                 'aprender como funciona um ChatBot',
                 'aprender a criar scripts e rotinas na plataforma de nuvem do Google Apps Scripts'
                 ]">
-                {{ n }}</li>
-        </ul>
-    </mat-card-subtitle>
-</mat-card>
-<div class="div-columns">
-    <mat-card class="home mat-elevation-z4">
-        <mat-card-title class="title">
-            Tecnologias utilizadas
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            Frontend:<br>
-            <div class="tech" matTooltip="The Telegram Bot API - Allows you to create and manage Chatbots. Just
+                        {{ n }}</li>
+                </ul>
+            </mat-card-subtitle>
+        </mat-card>
+        <div class="div-columns">
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    Tecnologias utilizadas
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    Frontend:<br>
+                    <div class="tech" matTooltip="The Telegram Bot API - Allows you to create and manage Chatbots. Just
                         simple to interact with text messages and chat buttons as
                         we use it on a daily basis.">
-                <a href="https://telegram.org/">
-                    <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png" alt="TG_logo" />
-                    Telegram (nativo)
-                </a>
-            </div>
-            <br>Backend:<br>
-            <div class="tech" matTooltip="Google Sheets - Easy way to explore and organize data. Integrated With
+                        <a href="https://telegram.org/">
+                            <img class="mini-logo" src="assets/img/tech-logos/256px-Telegram_logo.png" alt="TG_logo" />
+                            Telegram (nativo)
+                        </a>
+                    </div>
+                    <br>Backend:<br>
+                    <div class="tech" matTooltip="Google Sheets - Easy way to explore and organize data. Integrated With
                 Google Apps Scripts you can automate workflows and boost productivity.">
-                <a href="https://sheets.google.com">
-                    <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png" alt="SHEETS_logo" />
-                    Google Sheet
-                </a>
-            </div>
-            <br>Infraestrutura:<br>
-            <div class="tech" matTooltip="Google Apps Script - A modern JavaScript cloud-based platform to build 
+                        <a href="https://sheets.google.com">
+                            <img class="mini-logo" src="assets/img/tech-logos/google-sheets-logo.png"
+                                alt="SHEETS_logo" />
+                            Google Sheet
+                        </a>
+                    </div>
+                    <br>Infraestrutura:<br>
+                    <div class="tech" matTooltip="Google Apps Script - A modern JavaScript cloud-based platform to build 
                 solutions integrating all Google Services and external APIs.">
-                <a href="https://developers.google.com/apps-script">
-                    <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
-                    Google Apps Scripts
-                </a>
-            </div>
-        </mat-card-subtitle>
-    </mat-card>
-    <mat-card class="home mat-elevation-z4 card-col-description">
-        <mat-card-title class="title">
-            Links
-        </mat-card-title>
-        <mat-card-subtitle class="subtitle">
-            <ul>
-                <li *myFor="let n em [
+                        <a href="https://developers.google.com/apps-script">
+                            <img class="mini-logo" src="assets/img/tech-logos/google-apps-script.svg" alt="GAS_logo" />
+                            Google Apps Scripts
+                        </a>
+                    </div>
+                </mat-card-subtitle>
+            </mat-card>
+            <mat-card class="home mat-elevation-z4 card-col-description">
+                <mat-card-title class="title">
+                    Links
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    <ul>
+                        <li *myFor="let n em [
                     'core.telegram.org/bots',
                     'core.telegram.org/bots/api',
                     'developers.google.com/apps-script'
                     ]">
-                    {{ n }}</li>
-            </ul>
-        </mat-card-subtitle>
-    </mat-card>
+                            {{ n }}</li>
+                    </ul>
+                </mat-card-subtitle>
+            </mat-card>
+        </div>
+        <mat-card class="home mat-elevation-z4">
+            <mat-card-title class="title">
+                EXTRA - Como fazer um robô de conversas no Telegram?
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                Confira este meu vídeo ensinando como fazer o seu primeiro ChatBot no Telegram do zero. Seguindo os
+                passos e
+                explicações você terá seu próprio ChatBot. Tudo configurado e rodando 100% na nuvem com Google Apps
+                Script. Se você não sabe programar e tem curiosidade, pode ser um ótimo início. Ver o código rodando
+                e o
+                robô
+                funcionando vai ser bem gratificante.
+                <br><br>
+                <iframe width="480px" height="270px" src="https://www.youtube.com/embed/NYg5iDCjTNg" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
 </div>
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title">
-        EXTRA - Como fazer um robô de conversas no Telegram?
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        Confira este meu vídeo ensinando como fazer o seu primeiro ChatBot no Telegram do zero. Seguindo os passos e
-        explicações você terá seu próprio ChatBot. Tudo configurado e rodando 100% na nuvem com Google Apps
-        Script. Se você não sabe programar e tem curiosidade, pode ser um ótimo início. Ver o código rodando e o
-        robô
-        funcionando vai ser bem gratificante.
-        <br><br>
-        <iframe width="480px" height="270px" src="https://www.youtube.com/embed/NYg5iDCjTNg" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </mat-card-subtitle>
-</mat-card>
