@@ -18,15 +18,6 @@ export interface ProductRead2Item {
 const EXAMPLE_DATA: Project[] = [
     // para alterar a estrutura do projeto mexer no arquivo project.model.ts
     /*
-export interface Project {
-    id? : number // ? question mark = opcional
-    name: string
-    type?: string // mobile |  web    |  multiplataform
-    category?: string // ⭐️ basic app    |  ⭐️⭐️ modest / intermediate app   |    ⭐️⭐️⭐️ advanced app
-    website?: string
-    portfolio_link?: string // caminho para abrir no proprio site de portfolio
-}
-    */
     {
         name: 'My Portfolio (this website)', launched_year: 2021, project_icon: 'desktop_windows', platform: 'Web', category: '⭐️⭐️',
         website: 'portfolio.jvictor.com.br', website_text: '', portfolio_link: '',
@@ -83,13 +74,15 @@ export interface Project {
         angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
         googleAppsScript: 'tech-tool-show', digitalOcean: 'tech-tool-show', twitter_api: 'tech-tool-show'
     },
+    */
     {
         name: 'Controle Financeiro', launched_year: 2017, project_icon: 'attach_money', platform: 'Telegram Chatbot', category: '⭐️',
         website: '-', website_text: '', portfolio_link: 'controle-financeiro',
         github_link: '', techs: '#TG', total_apis: 1, total_apis_owned: 0,
         angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
         googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
-    },
+    }
+    /*
     {
         name: 'FireSafe', launched_year: 2020, project_icon: 'local_fire_department', platform: 'Mobile', category: '⭐️',
         website: '2020.spaceappschallenge.org/challenges/confront/spot-fire-3/teams/firesafe', website_text: '2020 Nasa Space Apps Challange - Firesafe Team', portfolio_link: 'link',
@@ -125,6 +118,7 @@ export interface Project {
         angular: 'hide', reactNative: 'hide', telegramBot_api: 'tech-tool-show', googleSheet: 'hide',
         googleAppsScript: 'tech-tool-show', digitalOcean: 'hide', twitter_api: 'hide'
     }
+    */
 ];
 
 /**
