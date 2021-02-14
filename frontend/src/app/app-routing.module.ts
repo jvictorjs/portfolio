@@ -17,6 +17,7 @@ import { MyExperienceComponent } from './views/my-experience/my-experience.compo
 import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ResumeComponent } from './views/resume/resume.component';
+import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 
 const routes: Routes = [
   {
@@ -82,6 +83,10 @@ const routes: Routes = [
   {
     path: "demos",
     component: SimpleDemosComponent
+  },
+  {
+    path: "quotes",
+    component: QuotesComponent
   }
 ];
 

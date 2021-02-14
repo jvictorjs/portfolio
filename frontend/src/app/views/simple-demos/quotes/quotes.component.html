@@ -1,0 +1,77 @@
+<a routerLink="/demos">
+    <button mat-raised-button color="primary">
+        <span class="material-icons-two-tone md-21 v-middle">
+            arrow_back
+        </span>
+        Back to Demos
+    </button>
+</a>
+
+<!-- copiado do componente product-read2 (que é a tabela original conforme modelo do template em https://material.angular.io/guide/schematics) -->
+<div class="mat-elevation-z4 table-div">
+    <table mat-table matSort aria-label="Elements">
+        <!-- text Column -->
+        <ng-container matColumnDef="quote">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Quote</th>
+            <td mat-cell *matCellDef="let row" class="name_col">
+                <div class="div-name">
+                    {{row.quote}}
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- author Column -->
+        <ng-container matColumnDef="author">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header class="th">Author</th>
+            <td mat-cell *matCellDef="let row" class="name_col">
+                <div class="div-name">
+                    {{row.author}}
+                </div>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="5"
+        [pageSizeOptions]="[5, 10, 20, 50]">
+    </mat-paginator>
+</div>
+<br>
+<button mat-raised-button color="primary" (click)="refresh()">
+    <span class="material-icons-two-tone md-21 v-middle">
+        refresh
+    </span>
+    Refresh Table
+</button>
+
+<div class="div-items-description">
+    <mat-card class="mat-elevation-z4 card-col-description">
+        <mat-card-title class="title">
+            Platform
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+            <i class="material-icons-two-tone mini-logo-fixed">
+                desktop_windows
+            </i>Web: accessible via web browser
+            <br>
+            <i class="material-icons-two-tone mini-logo-fixed">
+                phone_android
+            </i>Mobile: mobile phone application
+            <br>
+            <i class="material-icons-two-tone mini-logo-fixed">
+                chat
+            </i>Telegram Chatbot: services available via instant messages and commands
+        </mat-card-subtitle>
+    </mat-card>
+    <mat-card class="mat-elevation-z4 card-col-description">
+        <mat-card-title class="title">
+            Category
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle">
+            ⭐️ basic project
+            <br>⭐️⭐️ modest / intermediate project
+            <br>⭐️⭐️⭐️ advanced project
+        </mat-card-subtitle>
+    </mat-card>
+</div>

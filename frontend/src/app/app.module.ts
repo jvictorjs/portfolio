@@ -56,7 +56,8 @@ import { ContactComponent } from './views/contact/contact.component';
 import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.component';
 import { ResumeComponent } from './views/resume/resume.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component'
+import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component';
+import { QuotesComponent } from './views/simple-demos/quotes/quotes.component'
 
 registerLocaleData(localePt);
 
@@ -87,7 +88,8 @@ registerLocaleData(localePt);
     ContactComponent,
     PortfolioListComponent,
     ResumeComponent,
-    SimpleDemosComponent
+    SimpleDemosComponent,
+    QuotesComponent
   ],
   imports: [ // módulos
     BrowserModule,
