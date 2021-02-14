@@ -44,10 +44,12 @@ export class QuotesComponent implements AfterViewInit, OnInit {
   }
 
   refresh(): void {
+    this.showLoader();
     this.quoteService.read().subscribe(quotes => {
       this.dataSource = new QuoteDataSource(quotes);
-      console.log(quotes)
-      this.ngAfterViewInit()
+      console.log(quotes);
+      this.ngAfterViewInit();
+      this.hideLoader();
     });
 
   }
@@ -74,5 +76,17 @@ export class QuotesComponent implements AfterViewInit, OnInit {
 
   read(): Observable<any[]> {
     return this.http.get<any[]>(this.baseUrl)
+  }
+
+  hideLoader(): void {
+    // Setting display of spinner element to none 
+    document.getElementById('loadingQuote').style.display = 'none';
+    document.getElementById('quotesTable').style.display = 'inline';
+  }
+
+  showLoader(): void {
+    // Setting display of spinner element to inline 
+    document.getElementById('loadingQuote').style.display = 'inline';
+    document.getElementById('quotesTable').style.display = 'none';
   }
 }

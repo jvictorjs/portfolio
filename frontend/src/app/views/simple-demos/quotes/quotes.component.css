@@ -4,11 +4,30 @@ button {
 
 .th {
     font-size: 0.9rem;
+    text-align: center;
+}
+
+.th-author {
+    font-size: 0.9rem;
+    width: 30%;
+    text-align: center;
 }
 
 .th-align-center {
     text-align: center;
     padding-right: 10px;
+}
+
+.quote_col {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.author_col {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 ::ng-deep .mat-sort-header-container {
@@ -20,7 +39,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0px 18px 0px;
+    margin: 0px 0px 18px 0px;
     column-gap: 20px;
 }
 
@@ -55,6 +74,19 @@ table {
     font-size: 0.9rem;
     font-weight: 500;
     text-align: start;
+}
+
+.div-quote {
+    margin: 10px 0 10px;
+    transition: transform .1s;
+}
+
+.div-quote:hover {
+    -ms-transform: scale(1.07);
+    /* IE 9 */
+    -webkit-transform: scale(1.07);
+    /* Safari 3-8 */
+    transform: scale(1.02);
 }
 
 .div-name {
