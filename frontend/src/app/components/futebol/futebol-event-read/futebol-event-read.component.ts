@@ -51,7 +51,7 @@ export class FutebolEventReadComponent implements OnInit {
       console.log('chegou evento = ' + JSON.stringify(event))
       this.futebolService.event = event
       this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
-      this.futebolService.showMessage('Event loaded.')
+      this.futebolService.showMessage('Event loaded ✅') // ✅✔
       this.hideLoader()
       // console.log()
     })
@@ -62,7 +62,7 @@ export class FutebolEventReadComponent implements OnInit {
       this.futebolService.event = event
       // this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
       this.event = event
-      this.futebolService.showMessage('Event loaded.')
+      this.futebolService.showMessage('Event loaded ✅') // ✅✔
       this.hideLoader()
       // console.log()
     })
@@ -86,7 +86,7 @@ export class FutebolEventReadComponent implements OnInit {
     this.futebolService.read().subscribe(jogos => {
       this.futebolService.jogos = jogos
       this.event = this.jogos.result.inPlayEventsBSF_eventViewInfos.find((x: { id: number; }) => x.id == this.eventId)
-      this.futebolService.showMessage('Events list reloaded.')
+      this.futebolService.showMessage('Events reloaded. ✅') // ✅✔
     })
   }
 

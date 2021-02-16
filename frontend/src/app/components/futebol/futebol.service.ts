@@ -29,7 +29,7 @@ export class FutebolService {
 
   showLoadingMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
-      duration: 15000,
+      duration: 5000,
       horizontalPosition: "center",
       verticalPosition: "bottom",
       panelClass: ['msg-default']

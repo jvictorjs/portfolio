@@ -1,6 +1,6 @@
 <a routerLink="/demos">
     <button mat-raised-button color="primary">
-        <span class="material-icons-two-tone md-21 v-middle">
+        <span class="material-icons-two-tone md-24 v-middle">
             arrow_back
         </span>
         Back to Demos
@@ -8,7 +8,10 @@
 </a>
 <br>
 <button mat-raised-button (click)="navigateToProductCreate()" color="primary">
-    Novo Produto
+    <span class="material-icons-two-tone md-24 v-middle">
+        add_circle_outline
+    </span>
+    New Product
 </button>
 
 <app-product-read></app-product-read>

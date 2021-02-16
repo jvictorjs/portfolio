@@ -18,12 +18,18 @@ body {
 }
 
 .msg-success {
+    /*
     background-color: #21923c;
+    */
+    background-color: #343636;
     color: #fff
 }
 
 .msg-error {
-    background-color: #e35e6b;
+    /* 
+    background-color: #e35e6b; 
+    */
+    background-color: #343636;
     color: #fff
 }
 
