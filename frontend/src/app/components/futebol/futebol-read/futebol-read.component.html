@@ -68,9 +68,20 @@
     -->
 </div>
 
-<button mat-raised-button (click)="consolaTotalEvents()" color="primary" class='button'>
-    Console
-</button>
+<div style="display: flex;flex-direction: row;">
+
+    <button mat-raised-button (click)="consolaTotalEvents()" color="primary" class='button'>
+        Console
+    </button>
+    
+    <button mat-raised-button color="primary" (click)="loadEvents()">
+        <span class="material-icons-two-tone md-21 v-middle">
+            refresh
+        </span>
+        Refresh
+    </button>
+</div>
+
 
 <!--
     <p class="texto">{{ jogos | json }}</p>

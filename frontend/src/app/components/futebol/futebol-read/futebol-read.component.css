@@ -22,8 +22,8 @@ table {
     color: #0d3fe2;
 }
 
-.button {
-    margin-top: 15px;
+button {
+    margin: 15px 20px 0 0;
 }
 
 i {
