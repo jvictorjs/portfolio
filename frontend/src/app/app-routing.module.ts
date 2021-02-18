@@ -18,6 +18,7 @@ import { JvictorStackComponent } from './views/jvictor-stack/jvictor-stack.compo
 import { ContactComponent } from './views/contact/contact.component';
 import { ResumeComponent } from './views/resume/resume.component';
 import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
+import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: "futebol",
     component: FutebolComponent
+  },
+  {
+    path: "futebol-upcoming",
+    component: FutebolUpcomingComponent
   },
   {
     path: "futebol/event/:id",

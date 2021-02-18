@@ -57,7 +57,8 @@ import { PortfolioListComponent } from './views/portfolio-list/portfolio-list.co
 import { ResumeComponent } from './views/resume/resume.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component';
-import { QuotesComponent } from './views/simple-demos/quotes/quotes.component'
+import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
+import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component'
 
 registerLocaleData(localePt);
 
@@ -89,7 +90,8 @@ registerLocaleData(localePt);
     PortfolioListComponent,
     ResumeComponent,
     SimpleDemosComponent,
-    QuotesComponent
+    QuotesComponent,
+    FutebolUpcomingComponent
   ],
   imports: [ // módulos
     BrowserModule,
