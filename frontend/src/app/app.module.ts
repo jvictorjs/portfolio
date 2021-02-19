@@ -59,6 +59,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component';
 import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component'
+import { ChartsModule } from 'ng2-charts';
 
 registerLocaleData(localePt);
 
@@ -112,7 +113,8 @@ registerLocaleData(localePt);
     MatPaginatorModule,
     MatSortModule,
     MatTooltipModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ChartsModule
   ],
   providers: [{
     provide: LOCALE_ID,
