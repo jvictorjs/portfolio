@@ -18,8 +18,12 @@
 
             <!-- Name Column -->
             <ng-container matColumnDef="clock">
-                <th mat-header-cell *matHeaderCellDef>Clock</th>
-                <td mat-cell *matCellDef="let event">{{event.brClock}}</td>
+                <th mat-header-cell *matHeaderCellDef style="padding: 0 8px 0 8px;">Timer</th>
+                <td mat-cell *matCellDef="let event">
+                    <div style="padding: 0 8px 0 8px;">
+                        {{event.brClock}}
+                    </div>
+                </td>
             </ng-container>
 
             <!-- Country (cc) Column -->
@@ -32,18 +36,22 @@
             <!-- competition Column -->
             <ng-container matColumnDef="league">
                 <th mat-header-cell *matHeaderCellDef>League</th>
-                <td mat-cell *matCellDef="let event">{{event.league.name}}</td>
+                <td mat-cell *matCellDef="let event">{{getFlags(event.league.cc)}} {{event.league.name}}</td>
             </ng-container>
 
 
             <ng-container matColumnDef="event">
                 <th mat-header-cell *matHeaderCellDef>Event</th>
                 <td mat-cell *matCellDef="let event" class="v-middle">
-                    <img src="https://assets.b365api.com/images/team/m/{{ event.home.image_id }}.png" alt="home_logo"
-                        class="team-logo" />
-                    {{event.stringedGameWithRedcards}}
-                    <img src="https://assets.b365api.com/images/team/m/{{ event.away.image_id }}.png" alt="away_logo"
-                        class="team-logo" />
+                    <div class="event-div">
+                        <a routerLink="/futebol/event/{{ event.id }}" [state]="{hello:'world'}" class="view">
+                            <img src="https://assets.b365api.com/images/team/m/{{ event.home.image_id }}.png"
+                                alt="home_logo" class="team-logo" />
+                            {{event.stringedGameWithRedcards}}
+                            <img src="https://assets.b365api.com/images/team/m/{{ event.away.image_id }}.png"
+                                alt="away_logo" class="team-logo" />
+                        </a>
+                    </div>
                 </td>
             </ng-container>
 

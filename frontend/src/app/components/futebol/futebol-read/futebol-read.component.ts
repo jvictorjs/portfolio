@@ -10,7 +10,7 @@ import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 export class FutebolReadComponent implements OnInit {
 
   jogos: any = { id: 0, response: { botVersion: 0, result: { loopMsgText: '', inPlayEventsBSF_eventViewInfos: [] } } };
-  displayedColumns = ['country', 'league', 'clock', 'event', 'action']
+  displayedColumns = ['league', 'clock', 'event']
 
   // STACKOVERFLOW https://stackoverflow.com/questions/37116619/angular-2-setinterval-keep-running-on-other-component
   intervalId: any;

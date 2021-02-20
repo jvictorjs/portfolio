@@ -4,6 +4,7 @@
 
 table {
     width: 100%;
+    padding: -18px;
 }
 
 .edit {
@@ -16,6 +17,19 @@ table {
 
 .delete>i {
     color: #e35e6b;
+}
+
+.event-div {
+    width: auto;
+}
+
+.event-div:hover {
+    font-weight: 500;
+    -ms-transform: scale(1.01);
+    /* IE 9 */
+    -webkit-transform: scale(1.01);
+    /* Safari 3-8 */
+    transform: scale(1.01);
 }
 
 .view>i {
