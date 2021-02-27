@@ -1,0 +1,26 @@
+<a routerLink="/demos">
+    <button mat-raised-button color="primary">
+        <span class="material-icons-two-tone md-24 v-middle">
+            arrow_back
+        </span>
+        Back to Demos
+    </button>
+</a>
+<br>
+<br>
+<a (click)="switchShowOnlineUsers()">
+    <button mat-raised-button color="primary">
+        <span class="material-icons md-24 v-middle">
+            preview
+        </span>
+        Show online users
+    </button>
+</a>
+<br>
+<br>
+<div id="onlineUsersSocketIODemoView" (click)="switchShowOnlineUsers()"
+    style="display: flex;justify-content: center;font-weight: 500;border: none;color: #fff">
+    <br>
+    <br>
+    <h1>{{numberOfOnlineUsers}} active {{numberOfOnlineUsers > 1 ? 'visitors' : 'visitor' }} now.</h1>
+</div>

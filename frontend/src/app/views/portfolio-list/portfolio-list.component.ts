@@ -1,4 +1,4 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -26,8 +26,8 @@ export class PortfolioListComponent implements OnInit {
   DIGITALOCEAN_DESCRIPTION: string = "Digital Ocean - One of the best cloud infraestructure provider in the world."
   TWITTER_API_DESCRIPTION: string = "Twitter API - The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources."
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: 'All Projects List',
       icon: 'work',
       routeUrl: 'portfolio-list'

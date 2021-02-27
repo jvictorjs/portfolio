@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,9 +10,9 @@ import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 export class SimpleDemosComponent implements OnInit {
   faFutbol = faFutbol
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
-      title: 'Simple Demos',
+  constructor(private navService: NavService) {
+    navService.navData = {
+      title: 'Demos',
       icon: 'developer_mode',
       routeUrl: 'demos'
     }

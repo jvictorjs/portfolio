@@ -114,7 +114,7 @@
                             <mat-icon mat-list-icon class="material-icons side-nav-icon">
                                 developer_mode
                             </mat-icon>
-                            Simple Demos
+                            Demos
                         </a>
                         <a mat-list-item routerLink="/contact" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
@@ -126,7 +126,7 @@
                             Contact
                         </a>
                         <div
-                            style="display: flex;justify-content: center; flex-direction: column;height: 40px; align-content: center; text-align: center;">
+                            style="display: flex;justify-content: center; flex-direction: column;height: 20px; align-content: center; text-align: center;">
 
                         </div>
                         <div style="display: flex;justify-content: flex-end; flex-direction: column;height: 100px;">
@@ -168,8 +168,7 @@
                         </div>
 
                         <div
-                            style="display: flex;justify-content: center; flex-direction: column;height: 30px; align-content: center; text-align: center;">
-
+                            style="display: flex;justify-content: center; flex-direction: column;height: 30px; align-content: center; text-align: center;margin: 10px 0 0 0 ;">
 
                             <div style="display: flex;justify-content: center;">
                                 <!-- 
@@ -212,6 +211,19 @@
                                         style="color: black;margin:2px 0 0 15px"></fa-icon>
 
                                 </a>
+                            </div>
+                            <!--
+                                STACKOVERFLOW https://www.youtube.com/watch?v=lv0QX0jwrTI
+                                STACKOVERFLOW https://www.youtube.com/watch?v=zHPzHSljBF8
+
+                                tentando somente esse aqui embaixo, depois vou adaptar ao de cima
+                                STACKOVERFLOW https://www.youtube.com/watch?v=66T2A2dvplY // video not used
+                                see server.js file
+                            -->
+                            <br>
+                            <div id="onlineUsers" (click)="switchShowOnlineUsers()"
+                                style="display: flex;justify-content: center;font-weight: 500;border: none; color: #3f51b5">
+                                Online visitors: {{numberOfOnlineUsers}}
                             </div>
                         </div>
                     </mat-nav-list>

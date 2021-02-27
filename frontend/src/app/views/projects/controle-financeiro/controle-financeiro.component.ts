@@ -1,7 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../../components/template/nav/nav.service';
+import { NavService } from './../../../components/template/nav/nav.service';
 import { Location } from '@angular/common';
 
 @Component({
@@ -27,8 +27,8 @@ export class ControleFinanceiroComponent implements OnInit {
     access_icon: 'lock'
   }
 
-  constructor(private headerService: HeaderService, private location: Location) {
-    headerService.headerData = {
+  constructor(private navService: NavService, private location: Location) {
+    navService.navData = {
       title: 'Controle Financeiro',
       icon: 'attach_money',
       routeUrl: 'controle-financeiro'

@@ -1,4 +1,4 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyExperienceComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: "My Experience",
       icon: 'work',
       routeUrl: 'my-experience'

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 
 @Component({
   selector: 'app-portfolio-table',
@@ -8,8 +8,8 @@ import { HeaderService } from './../../components/template/nav/nav.service';
 })
 export class PortfolioTableComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: 'All Projects Table',
       icon: 'work',
       routeUrl: 'portfolio-table'

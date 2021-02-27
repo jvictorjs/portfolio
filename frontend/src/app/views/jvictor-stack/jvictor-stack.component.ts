@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import {
   faYoutube, faLinkedin, faGithub, faJsSquare, faHtml5, faCss3,
   faStackOverflow, faCodepen, faDiscord, faUbuntu
@@ -28,8 +28,8 @@ export class JvictorStackComponent implements OnInit {
   faUbuntu = faUbuntu
 
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: 'JVictor Stack',
       icon: 'settings_ethernet',
       routeUrl: 'jvictor-stack'

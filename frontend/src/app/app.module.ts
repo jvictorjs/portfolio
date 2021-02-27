@@ -60,6 +60,7 @@ import { SimpleDemosComponent } from './views/simple-demos/simple-demos.componen
 import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component'
 import { ChartsModule } from 'ng2-charts';
+import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
 
 registerLocaleData(localePt);
 
@@ -92,7 +93,8 @@ registerLocaleData(localePt);
     ResumeComponent,
     SimpleDemosComponent,
     QuotesComponent,
-    FutebolUpcomingComponent
+    FutebolUpcomingComponent,
+    SocketIoComponent
   ],
   imports: [ // módulos
     BrowserModule,

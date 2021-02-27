@@ -1,4 +1,4 @@
-import { HeaderService } from '../../../components/template/nav/nav.service';
+import { NavService } from '../../../components/template/nav/nav.service';
 import { Location } from '@angular/common';
 import { Quote } from './quote.model';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
@@ -29,9 +29,9 @@ export class QuotesComponent implements AfterViewInit, OnInit {
   baseUrl = 'https://script.google.com/macros/s/AKfycby9ZWcPcTWaTtvyCK8tv4pJXfe0-VZUo0vacJXF9JGx2xid8Xr2eEOy/exec?getQuotes=all'
   quotes: Quote[] = [];
 
-  constructor(private headerService: HeaderService, private location: Location, private http: HttpClient,
+  constructor(private navService: NavService, private location: Location, private http: HttpClient,
     private quoteService: QuoteService) {
-    headerService.headerData = {
+    navService.navData = {
       title: 'Quotes',
       icon: 'format_quote',
       routeUrl: 'quotes'

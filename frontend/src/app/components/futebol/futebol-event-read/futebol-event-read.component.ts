@@ -181,7 +181,7 @@ export class FutebolEventReadComponent implements OnInit {
     */
 
     this.futebolService.readById_cached(id).subscribe(event => { // cached direct from google apps scripts
-      console.log('chegou evento = ' + JSON.stringify(event))
+      console.log('event loaded.')
       this.futebolService.event = event
       // this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
       this.event = event
@@ -204,7 +204,8 @@ export class FutebolEventReadComponent implements OnInit {
 
   refreshData(id: number): void {
     this.futebolService.readById_cached(id).subscribe(event => { // cached direct from google apps scripts
-      console.log('chegou evento = ' + JSON.stringify(event))
+      // console.log('chegou evento = ' + JSON.stringify(event))
+      console.log('event loaded.')
       this.futebolService.event = event
       // this.event = this.futebolService.event.result.inPlayEventsBSF_eventViewInfos[0]
       this.event = event

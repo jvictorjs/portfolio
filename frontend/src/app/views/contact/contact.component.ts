@@ -1,4 +1,4 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 import { faYoutube, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFileAlt, faFutbol } from '@fortawesome/free-solid-svg-icons';
@@ -16,8 +16,8 @@ export class ContactComponent implements OnInit {
   faFileAlt = faFileAlt
 
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: 'Contact',
       icon: 'mail_outline',
       routeUrl: 'contact'

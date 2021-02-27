@@ -19,6 +19,7 @@ import { ContactComponent } from './views/contact/contact.component';
 import { ResumeComponent } from './views/resume/resume.component';
 import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component';
+import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,10 @@ const routes: Routes = [
   {
     path: "quotes",
     component: QuotesComponent
+  },
+  {
+    path: "socket-io",
+    component: SocketIoComponent
   }
 ];
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './../../../components/template/nav/nav.service';
+import { NavService } from './../../../components/template/nav/nav.service';
 
 @Component({
   selector: 'app-firesafe',
@@ -8,8 +8,8 @@ import { HeaderService } from './../../../components/template/nav/nav.service';
 })
 export class FiresafeComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+  constructor(private navService: NavService) {
+    navService.navData = {
       title: 'FireSafe - Uma aplicação feita no Hackaton Nasa Space Apps Challenge 2020',
       icon: 'local_fire_department',
       routeUrl: 'firesafe'

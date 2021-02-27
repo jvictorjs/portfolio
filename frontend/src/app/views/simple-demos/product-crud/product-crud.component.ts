@@ -1,4 +1,4 @@
-import { HeaderService } from '../../../components/template/nav/nav.service';
+import { NavService } from '../../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { Location } from '@angular/common';
@@ -10,8 +10,8 @@ import { Location } from '@angular/common';
 })
 export class ProductCrudComponent implements OnInit {
 
-  constructor(private router: Router, private headerService: HeaderService, private location: Location) {
-    headerService.headerData = {
+  constructor(private router: Router, private navService: NavService, private location: Location) {
+    navService.navData = {
       title: 'Products CRUD',
       icon: 'storefront',
       routeUrl: '/products'

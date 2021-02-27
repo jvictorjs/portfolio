@@ -1,4 +1,4 @@
-import { HeaderService } from './../../components/template/nav/nav.service';
+import { NavService } from './../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   quote: any = { quote: 'none', author: 'none' };
   randomQuoteURL = "https://script.google.com/macros/s/AKfycby9ZWcPcTWaTtvyCK8tv4pJXfe0-VZUo0vacJXF9JGx2xid8Xr2eEOy/exec?getQuotes=random"
 
-  constructor(private headerService: HeaderService, private http: HttpClient) {
-    headerService.headerData = {
+  constructor(private navService: NavService, private http: HttpClient) {
+    navService.navData = {
       title: 'Home',
       icon: 'home',
       routeUrl: ''

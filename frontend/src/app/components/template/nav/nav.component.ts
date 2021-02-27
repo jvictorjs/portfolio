@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { HeaderService } from './nav.service'
+import { NavService } from './nav.service'
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { faYoutube, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFileAlt, faFutbol } from '@fortawesome/free-solid-svg-icons';
@@ -20,24 +20,35 @@ export class NavComponent implements OnInit {
   events: string[] = [];
   opened: boolean = true;
 
+  showOnlineUsers = false;
+
   ngOnInit(): void {
     if (this.mobileQuery.matches) {
       this.opened = false;
     }
   }
 
-
-
-
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
 
-  constructor(private HeaderService: HeaderService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(private navService: NavService,
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher) {
+
     this.mobileQuery = media.matchMedia('(max-width: 800px)');
 
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+  }
+
+  switchShowOnlineUsers(): void {
+    this.navService.switchShowOnlineUsers()
+  }
+
+  // STACKOVERFLOW https://stackoverflow.com/questions/53730983/angular-updating-component-value-when-service-value-changes
+  get numberOfOnlineUsers(): number {
+    return this.navService.numberOfOnlineUsers;
   }
 
   ngOnDestroy(): void {
@@ -61,14 +72,14 @@ export class NavComponent implements OnInit {
     } else {
       this.opened = true;
     }
-    return this.HeaderService.headerData.title
+    return this.navService.navData.title
   }
 
   get icon(): string {
-    return this.HeaderService.headerData.icon
+    return this.navService.navData.icon
   }
 
   get routeUrl(): string {
-    return this.HeaderService.headerData.routeUrl
+    return this.navService.navData.routeUrl
   }
 }
