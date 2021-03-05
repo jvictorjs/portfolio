@@ -11,9 +11,9 @@
 <a (click)="switchShowOnlineUsers()">
     <button mat-raised-button color="primary">
         <span class="material-icons md-24 v-middle">
-            preview
+            {{showOnlineUsers ? 'visibility_off': 'preview' }}
         </span>
-        Show online users
+        {{showOnlineUsers ? 'Hide online users': 'Show online users' }}
     </button>
 </a>
 <br>

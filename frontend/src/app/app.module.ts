@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatRippleModule } from '@angular/material/core';
 
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
@@ -61,6 +62,8 @@ import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component'
 import { ChartsModule } from 'ng2-charts';
 import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
+import { CountdownTimerComponent } from './views/simple-demos/countdown-timer/countdown-timer.component';
+import { AudioAppComponent } from './views/simple-demos/audio-app/audio-app.component';
 
 registerLocaleData(localePt);
 
@@ -94,7 +97,9 @@ registerLocaleData(localePt);
     SimpleDemosComponent,
     QuotesComponent,
     FutebolUpcomingComponent,
-    SocketIoComponent
+    SocketIoComponent,
+    CountdownTimerComponent,
+    AudioAppComponent
   ],
   imports: [ // módulos
     BrowserModule,
@@ -116,7 +121,8 @@ registerLocaleData(localePt);
     MatSortModule,
     MatTooltipModule,
     FontAwesomeModule,
-    ChartsModule
+    ChartsModule,
+    MatRippleModule
   ],
   providers: [{
     provide: LOCALE_ID,

@@ -1,3 +1,5 @@
+import { AudioAppComponent } from './views/simple-demos/audio-app/audio-app.component';
+import { CountdownTimerComponent } from './views/simple-demos/countdown-timer/countdown-timer.component';
 import { SimpleDemosComponent } from './views/simple-demos/simple-demos.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -97,6 +99,14 @@ const routes: Routes = [
   {
     path: "socket-io",
     component: SocketIoComponent
+  },
+  {
+    path: "countdown-timer",
+    component: CountdownTimerComponent
+  },
+  {
+    path: "audio-app",
+    component: AudioAppComponent
   }
 ];
 

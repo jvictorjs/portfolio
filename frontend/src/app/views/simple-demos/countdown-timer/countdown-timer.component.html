@@ -1,0 +1,59 @@
+<a routerLink="/demos">
+    <button mat-raised-button color="primary">
+        <span class="material-icons-two-tone md-24 v-middle">
+            arrow_back
+        </span>
+        Back to Demos
+    </button>
+</a>
+<br>
+<br>
+<!-- 
+    STACKOVERFLOW Angular 9 Tutorial | Create A Angular Audio Player Project | Angular Training
+ https://www.youtube.com/watch?v=1lJm3n7yKQE 
+-->
+<h1>Audio App</h1>
+
+<mat-card class="mat-elevation-z5"*ngFor="let file of files" (click)="openFile(file.url)" style="margin:10px">
+    {{file.name}}
+</mat-card>
+
+
+<button mat-raised-button color="primary" class='button' style="margin: 16px 0 0 0; width: 200px;"
+    (click)="startCountDownTimer()">
+    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+        import_export
+    </mat-icon>
+    START
+</button>
+<br>
+<button mat-raised-button (click)="play()" color="primary" class='button' style="margin: 16px 16px 0 0; width: 100px;">
+    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+        play_arrow
+    </mat-icon>
+    Play
+</button>
+<button mat-raised-button (click)="pause()" color="primary" class='button' style="margin: 16px 16px 0 0; width: 100px;">
+    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+        pause
+    </mat-icon>
+    Pause
+</button>
+<button mat-raised-button (click)="stop()" color="primary" class='button' style="margin: 16px 0 0 0 ; width: 100px;">
+    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+        stop
+    </mat-icon>
+    Stop
+</button>
+
+<div>
+    <span>{{ currentTime}}</span>
+    <input type="range" min="0" max="{{duration}}" [value]="currentTime">
+    <span>{{duration}}</span>
+</div>
+<div>
+    <span>volume</span>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
+</div>
+
+<h1>{{ eventClock.date | date: 'mm:ss' }}</h1>
