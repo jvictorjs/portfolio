@@ -43,8 +43,8 @@ export class CountdownTimerComponent implements OnInit {
       name: 'Trim alarm mad'
     }
   ];
-  currentTime = '00:00:00';
-  duration = '00:00:00';
+  currentTime = '00:00';
+  duration = '00:00';
   seek = 0;
   audioMaxLength = 0
 
@@ -77,13 +77,15 @@ export class CountdownTimerComponent implements OnInit {
 
   ngOnInit(): void {
     this.counterTimerSeconds = this.getTotalTimerSelectionInSeconds();
+    this.stramObserver(this.files[0].url)
   }
 
   stramObserver(url) {
     return new Observable(observer => {
       this.audioObj.src = url;
       this.audioObj.load();
-      this.audioObj.play();
+      // this.audioObj.play();
+      this.play();
 
       const handler = (event: Event) => {
         console.log(event);
@@ -91,13 +93,15 @@ export class CountdownTimerComponent implements OnInit {
         this.audioMaxLength = this.audioObj.duration;
         this.duration = this.timeFormat(this.audioObj.duration);
         this.currentTime = this.timeFormat(this.audioObj.currentTime);
+        if (event.type === 'ended') {
+          this.showPlayerPlayButtonAndHidePause();
+        }
       }
 
       this.addEvent(this.audioObj, this.audioEvents, handler);
       return () => {
-        this.audioObj.pause();
+        this.pause();
         this.audioObj.currentTime = 0;
-
         this.removeEvent(this.audioObj, this.audioEvents, handler)
       }
     });
@@ -121,18 +125,21 @@ export class CountdownTimerComponent implements OnInit {
 
   openFile(url) {
     this.stramObserver(url).subscribe(event => {
+
     })
     console.log(url);
   }
 
   play() {
     this.audioObj.play();
-    console.log('Clicked Play Button');
+    this.hidePlayerPlayButtonAndShowPause();
+    // console.log('Clicked Play Button');
   }
 
   pause() {
     this.audioObj.pause();
-    console.log('Clicked Pause Button');
+    this.showPlayerPlayButtonAndHidePause();
+    // console.log('Clicked Pause Button');
   }
 
   stop() {
@@ -146,7 +153,7 @@ export class CountdownTimerComponent implements OnInit {
     console.log(ev.target.value);
   }
 
-  timeFormat(time, format = "HH:mm:ss") {
+  timeFormat(time, format = "mm:ss") {
     const momentTime = time * 1000;
     return moment.utc(momentTime).format(format);
   }
@@ -208,6 +215,16 @@ export class CountdownTimerComponent implements OnInit {
     document.getElementById('timer-selection-div').style.display = 'none'; // none OR inline
     document.getElementById('stop-button').style.display = 'inline'; // none OR inline
     document.getElementById('start-button').style.display = 'none'; // none OR inline
+  }
+
+  showPlayerPlayButtonAndHidePause() {
+    document.getElementById('play-sound-button').style.display = 'inline'; // none OR inline
+    document.getElementById('pause-sound-button').style.display = 'none'; // none OR inline
+  }
+
+  hidePlayerPlayButtonAndShowPause() {
+    document.getElementById('play-sound-button').style.display = 'none'; // none OR inline
+    document.getElementById('pause-sound-button').style.display = 'inline'; // none OR inline
   }
 
   showSnackBarMessage(msg: string) {
