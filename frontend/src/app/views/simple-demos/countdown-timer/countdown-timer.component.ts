@@ -43,6 +43,7 @@ export class CountdownTimerComponent implements OnInit {
       name: 'Trim alarm mad'
     }
   ];
+  selectedSoundIndex = 0
   currentTime = '00:00';
   duration = '00:00';
   seek = 0;
@@ -66,18 +67,22 @@ export class CountdownTimerComponent implements OnInit {
   selectedHours = '00';
   selectedMinutes = '25';
   selectedSeconds = '00';
+  clockToShow = '00:00:00';
+  bolClockTicking = false;
 
   constructor(private navService: NavService, private snackBar: MatSnackBar) {
     navService.navData = {
-      title: 'Audio App',
-      icon: 'music_note',
-      routeUrl: 'audio-app'
+      title: 'Countdown timer',
+      icon: 'timer',
+      routeUrl: 'countdown-timer'
     }
   }
 
   ngOnInit(): void {
     this.counterTimerSeconds = this.getTotalTimerSelectionInSeconds();
-    this.stramObserver(this.files[0].url)
+    //this.stramObserver(this.files[0].url)
+    this.openFile(this.files[this.selectedSoundIndex].url)
+    this.clockToShow = this.convertSecondsToClock(this.counterTimerSeconds);
   }
 
   stramObserver(url) {
@@ -85,7 +90,13 @@ export class CountdownTimerComponent implements OnInit {
       this.audioObj.src = url;
       this.audioObj.load();
       // this.audioObj.play();
-      this.play();
+
+
+
+      //this.play();
+
+
+
 
       const handler = (event: Event) => {
         console.log(event);
@@ -94,6 +105,7 @@ export class CountdownTimerComponent implements OnInit {
         this.duration = this.timeFormat(this.audioObj.duration);
         this.currentTime = this.timeFormat(this.audioObj.currentTime);
         if (event.type === 'ended') {
+          this.clockToShow = '00:00:00';
           this.showPlayerPlayButtonAndHidePause();
         }
       }
@@ -149,8 +161,10 @@ export class CountdownTimerComponent implements OnInit {
   }
 
   setVolume(ev) {
-    this.audioObj.volume = ev.target.value;
-    console.log(ev.target.value);
+    //  this.audioObj.volume = ev.target.value;
+    //    console.log(ev.target.value);
+    this.audioObj.volume = ev.value;
+    console.log(ev.value);
   }
 
   timeFormat(time, format = "mm:ss") {
@@ -160,7 +174,7 @@ export class CountdownTimerComponent implements OnInit {
 
   convertSecondsToClock(seconds: number) {
     let hh = '' + Math.floor(seconds / 3600);
-    let mm = '' + Math.floor(seconds / 60);
+    let mm = '' + Math.floor((seconds % 3600) / 60);
     let ss = '' + Math.floor(seconds % 60);
     if (hh.length < 2) hh = '0' + hh
     if (mm.length < 2) mm = '0' + mm
@@ -170,7 +184,15 @@ export class CountdownTimerComponent implements OnInit {
 
   setTimer(event) {
     this.counterTimerSeconds = this.getTotalTimerSelectionInSeconds();
+    this.clockToShow = this.convertSecondsToClock(this.counterTimerSeconds);
     return this.counterTimerSeconds;
+  }
+
+  setSoundFile(event) {
+    this.selectedSoundIndex = event.value;
+    this.openFile(this.files[this.selectedSoundIndex].url)
+    console.log(event);
+    this.pause();
   }
 
   getTotalTimerSelectionInSeconds() {
@@ -178,6 +200,7 @@ export class CountdownTimerComponent implements OnInit {
   }
 
   startCountDownTimer(): void {
+    this.clockToShow = this.convertSecondsToClock(this.counterTimerSeconds);
     this.hideTimerSelectionDiv();
     this.showSnackBarMessage(`Timer set to ${this.selectedHours}:${this.selectedMinutes}:${this.selectedSeconds}`)
     this.interval = setInterval(() => {
@@ -193,6 +216,7 @@ export class CountdownTimerComponent implements OnInit {
         this.showSnackBarMessage(`Timer finished!`)
       } else {
         this.counterTimerSeconds--;
+        this.clockToShow = this.convertSecondsToClock(this.counterTimerSeconds);
       }
     }, 1000);
   }
@@ -206,15 +230,17 @@ export class CountdownTimerComponent implements OnInit {
   }
 
   showTimerSelectionDiv() {
-    document.getElementById('timer-selection-div').style.display = 'inline'; // none OR inline
+    //document.getElementById('timer-selection-div').style.display = 'inline'; // none OR inline
     document.getElementById('stop-button').style.display = 'none'; // none OR inline
     document.getElementById('start-button').style.display = 'inline'; // none OR inline
+    this.bolClockTicking = false;
   }
 
   hideTimerSelectionDiv() {
-    document.getElementById('timer-selection-div').style.display = 'none'; // none OR inline
+    // document.getElementById('timer-selection-div').style.display = 'none'; // none OR inline
     document.getElementById('stop-button').style.display = 'inline'; // none OR inline
     document.getElementById('start-button').style.display = 'none'; // none OR inline
+    this.bolClockTicking = true;
   }
 
   showPlayerPlayButtonAndHidePause() {
@@ -238,11 +264,10 @@ export class CountdownTimerComponent implements OnInit {
 
   async playAlarm() {
     console.log('Will play alarm sound...')
-    this.stramObserver(this.files[0].url).subscribe(event => {
-    })
-    await this.delay(4555);
-    this.stramObserver(this.files[1].url).subscribe(event => {
-    })
+    // this.stramObserver(this.files[0].url).subscribe(event => { })
+    this.play();
+    //await this.delay(4555);
+    // this.stramObserver(this.files[1].url).subscribe(event => { })
   }
 
   // STACKOVERFLOW https://medium.com/aprendajs/angular-6-com-uma-fun%C3%A7%C3%A3o-para-delay-192b4562f2b4

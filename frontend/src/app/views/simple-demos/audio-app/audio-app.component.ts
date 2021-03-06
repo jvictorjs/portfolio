@@ -41,7 +41,7 @@ export class AudioAppComponent implements OnInit {
   currentTime = '00:00:00';
   duration = '00:00:00';
   seek = 0;
-  audioMaxLength = 0
+  audioMaxLength = 1
 
   constructor(private navService: NavService) {
     navService.navData = {
@@ -55,7 +55,7 @@ export class AudioAppComponent implements OnInit {
 
   }
 
-  
+
 
   stramObserver(url) {
     return new Observable(observer => {
@@ -94,7 +94,9 @@ export class AudioAppComponent implements OnInit {
   }
 
   setSeekTo(ev) {
-    this.audioObj.currentTime = ev.target.value;
+    // this.audioObj.currentTime = ev.target.value;
+    this.audioObj.currentTime = ev.value;;
+    console.log(ev);
   }
 
   openFile(url) {
@@ -120,8 +122,10 @@ export class AudioAppComponent implements OnInit {
   }
 
   setVolume(ev) {
-    this.audioObj.volume = ev.target.value;
-    console.log(ev.target.value);
+    // this.audioObj.volume = ev.target.value;
+    // console.log(ev.target.value);
+    this.audioObj.volume = ev.value;
+    console.log(ev.value);
   }
 
   timeFormat(time, format = "HH:mm:ss") {

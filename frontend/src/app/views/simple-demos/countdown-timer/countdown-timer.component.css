@@ -1,0 +1,9 @@
+/*
+STACKOVERFLOW https://stackoverflow.com/questions/46766597/styling-mat-select-in-angular-material
+*/
+
+::ng-deep .mat-select {
+    width: 200px;
+    height: 30px;
+    font-size: 1.15rem;
+}
