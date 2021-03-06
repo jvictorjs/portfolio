@@ -65,9 +65,9 @@ export class AudioAppComponent implements OnInit {
 
       const handler = (event: Event) => {
         console.log(event);
+        this.duration = this.timeFormat(this.audioObj.duration);
         this.seek = this.audioObj.currentTime;
         this.audioMaxLength = this.audioObj.duration;
-        this.duration = this.timeFormat(this.audioObj.duration);
         this.currentTime = this.timeFormat(this.audioObj.currentTime);
       }
 
@@ -138,5 +138,13 @@ export class AudioAppComponent implements OnInit {
       // console.log(this.eventClock.date)
       this.eventClock.date = new Date(this.eventClock.date.getTime() - 1000);
     }, 1000);
+  }
+
+  // STACKOVERFLOW https://medium.com/aprendajs/angular-6-com-uma-fun%C3%A7%C3%A3o-para-delay-192b4562f2b4
+  // nossa função delay com suporte a promisse.
+  private delay(ms: number): Promise<boolean> {
+    return new Promise(resolve => {
+      setTimeout(() => { resolve(true); }, ms);
+    });
   }
 }

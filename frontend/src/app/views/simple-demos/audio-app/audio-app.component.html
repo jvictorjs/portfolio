@@ -60,7 +60,8 @@
                    -->
                     <mat-slider min="0" max="{{audioMaxLength}}" [value]="seek" value="0" (input)="setSeekTo($event)"
                         color="primary"></mat-slider>
-                    <span style="font-weight: 500;">{{duration}}</span>
+                        <!-- to prevent just before the audio player starts shows 'Invalid date' in duration-->
+                    <span style="font-weight: 500;">{{duration === 'Invalid date' ? '00:00:00' : duration}}</span>
                 </div>
                 <br>
                 <div>
