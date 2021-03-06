@@ -1,59 +1,94 @@
-<a routerLink="/demos">
-    <button mat-raised-button color="primary">
-        <span class="material-icons-two-tone md-24 v-middle">
-            arrow_back
-        </span>
-        Back to Demos
-    </button>
-</a>
-<br>
-<br>
-<!-- 
+<div class="view-content">
+    <div
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+
+        <div
+            style="display: flex; flex-direction: column; align-items: stretch; max-width: 1000px; border: none; width: 100%;">
+
+            <a routerLink="/demos">
+                <button mat-raised-button color="primary">
+                    <span class="material-icons-two-tone md-24 v-middle">
+                        arrow_back
+                    </span>
+                    Back to Demos
+                </button>
+            </a>
+            <br>
+            <!-- 
     STACKOVERFLOW Angular 9 Tutorial | Create A Angular Audio Player Project | Angular Training
  https://www.youtube.com/watch?v=1lJm3n7yKQE 
 -->
-<h1>Audio App</h1>
-
-<mat-card class="mat-elevation-z5"*ngFor="let file of files" (click)="openFile(file.url)" style="margin:10px">
-    {{file.name}}
-</mat-card>
+            <h1>Countdown Timer</h1>
 
 
-<button mat-raised-button color="primary" class='button' style="margin: 16px 0 0 0; width: 200px;"
-    (click)="startCountDownTimer()">
-    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-        import_export
-    </mat-icon>
-    START
-</button>
-<br>
-<button mat-raised-button (click)="play()" color="primary" class='button' style="margin: 16px 16px 0 0; width: 100px;">
-    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-        play_arrow
-    </mat-icon>
-    Play
-</button>
-<button mat-raised-button (click)="pause()" color="primary" class='button' style="margin: 16px 16px 0 0; width: 100px;">
-    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-        pause
-    </mat-icon>
-    Pause
-</button>
-<button mat-raised-button (click)="stop()" color="primary" class='button' style="margin: 16px 0 0 0 ; width: 100px;">
-    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-        stop
-    </mat-icon>
-    Stop
-</button>
+            <div id="countdown-timer-clock" style="font-size: 4rem; margin: 10px 0 30px 0; align-self: center;">
+                {{ convertSecondsToClock(counterTimerSeconds) }}
+            </div>
 
-<div>
-    <span>{{ currentTime}}</span>
-    <input type="range" min="0" max="{{duration}}" [value]="currentTime">
-    <span>{{duration}}</span>
+            <mat-card class="mat-elevation-z5" *ngFor="let file of files" (click)="openFile(file.url)"
+                style="margin:5px">
+                {{file.name}}
+            </mat-card>
+
+            <br>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+
+                <button id="start-button" mat-raised-button color="primary" class='button'
+                    style="margin: 10px 0 5px 0; width: 155px;" (click)="startCountDownTimer()">
+                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                        play_arrow
+                    </mat-icon>
+                    START
+                </button>
+                <button id="stop-button" mat-raised-button color="primary" class='button'
+                    style="margin: 10px 0 5px 0; width: 155px; display:none;" (click)="stopCountDownTimer()">
+                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                        stop
+                    </mat-icon>
+                    STOP
+                </button>
+                <div id="timer-selection-div" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; 
+                margin: 10px 0 0 0px;">
+                    <!--
+                    <h1>You selected: {{selectedHours}}:{{selectedMinutes}}:{{selectedSeconds}}</h1>
+                -->
+                    <mat-form-field style="width: 55px;">
+                        <mat-label>Hours</mat-label>
+                        <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
+                        <mat-select [(value)]="selectedHours" (selectionChange)="setTimer($event)">
+                            <mat-option [value]="hour" *ngFor="let hour of hours">{{ hour }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field style="width: 55px;">
+                        <mat-label>Minutes</mat-label>
+                        <mat-select [(value)]="selectedMinutes" (selectionChange)="setTimer($event)">
+                            <mat-option [value]="minute" *ngFor="let minute of minutes">{{ minute }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field style="width: 55px;">
+                        <mat-label>Seconds</mat-label>
+                        <mat-select [(value)]="selectedSeconds" (selectionChange)="setTimer($event)">
+                            <mat-option [value]="second" *ngFor="let second of seconds">{{ second }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <br>
+                <button mat-raised-button (click)="play()" color="primary" class='button'
+                    style="margin: 0px 0px 0 0; width: 200px;">
+                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                        play_arrow
+                    </mat-icon>
+                    Play Sound
+                </button>
+                <div style="margin: 5px">
+                    <span>volume</span>
+                    <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
+                </div>
+
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
 </div>
-<div>
-    <span>volume</span>
-    <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
-</div>
-
-<h1>{{ eventClock.date | date: 'mm:ss' }}</h1>

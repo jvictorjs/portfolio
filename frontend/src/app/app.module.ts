@@ -19,6 +19,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRippleModule } from '@angular/material/core';
+import { MatSliderModule } from '@angular/material/slider'
+import { MatSelectModule } from '@angular/material/select';
+
 
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
@@ -122,7 +125,9 @@ registerLocaleData(localePt);
     MatTooltipModule,
     FontAwesomeModule,
     ChartsModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSliderModule,
+    MatSelectModule
   ],
   providers: [{
     provide: LOCALE_ID,
