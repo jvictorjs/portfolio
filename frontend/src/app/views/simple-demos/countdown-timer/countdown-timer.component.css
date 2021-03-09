@@ -7,3 +7,8 @@ STACKOVERFLOW https://stackoverflow.com/questions/46766597/styling-mat-select-in
     height: 30px;
     font-size: 1.15rem;
 }
+
+.card-countdown-timer {
+    margin-bottom: 10px;
+    border-radius: 8px;
+}

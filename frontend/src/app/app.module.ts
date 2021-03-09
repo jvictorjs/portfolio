@@ -21,7 +21,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSliderModule } from '@angular/material/slider'
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
@@ -127,7 +127,8 @@ registerLocaleData(localePt);
     ChartsModule,
     MatRippleModule,
     MatSliderModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSlideToggleModule
   ],
   providers: [{
     provide: LOCALE_ID,

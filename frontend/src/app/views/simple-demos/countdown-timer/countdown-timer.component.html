@@ -20,85 +20,105 @@
 -->
             <h1>Countdown Timer</h1>
 
-            <div id="countdown-timer-clock" style="font-size: 4rem; margin: 80px 0 90px 0; align-self: center;">
-                {{ clockToShow }}
-            </div>
-
-
-            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                    <button id="start-button" mat-raised-button color="primary" class='button'
-                        style="margin: 10px 30px 5px 0; width: 100px; height: 40px;" (click)="startCountDownTimer()">
-                        <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
-                            play_arrow
-                        </mat-icon>
-                        START
-                    </button>
-                    <button id="stop-button" mat-raised-button color="primary" class='button centerALL'
-                        style="margin: 10px 30px 5px 0; width: 100px; height: 40px; display:none;"
-                        (click)="stopCountDownTimer()">
-                        <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
-                            stop
-                        </mat-icon>
-                        STOP
-                    </button>
-                    <div id="timer-selection-div" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; 
+            <mat-card class="card-countdown-timer mat-elevation-z4">
+                <div id="countdown-timer-clock" style="display: flex; justify-content: center; flex-direction: column; align-items: center; 
+                    font-size: 5rem; margin: 50px 0 50px 0; align-self: center; border: none;">
+                    {{ clockToShow }}
+                </div>
+            </mat-card>
+            <mat-card class="card-countdown-timer mat-elevation-z4">
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div id="timer-selection-div" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; 
                 margin: 10px 0 0 0px;">
-                        <!--
+                            <!--
                     <h1>You selected: {{selectedHours}}:{{selectedMinutes}}:{{selectedSeconds}}</h1>
                 -->
-                        <mat-form-field style="width: 55px;">
-                            <mat-label>Hours</mat-label>
-                            <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
-                            <mat-select [(value)]="selectedHours" (selectionChange)="setTimer($event)"
-                                [disabled]="bolClockTicking">
-                                <mat-option [value]="hour" *ngFor="let hour of hours">{{ hour }}</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                        <mat-form-field style="width: 55px;">
-                            <mat-label>Minutes</mat-label>
-                            <mat-select [(value)]="selectedMinutes" (selectionChange)="setTimer($event)"
-                                [disabled]="bolClockTicking">
-                                <mat-option [value]="minute" *ngFor="let minute of minutes">{{ minute }}</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                        <mat-form-field style="width: 55px;">
-                            <mat-label>Seconds</mat-label>
-                            <mat-select [(value)]="selectedSeconds" (selectionChange)="setTimer($event)"
-                                [disabled]="bolClockTicking">
-                                <mat-option [value]="second" *ngFor="let second of seconds">{{ second }}</mat-option>
-                            </mat-select>
-                        </mat-form-field>
+                            <mat-form-field style="width: 55px;">
+                                <mat-label>Hours</mat-label>
+                                <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
+                                <mat-select [(value)]="selectedHours" (selectionChange)="setTimer($event)"
+                                    [disabled]="bolClockTicking">
+                                    <mat-option [value]="hour" *ngFor="let hour of hours">{{ hour }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field style="width: 55px;">
+                                <mat-label>Minutes</mat-label>
+                                <mat-select [(value)]="selectedMinutes" (selectionChange)="setTimer($event)"
+                                    [disabled]="bolClockTicking">
+                                    <mat-option [value]="minute" *ngFor="let minute of minutes">{{ minute }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field style="width: 55px;">
+                                <mat-label>Seconds</mat-label>
+                                <mat-select [(value)]="selectedSeconds" (selectionChange)="setTimer($event)"
+                                    [disabled]="bolClockTicking">
+                                    <mat-option [value]="second" *ngFor="let second of seconds">{{ second }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: row; align-items: center; border: none; margin: 0 15px 0 5px;">
+                        <button id="start-button" mat-raised-button color="primary" class='button'
+                            style="margin: 10px 15px 5px 0; width: 110px; height: 40px;"
+                            (click)="startCountDownTimer()">
+                            <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
+                                play_arrow
+                            </mat-icon>
+                            START
+                        </button>
+                        <button id="stop-button" mat-raised-button color="primary" class='button centerALL'
+                            style="margin: 10px 15px 5px 0; width: 110px; height: 40px; display:none;"
+                            (click)="stopCountDownTimer()">
+                            <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
+                                stop
+                            </mat-icon>
+                            STOP
+                        </button>
+                        <mat-slide-toggle [(ngModel)]="bolLoopMode" class="example-margin" [color]="'primary'"
+                            [checked]="bolLoopMode" (change)="switchBolLoopMode()">
+                            <!--
+                        
+                        <span class="material-icons md-24 v-middle">
+                            refresh
+                        </span>
+                    -->
+                        </mat-slide-toggle>
+                        <span style="font-weight: 500; font-size: 0.95rem; margin: 0 0 0 8px">Loop mode</span>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <mat-form-field style="width: 222px; height: 50px;">
-                    <mat-label>Choose finish sound</mat-label>
-                    <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
-                    <mat-select [(value)]="selectedSoundIndex" (selectionChange)="setSoundFile($event)">
-                        <!-- STACKOVERFLOW https://stackoverflow.com/questions/35405618/ngfor-with-index-as-value-in-attribute -->
-                        <mat-option [value]="i" *ngFor="let file of files; let i = index">{{ file.name }}
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <br>
-                <button id="play-sound-button" mat-raised-button (click)="play()" color="primary" class='button'
-                    style="margin: 0px 0px 5px 0; width: 155px; display: inline;">
-                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-                        play_arrow
-                    </mat-icon>
-                    Play Sound
-                </button>
-                <button id="pause-sound-button" mat-raised-button (click)="pause()" color="primary" class='button'
-                    style="margin: 0px 0px 5px 0; width: 155px; display: none;">
-                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-                        pause
-                    </mat-icon>
-                    Pause sound
-                </button>
-                <!--
+            </mat-card>
+            <mat-card class="card-countdown-timer mat-elevation-z4">
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center;margin: 10px 0 0 0;">
+                    <mat-form-field style="width: 222px; height: 50px;">
+                        <mat-label>Choose finish sound</mat-label>
+                        <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
+                        <mat-select [(value)]="selectedSoundIndex" (selectionChange)="setSoundFile($event)">
+                            <!-- STACKOVERFLOW https://stackoverflow.com/questions/35405618/ngfor-with-index-as-value-in-attribute -->
+                            <mat-option [value]="i" *ngFor="let file of files; let i = index">{{ file.name }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <button id="play-sound-button" mat-raised-button (click)="play()" color="primary" class='button'
+                        style="margin: 0px 0px 5px 0; width: 155px; display: inline;">
+                        <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                            play_arrow
+                        </mat-icon>
+                        Play Sound
+                    </button>
+                    <button id="pause-sound-button" mat-raised-button (click)="pause()" color="primary" class='button'
+                        style="margin: 0px 0px 5px 0; width: 155px; display: none;">
+                        <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                            pause
+                        </mat-icon>
+                        Pause sound
+                    </button>
+                    <!--
 
                     <div>
                         <span>{{ currentTime}}</span>
@@ -106,13 +126,14 @@
                         <span>{{duration}}</span>
                     </div>
                 -->
-                <div style="margin: 5px">
-                    <span style="font-weight: 500;">volume</span>
-                    <mat-slider min="0" max="1" step="0.025" value="0.75" (input)="setVolume($event)" color="primary">
-                    </mat-slider>
+                    <div style="margin: 5px">
+                        <span style="font-weight: 500;">volume</span>
+                        <mat-slider min="0" max="1" step="0.025" value="0.75" (input)="setVolume($event)"
+                            color="primary">
+                        </mat-slider>
+                    </div>
                 </div>
-
-            </div>
+            </mat-card>
             <br>
             <br>
         </div>

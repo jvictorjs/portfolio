@@ -69,6 +69,7 @@ export class CountdownTimerComponent implements OnInit {
   selectedSeconds = '00';
   clockToShow = '00:00:00';
   bolClockTicking = false;
+  bolLoopMode = false;
 
   constructor(private navService: NavService, private snackBar: MatSnackBar) {
     navService.navData = {
@@ -214,6 +215,10 @@ export class CountdownTimerComponent implements OnInit {
         this.showTimerSelectionDiv();
         this.counterTimerSeconds = this.getTotalTimerSelectionInSeconds();
         this.showSnackBarMessage(`Timer finished!`)
+        if (this.bolLoopMode === true) {
+          console.log(`Loop mode === true, starting a new timer...`)
+          this.startCountDownTimer();
+        }
       } else {
         this.counterTimerSeconds--;
         this.clockToShow = this.convertSecondsToClock(this.counterTimerSeconds);
@@ -251,6 +256,12 @@ export class CountdownTimerComponent implements OnInit {
   hidePlayerPlayButtonAndShowPause() {
     document.getElementById('play-sound-button').style.display = 'none'; // none OR inline
     document.getElementById('pause-sound-button').style.display = 'inline'; // none OR inline
+  }
+
+  
+  switchBolLoopMode(): void {
+    //  [(ngModel)]="bolLoopMode" parameter automatically switches the bolLoopMode value
+    console.log(`switchBolLoopMode switched to = ${this.bolLoopMode}`)
   }
 
   showSnackBarMessage(msg: string) {

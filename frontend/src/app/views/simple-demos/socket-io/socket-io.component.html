@@ -1,26 +1,45 @@
-<a routerLink="/demos">
-    <button mat-raised-button color="primary">
-        <span class="material-icons-two-tone md-24 v-middle">
-            arrow_back
-        </span>
-        Back to Demos
-    </button>
-</a>
-<br>
-<br>
-<a (click)="switchShowOnlineUsers()">
-    <button mat-raised-button color="primary">
-        <span class="material-icons md-24 v-middle">
-            {{showOnlineUsers ? 'visibility_off': 'preview' }}
-        </span>
-        {{showOnlineUsers ? 'Hide online users': 'Show online users' }}
-    </button>
-</a>
-<br>
-<br>
-<div id="onlineUsersSocketIODemoView" (click)="switchShowOnlineUsers()"
-    style="display: flex;justify-content: center;font-weight: 500;border: none;color: #fff">
-    <br>
-    <br>
-    <h1>{{numberOfOnlineUsers}} active {{numberOfOnlineUsers > 1 ? 'visitors' : 'visitor' }} now.</h1>
+<div class="view-content">
+    <div
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+
+        <div
+            style="display: flex; flex-direction: column; align-items: stretch; max-width: 1000px; border: none; width: 100%;">
+
+            <a routerLink="/demos">
+                <button mat-raised-button color="primary">
+                    <span class="material-icons-two-tone md-24 v-middle">
+                        arrow_back
+                    </span>
+                    Back to Demos
+                </button>
+            </a>
+            <br>
+            <!-- 
+    STACKOVERFLOW Angular 9 Tutorial | Create A Angular Audio Player Project | Angular Training
+ https://www.youtube.com/watch?v=1lJm3n7yKQE 
+-->
+            <h1>Socket IO - Total Online Active Sessions</h1>
+
+            <mat-card class="card mat-elevation-z4">
+                <a (click)="switchShowOnlineUsers()">
+                    <button mat-raised-button color="primary">
+                        <span class="material-icons md-24 v-middle">
+                            {{showOnlineUsers ? 'visibility_off': 'preview' }}
+                        </span>
+                        {{showOnlineUsers ? 'Hide online users': 'Show online users' }}
+                    </button>
+                </a>
+                <br>
+                <br>
+                <div id="onlineUsersSocketIODemoView" (click)="switchShowOnlineUsers()"
+                    style="display: flex;justify-content: center;font-weight: 500;border: none;color: #fff">
+                    <br>
+                    <br>
+                    <h1>{{numberOfOnlineUsers}} active {{numberOfOnlineUsers > 1 ? 'visitors' : 'visitor' }} now.</h1>
+                </div>
+            </mat-card>
+
+
+        </div>
+    </div>
 </div>

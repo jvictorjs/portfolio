@@ -23,53 +23,57 @@
             <h1>Audio App</h1>
 
             <mat-card class="mat-elevation-z4" *ngFor="let file of files" (click)="openFile(file.url)"
-                style="margin:0px 0 10px 0; border-radius: 8px;" matRipple [matRippleRadius]="133">
+                style="margin:0px 15px 10px 15px; border-radius: 8px; background-color: #fcfcfc;" matRipple
+                [matRippleRadius]="133">
                 {{file.name}}
             </mat-card>
-            <div style="display: flex; flex-direction: row;">
-                <button mat-raised-button (click)="play()" color="primary" class='button'
-                    style="margin: 16px 16px 0 0; width: 100px;">
-                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-                        play_arrow
-                    </mat-icon>
-                    Play
-                </button>
-                <button mat-raised-button (click)="pause()" color="primary" class='button'
-                    style="margin: 16px 16px 0 0; width: 100px;">
-                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-                        pause
-                    </mat-icon>
-                    Pause
-                </button>
-                <button mat-raised-button (click)="stop()" color="primary" class='button'
-                    style="margin: 16px 0 0 0 ; width: 100px;">
-                    <mat-icon mat-list-icon class="material-icons side-nav-icon">
-                        stop
-                    </mat-icon>
-                    Stop
-                </button>
-            </div>
-            <br>
-            <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; 
-                margin: 10px 0 0 20px;">
-                <div>
-                    <span style="font-weight: 500;">{{ currentTime}}</span>
-                    <!--
+
+            <mat-card class="card mat-elevation-z4">
+                <div style="display: flex; flex-direction: row;">
+                    <button mat-raised-button (click)="play()" color="primary" class='button'
+                        style="margin: 5px 16px 0 0; width: 100px;">
+                        <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                            play_arrow
+                        </mat-icon>
+                        Play
+                    </button>
+                    <button mat-raised-button (click)="pause()" color="primary" class='button'
+                        style="margin: 5px 16px 0 0; width: 100px;">
+                        <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                            pause
+                        </mat-icon>
+                        Pause
+                    </button>
+                    <button mat-raised-button (click)="stop()" color="primary" class='button'
+                        style="margin: 5px 0 0 0 ; width: 100px;">
+                        <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                            stop
+                        </mat-icon>
+                        Stop
+                    </button>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; 
+                margin: 5px 0 0 20px;">
+                    <div style="margin: 16px 0 0px 0; border: none;">
+                        <span style="font-weight: 500; margin: 0 3px 0 0;">{{ currentTime}}</span>
+                        <!--
                        tutorial input:
                        <input type="range" min="0" max="{{audioMaxLength}}" [value]="seek" (input)="setSeekTo($event)">
                    -->
-                    <mat-slider min="0" max="{{audioMaxLength}}" [value]="seek" value="0" (input)="setSeekTo($event)"
-                        color="primary"></mat-slider>
+                        <mat-slider min="0" max="{{audioMaxLength}}" [value]="seek" value="0"
+                            (input)="setSeekTo($event)" color="primary"></mat-slider>
                         <!-- to prevent just before the audio player starts shows 'Invalid date' in duration-->
-                    <span style="font-weight: 500;">{{duration === 'Invalid date' ? '00:00:00' : duration}}</span>
+                        <span style="font-weight: 500; margin: 0 0px 0 3px;">{{duration === 'Invalid date' ? '00:00:00' : duration}}</span>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;
+                    vertical-align: middle; border: none;">
+                        <span style="font-weight: 500; margin: 3px 5px 0 0;">volume</span>
+                        <mat-slider min="0" max="1" step="0.025" value="0.75" (input)="setVolume($event)"
+                            color="primary">
+                        </mat-slider>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <span style="font-weight: 500;">volume</span>
-                    <mat-slider min="0" max="1" step="0.025" value="0.75" (input)="setVolume($event)" color="primary">
-                    </mat-slider>
-                </div>
-            </div>
+            </mat-card>
         </div>
     </div>
 </div>
