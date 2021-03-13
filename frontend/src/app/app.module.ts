@@ -67,6 +67,7 @@ import { ChartsModule } from 'ng2-charts';
 import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
 import { CountdownTimerComponent } from './views/simple-demos/countdown-timer/countdown-timer.component';
 import { AudioAppComponent } from './views/simple-demos/audio-app/audio-app.component';
+import { MedReminderSettingsComponent } from './views/simple-demos/med-reminder-settings/med-reminder-settings.component';
 
 registerLocaleData(localePt);
 
@@ -102,7 +103,8 @@ registerLocaleData(localePt);
     FutebolUpcomingComponent,
     SocketIoComponent,
     CountdownTimerComponent,
-    AudioAppComponent
+    AudioAppComponent,
+    MedReminderSettingsComponent
   ],
   imports: [ // módulos
     BrowserModule,

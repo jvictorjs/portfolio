@@ -97,8 +97,6 @@ export class CountdownTimerComponent implements OnInit {
       //this.play();
 
 
-
-
       const handler = (event: Event) => {
         console.log(event);
         this.seek = this.audioObj.currentTime;
@@ -106,7 +104,7 @@ export class CountdownTimerComponent implements OnInit {
         this.duration = this.timeFormat(this.audioObj.duration);
         this.currentTime = this.timeFormat(this.audioObj.currentTime);
         if (event.type === 'ended') {
-          this.clockToShow = '00:00:00';
+          //this.clockToShow = '00:00:00'; // this may confuse the clock by change to 00:00:00 in the middle of the next timer loop
           this.showPlayerPlayButtonAndHidePause();
         }
       }
@@ -215,6 +213,7 @@ export class CountdownTimerComponent implements OnInit {
         this.showTimerSelectionDiv();
         this.counterTimerSeconds = this.getTotalTimerSelectionInSeconds();
         this.showSnackBarMessage(`Timer finished!`)
+        //this.clockToShow = '00:00:00';
         if (this.bolLoopMode === true) {
           console.log(`Loop mode === true, starting a new timer...`)
           this.startCountDownTimer();

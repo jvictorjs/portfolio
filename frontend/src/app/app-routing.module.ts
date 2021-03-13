@@ -22,6 +22,7 @@ import { ResumeComponent } from './views/resume/resume.component';
 import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component';
 import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
+import { MedReminderSettingsComponent } from './views/simple-demos/med-reminder-settings/med-reminder-settings.component';
 
 const routes: Routes = [
   {
@@ -107,6 +108,10 @@ const routes: Routes = [
   {
     path: "audio-app",
     component: AudioAppComponent
+  },
+  {
+    path: "med-reminder-settings",
+    component: MedReminderSettingsComponent
   }
 ];
 

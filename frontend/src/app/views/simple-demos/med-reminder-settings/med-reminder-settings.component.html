@@ -1,0 +1,65 @@
+<div class="view-content">
+    <div
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+
+        <div
+            style="display: flex; flex-direction: column; align-items: stretch; max-width: 1000px; border: none; width: 100%;">
+
+            <a routerLink="/demos">
+                <button mat-raised-button color="primary">
+                    <span class="material-icons-two-tone md-24 v-middle">
+                        arrow_back
+                    </span>
+                    Back to Demos
+                </button>
+            </a>
+            <br>
+            <!-- 
+    STACKOVERFLOW Angular 9 Tutorial | Create A Angular Audio Player Project | Angular Training
+ https://www.youtube.com/watch?v=1lJm3n7yKQE 
+-->
+            <h1>Medicine Reminder Timer Setup</h1>
+
+            <mat-card class="card-countdown-timer mat-elevation-z4">
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <div id="timer-selection-div" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; 
+                margin: 10px 0 0 0px;">
+                            <!--
+                    <h1>You selected: {{selectedHours}}:{{selectedMinutes}}:{{selectedSeconds}}</h1>
+                -->
+                            <mat-form-field style="width: 55px;">
+                                <mat-label>Hours</mat-label>
+                                <!-- STACKOVERFLOW https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed-->
+                                <mat-select [(value)]="selectedHours" (selectionChange)="setTimer($event)">
+                                    <mat-option [value]="hour" *ngFor="let hour of hours">{{ hour }}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field style="width: 55px;">
+                                <mat-label>Minutes</mat-label>
+                                <mat-select [(value)]="selectedMinutes" (selectionChange)="setTimer($event)">
+                                    <mat-option [value]="minute" *ngFor="let minute of minutes">{{ minute }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: row; align-items: center; border: none; margin: 0 15px 0 5px;">
+                        <button id="start-button" mat-raised-button color="primary" class='button'
+                            style="margin: 10px 0px 10px 0; width: 110px; height: 40px;" (click)="setNewTriggerTime()">
+                            <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
+                                save
+                            </mat-icon>
+                            APPLY
+                        </button>
+                    </div>
+                </div>
+            </mat-card>
+
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
