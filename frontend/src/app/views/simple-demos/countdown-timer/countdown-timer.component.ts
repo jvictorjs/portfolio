@@ -260,7 +260,7 @@ export class CountdownTimerComponent implements OnInit {
   
   switchBolLoopMode(): void {
     //  [(ngModel)]="bolLoopMode" parameter automatically switches the bolLoopMode value
-    console.log(`switchBolLoopMode switched to = ${this.bolLoopMode}`)
+    console.log(`bolLoopMode switched to = ${this.bolLoopMode}`)
   }
 
   showSnackBarMessage(msg: string) {

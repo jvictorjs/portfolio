@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <p>{{data.message}}</p>
+  <mat-form-field>
+    <mat-label>Insert Pass Code</mat-label>
+    <input type="password" matInput [(ngModel)]="data.pass_code">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.pass_code" cdkFocusInitial>Ok</button>
+</div>

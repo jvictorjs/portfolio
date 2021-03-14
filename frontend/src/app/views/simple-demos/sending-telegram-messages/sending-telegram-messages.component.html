@@ -1,0 +1,47 @@
+<div class="view-content">
+    <div
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+
+        <div
+            style="display: flex; flex-direction: column; align-items: stretch; max-width: 1000px; border: none; width: 100%;">
+
+            <a routerLink="/demos">
+                <button mat-raised-button color="primary">
+                    <span class="material-icons-two-tone md-24 v-middle">
+                        arrow_back
+                    </span>
+                    Back to Demos
+                </button>
+            </a>
+            <br>
+            <!-- 
+    STACKOVERFLOW Angular 9 Tutorial | Create A Angular Audio Player Project | Angular Training
+ https://www.youtube.com/watch?v=1lJm3n7yKQE 
+-->
+            <h1>Sending Telegram Messages</h1>
+
+            <mat-card class="card-countdown-timer mat-elevation-z4">
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                    <form>
+                        <mat-form-field>
+                            <input matInput placeholder="Message" [(ngModel)]="message" name="name">
+                        </mat-form-field>
+                    </form>
+                    <div
+                        style="display: flex; flex-direction: row; align-items: center; border: none; margin: 0 15px 0 5px;">
+                        <button id="start-button" mat-raised-button color="primary" class='button'
+                            style="margin: 10px 0px 10px 0; width: 212px; height: 40px;" (click)="openPassCodeDialog()">
+                            <mat-icon mat-list-icon class="material-icons side-nav-icon" style="margin: 0 0 3px 0;">
+                                send
+                            </mat-icon>
+                            Send this message
+                        </button>
+                    </div>
+                </div>
+            </mat-card>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

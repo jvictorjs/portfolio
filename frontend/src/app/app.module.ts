@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 
@@ -22,6 +23,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatSliderModule } from '@angular/material/slider'
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
@@ -68,6 +70,9 @@ import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.comp
 import { CountdownTimerComponent } from './views/simple-demos/countdown-timer/countdown-timer.component';
 import { AudioAppComponent } from './views/simple-demos/audio-app/audio-app.component';
 import { MedReminderSettingsComponent } from './views/simple-demos/med-reminder-settings/med-reminder-settings.component';
+import { PassCodeDialog } from './views/simple-demos/pass-code-dialog.component';
+import { SendingTelegramMessagesComponent } from './views/simple-demos/sending-telegram-messages/sending-telegram-messages.component';
+
 
 registerLocaleData(localePt);
 
@@ -104,7 +109,9 @@ registerLocaleData(localePt);
     SocketIoComponent,
     CountdownTimerComponent,
     AudioAppComponent,
-    MedReminderSettingsComponent
+    MedReminderSettingsComponent,
+    PassCodeDialog,
+    SendingTelegramMessagesComponent
   ],
   imports: [ // módulos
     BrowserModule,
@@ -130,7 +137,8 @@ registerLocaleData(localePt);
     MatRippleModule,
     MatSliderModule,
     MatSelectModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatDialogModule
   ],
   providers: [{
     provide: LOCALE_ID,

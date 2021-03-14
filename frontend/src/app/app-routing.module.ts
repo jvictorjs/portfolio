@@ -23,6 +23,7 @@ import { QuotesComponent } from './views/simple-demos/quotes/quotes.component';
 import { FutebolUpcomingComponent } from './components/futebol/futebol-upcoming/futebol-upcoming.component';
 import { SocketIoComponent } from './views/simple-demos/socket-io/socket-io.component';
 import { MedReminderSettingsComponent } from './views/simple-demos/med-reminder-settings/med-reminder-settings.component';
+import { SendingTelegramMessagesComponent } from './views/simple-demos/sending-telegram-messages/sending-telegram-messages.component';
 
 const routes: Routes = [
   {
@@ -112,6 +113,10 @@ const routes: Routes = [
   {
     path: "med-reminder-settings",
     component: MedReminderSettingsComponent
+  },
+  {
+    path: "sending-telegram-messages",
+    component: SendingTelegramMessagesComponent
   }
 ];
 

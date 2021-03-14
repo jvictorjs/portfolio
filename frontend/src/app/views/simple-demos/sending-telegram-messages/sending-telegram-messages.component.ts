@@ -1,18 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Inject } from '@angular/core';
-import { NavService } from './../../../components/template/nav/nav.service';
+import { NavService } from '../../../components/template/nav/nav.service';
 import { EMPTY, Observable } from 'rxjs';
 import * as moment from 'moment'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogConfig } from '@angular/material/dialog';
-import { PassCodeDialog } from './../pass-code-dialog.component';
+import { PassCodeDialog } from '../pass-code-dialog.component';
 
 @Component({
-  selector: 'app-med-reminder-settings',
-  templateUrl: './med-reminder-settings.component.html',
-  styleUrls: ['./med-reminder-settings.component.css']
+  selector: 'sending-telegram-messages',
+  templateUrl: './sending-telegram-messages.component.html',
+  styleUrls: ['./sending-telegram-messages.component.css']
 })
-export class MedReminderSettingsComponent implements OnInit {
+export class SendingTelegramMessagesComponent implements OnInit {
 
   baseUrl = 'https://script.google.com/macros/s/AKfycbyktSv0DMZXzRmvjX3HPgsepI7tDPuNc2l1e5nF4wkn-fA9paIE/exec' // PRODUÇÃO
 
@@ -32,15 +32,16 @@ export class MedReminderSettingsComponent implements OnInit {
 
   selectedHours = '22';
   selectedMinutes = '30';
+  bolSendNow = false;
 
   constructor(private navService: NavService,
     private snackBar: MatSnackBar,
     private http: HttpClient,
     public dialog: MatDialog) {
     navService.navData = {
-      title: 'Medicine Reminder',
-      icon: 'medication',
-      routeUrl: 'med-reminder-settings'
+      title: 'Sending Messages',
+      icon: 'send',
+      routeUrl: 'sending-telegram-messages'
     }
   }
 
@@ -124,15 +125,16 @@ export class MedReminderSettingsComponent implements OnInit {
   }
 
   setNewTriggerTime() {
-    this.showSnackBarMessage(`Medicine reminder will be set to ${this.selectedHours}:${this.selectedMinutes}`);
+    this.showSnackBarMessage(`Scheduling message...`);
     this.setGoogleAppsNewTrigger().subscribe(response => {
       console.log(response);
-      this.showSnackBarMessage(`New medicine near time is: ${this.selectedHours}:${this.selectedMinutes} ✅`);
+      this.showSnackBarMessage(`Message scheduled ✅`);
     });
   }
 
   setGoogleAppsNewTrigger(): Observable<any[]> {
-    return this.http.get<any[]>(this.baseUrl + '?newTriggerHH=' + this.selectedHours + '&newTriggerMM=' + this.selectedMinutes)
+    return this.http.get<any[]>(this.baseUrl
+      + '?schedule_message=' + this.message)
   }
 
 
@@ -144,11 +146,12 @@ export class MedReminderSettingsComponent implements OnInit {
   }
 
   pass_code = '123456'
+  message = ''
 
   openPassCodeDialog(): void {
     const dialogRef = this.dialog.open(PassCodeDialog, {
-      width: '250px',
-      data: { pass_code: '', title: 'Insert Pass Code' }
+      width: '333px',
+      data: { pass_code: '', message: this.message, title: 'Insert Pass Code to schedule this message' }
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -159,5 +162,10 @@ export class MedReminderSettingsComponent implements OnInit {
         this.showSnackBarMessage('Wrong pass code.')
       }
     });
+  }
+
+  switchBolSendNow(): void {
+    //  [(ngModel)]="bolLoopMode" parameter automatically switches the bolLoopMode value
+    console.log(`bolSendNow switched to = ${this.bolSendNow}`)
   }
 }
