@@ -101,7 +101,7 @@ export class ContactComponent implements OnInit {
     */
     // STACKOVERFLOW https://stackoverflow.com/questions/55420376/encode-string-for-url-angular
     return this.http.get<any[]>(this.baseUrl
-      + '?schedule_message=' + encodeURIComponent('New contact message from portfolio site.'
+      + '?send_message=' + encodeURIComponent('New contact message from portfolio site.'
         + '\n<b>name</b>  = ' + this.name
         + '\n<b>contact</b> = ' + this.contact
         + '\n<b>message</b> = ' + this.message

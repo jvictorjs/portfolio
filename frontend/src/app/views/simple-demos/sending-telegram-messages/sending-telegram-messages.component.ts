@@ -125,16 +125,16 @@ export class SendingTelegramMessagesComponent implements OnInit {
   }
 
   setNewTriggerTime() {
-    this.showSnackBarMessage(`Scheduling message...`);
+    this.showSnackBarMessage(`Sending your message...`);
     this.setGoogleAppsNewTrigger().subscribe(response => {
       console.log(response);
-      this.showSnackBarMessage(`Message scheduled ✅`);
+      this.showSnackBarMessage(`Message sent ✅`);
     });
   }
 
   setGoogleAppsNewTrigger(): Observable<any[]> {
     return this.http.get<any[]>(this.baseUrl
-      + '?schedule_message=' + this.message)
+      + '?send_message=' + this.message)
   }
 
 
