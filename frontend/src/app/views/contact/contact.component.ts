@@ -74,14 +74,18 @@ export class ContactComponent implements OnInit {
   }
 
   sendTelegramMessage() {
-    this.showSnackBarMessage(`Sending your message...`);
-    this.setGoogleAppsNewTrigger().subscribe(response => {
-      console.log(response);
-      this.showSnackBarMessage(`Message sent ✅`);
-      this.name = ''
-      this.contact = ''
-      this.message = ''
-    });
+    if (this.message.length === 0) {
+      this.showSnackBarMessage(`Message field cannot be empty.`);
+    } else {
+      this.showSnackBarMessage(`Sending your message...`);
+      this.setGoogleAppsNewTrigger().subscribe(response => {
+        console.log(response);
+        this.showSnackBarMessage(`Message sent ✅`);
+        this.name = ''
+        this.contact = ''
+        this.message = ''
+      });
+    }
   }
 
   setGoogleAppsNewTrigger(): Observable<any[]> {

@@ -134,7 +134,9 @@ export class SendingTelegramMessagesComponent implements OnInit {
 
   setGoogleAppsNewTrigger(): Observable<any[]> {
     return this.http.get<any[]>(this.baseUrl
-      + '?send_message=' + this.message)
+      + '?send_message=' + encodeURIComponent('New message from portfolio site telegram message demo:'
+        + '\n<b>message</b> = ' + this.message
+        + '\n'))
   }
 
 
@@ -149,19 +151,23 @@ export class SendingTelegramMessagesComponent implements OnInit {
   message = ''
 
   openPassCodeDialog(): void {
-    const dialogRef = this.dialog.open(PassCodeDialog, {
-      width: '333px',
-      data: { pass_code: '', message: this.message, title: 'Insert Pass Code to schedule this message' }
-    });
+    if (this.message.length === 0) {
+      this.showSnackBarMessage(`Message field cannot be empty.`);
+    } else {
+      const dialogRef = this.dialog.open(PassCodeDialog, {
+        width: '333px',
+        data: { pass_code: '', message: this.message, title: 'Insert Pass Code to schedule this message' }
+      });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      if (this.pass_code === result) {
-        this.setNewTriggerTime()
-      } else {
-        this.showSnackBarMessage('Wrong pass code.')
-      }
-    });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        if (this.pass_code === result) {
+          this.setNewTriggerTime()
+        } else {
+          this.showSnackBarMessage('Wrong pass code.')
+        }
+      });
+    }
   }
 
   switchBolSendNow(): void {
