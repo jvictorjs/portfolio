@@ -21,14 +21,14 @@ const EXAMPLE_DATA: Project[] = [
     {
         name: 'My Portfolio (this website)', launched_year: 2021, project_icon: 'desktop_windows', platform: 'Web', category: '⭐️⭐️',
         website: 'portfolio.jvictor.com.br', website_text: '', portfolio_link: '',
-        github_link: 'github.com/jvictorhub/portfolio', techs: '#TG', total_apis: 2, total_apis_owned: 2,
+        github_link: 'github.com/jvictorjs/portfolio', techs: '#TG', total_apis: 2, total_apis_owned: 2,
         angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
         googleAppsScript: 'hide', digitalOcean: 'tech-tool-show', twitter_api: 'hide'
     },
     {
         name: 'Produtos Angular CRUD', launched_year: 2020, project_icon: 'desktop_windows', platform: 'Web', category: '⭐️',
         website: 'portfolio.jvictor.com.br/products', website_text: '', portfolio_link: 'products',
-        github_link: 'github.com/jvictorhub/portfolio', techs: '#TG', total_apis: 1, total_apis_owned: 1,
+        github_link: 'github.com/jvictorjs/portfolio', techs: '#TG', total_apis: 1, total_apis_owned: 1,
         angular: 'tech-tool-show', reactNative: 'hide', telegramBot_api: 'hide', googleSheet: 'hide',
         googleAppsScript: 'hide', digitalOcean: 'tech-tool-show', twitter_api: 'hide'
     },
@@ -42,7 +42,7 @@ const EXAMPLE_DATA: Project[] = [
     {
         name: 'TremdGol APP', launched_year: 2020, project_icon: 'sports_soccer', platform: 'Mobile', category: '⭐️⭐️⭐️',
         website: '-', website_text: '', portfolio_link: '',
-        github_link: 'github.com/jvictorhub/hero1', techs: '#TG', total_apis: 6, total_apis_owned: 3,
+        github_link: 'github.com/jvictorjs/hero1', techs: '#TG', total_apis: 6, total_apis_owned: 3,
         angular: 'hide', reactNative: 'tech-tool-show', telegramBot_api: 'tech-tool-show', googleSheet: 'tech-tool-show',
         googleAppsScript: 'tech-tool-show', digitalOcean: 'tech-tool-show', twitter_api: 'tech-tool-show'
     },
