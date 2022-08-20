@@ -72,6 +72,7 @@ import { AudioAppComponent } from './views/simple-demos/audio-app/audio-app.comp
 import { MedReminderSettingsComponent } from './views/simple-demos/med-reminder-settings/med-reminder-settings.component';
 import { PassCodeDialog } from './views/simple-demos/pass-code-dialog.component';
 import { SendingTelegramMessagesComponent } from './views/simple-demos/sending-telegram-messages/sending-telegram-messages.component';
+import { AboutComponent } from './views/about/about.component';
 
 
 registerLocaleData(localePt);
@@ -111,7 +112,8 @@ registerLocaleData(localePt);
     AudioAppComponent,
     MedReminderSettingsComponent,
     PassCodeDialog,
-    SendingTelegramMessagesComponent
+    SendingTelegramMessagesComponent,
+    AboutComponent
   ],
   imports: [ // módulos
     BrowserModule,

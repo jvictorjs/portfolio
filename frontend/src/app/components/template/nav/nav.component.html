@@ -73,10 +73,19 @@
                             <!-- STACKOVERFLOW https://stackoverflow.com/questions/49176479/angular-incorrect-margin-left-applied-to-sidenav-content -->
                             <mat-icon mat-list-icon class="material-icons side-nav-icon">
                                 <!--https://material.io/resources/icons/?style=baseline-->
-                                home
+                                person
                             </mat-icon>
-                            Home
+                            About
                         </a>
+                        <!--
+
+                            <a mat-list-item routerLink="/" class="list-item-with-icon">
+                                <mat-icon mat-list-icon class="material-icons side-nav-icon">
+                                    home
+                                </mat-icon>
+                                Home
+                            </a>
+                        -->
                         <a mat-list-item routerLink="/portfolio-list" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
                             <mat-icon mat-list-icon class="material-icons side-nav-icon">
@@ -85,14 +94,18 @@
                             </mat-icon>
                             Projects
                         </a>
-                        <a mat-list-item routerLink="/my-experience" class="list-item-with-icon"
+                        <!-- 
+                            
+                            <a mat-list-item routerLink="/my-experience" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
                             <mat-icon mat-list-icon class="material-icons side-nav-icon">
                                 work
                                 <!-- work_outline work -->
+                                <!-- 
                             </mat-icon>
                             My experience
                         </a>
+                    -->
                         <a mat-list-item routerLink="/resume" class="list-item-with-icon"
                             (click)="mobileQuery.matches === false || sidenav.close()">
                             <mat-icon mat-list-icon class="material-icons side-nav-icon">

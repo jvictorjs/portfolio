@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './views/home/home.component';
+import { AboutComponent } from './views/about/about.component';
 import { ProductCrudComponent } from './views/simple-demos/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
@@ -28,7 +29,15 @@ import { SendingTelegramMessagesComponent } from './views/simple-demos/sending-t
 const routes: Routes = [
   {
     path: "",
+    component: AboutComponent
+  },
+  {
+    path: "home",
     component: HomeComponent
+  },
+  {
+    path: "about",
+    component: AboutComponent
   },
   {
     path: "products",

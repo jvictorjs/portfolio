@@ -1,0 +1,210 @@
+.home {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.home .title {
+  font-size: 2.2rem;
+  font-weight: light;
+  line-height: 1.2;
+}
+
+.home .subtitle {
+  font-size: 1.1rem;
+  margin: 10px 0 10px 0;
+}
+
+.home .div-signature {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px -3px -8px 0;
+  font-size: 0.77rem;
+}
+
+.certificate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 8px;
+  transition: transform 0.4s;
+  max-width: 400px;
+}
+
+.certificate:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.4);
+  border-radius: 8px;
+}
+
+.div-complete-stack {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-style: none;
+  max-width: 1440px;
+}
+
+.div-jvictor-stack-item {
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  /* so trocar pra inset pra ver a borda*/
+  height: 55px;
+}
+
+/* #STACKOVERFLOW https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css */
+
+.span-jvictor-stack-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  margin: 11px 5px 0 0px;
+}
+
+.mini-logo-fixed {
+  width: 2.6rem;
+  vertical-align: middle;
+}
+
+.topmargin3px {
+  margin-top: 3px;
+}
+
+.mini-logo {
+  width: 1.6rem;
+  vertical-align: middle;
+  transition: transform 0.3s;
+  margin: 0px 0px 0px 0px;
+}
+
+.mini-logo:hover {
+  -ms-transform: scale(1.8);
+  /* IE 9 */
+  -webkit-transform: scale(1.8);
+  /* Safari 3-8 */
+  transform: scale(1.8);
+}
+
+.div-mini-logo-combo {
+  transition: transform 0.3s;
+}
+
+/*
+.div-mini-logo-combo:hover {
+    -ms-transform: scale(1.8);
+    /* IE 9 */
+
+/*  -webkit-transform: scale(1.8);
+    /* Safari 3-8 */
+
+/*transform: scale(1.8);
+}
+*/
+
+.mini-logo-combo {
+  margin-left: 10px;
+  transition: transform 0.3s;
+  height: 33px;
+  margin-top: -13px;
+  animation: rotation 2s;
+  /*animation: zoom-out 3s infinite; */
+}
+
+.mini-logo-combo-fixed {
+  margin-left: 10px;
+  transition: transform 0.3s;
+  height: 33px;
+  margin-top: -13px;
+}
+
+.mini-logo-combo:hover {
+  animation: rotation 3s;
+}
+
+.rotate {
+  animation: rotation 3s;
+  animation: zoom-out 3s infinite;
+  /* infinite;  infinite rotates forever    linear; rotates at constant speed*/
+}
+
+.rotate-infinite {
+  animation: rotation 3s infinite;
+  animation: zoom-out 3s infinite;
+  /* infinite;  infinite rotates forever*/
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.blob {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 6px;
+  height: 8px;
+  width: 8px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse-mini 2s infinite;
+}
+
+.pulse {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s linear;
+}
+
+.pulse-mini {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse-mini 2s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse-mini {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

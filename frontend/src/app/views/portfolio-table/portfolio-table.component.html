@@ -1,10 +1,16 @@
-
 <button mat-raised-button color="primary">
     <a href="/portfolio-list">
         <span class="material-icons md-24 v-middle">
             view_module
         </span>
-        switch to projects list
+        switch to list view
     </a>
 </button>
-<app-projects-table></app-projects-table>
+
+<div class="view-content">
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+        <div style="max-width: 1800px; border: none; width: 100%;">
+            <app-projects-table></app-projects-table>
+        </div>
+    </div>
+</div>

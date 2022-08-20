@@ -1,0 +1,161 @@
+<div class="view-content">
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; border: none; width: 100%;">
+        <div style="display: flex; flex-direction: column; align-items: stretch; max-width: 1400px; border: none; width: 100%;">
+            <div style="display: flex; justify-content: center; margin: 15px 15px 20px 15px; max-width: 1400px;">
+                <!-- 
+        STACKOVERFLOW https://www.geeksforgeeks.org/how-to-display-spinner-on-the-screen-till-the-data-from-the-api-loads-using-angular-8/
+     
+        STACKOVERFLOW https://projects.lukehaas.me/css-loaders/
+    -->
+                <div style="display: flex; align-items: center; justify-content: center; height: 75px; border: none;">
+                    <div class="loader" id="loadingQuote"></div> <!-- loader src/styles.css-->
+                </div>
+                <div id="quote" style="display: flex; flex-direction: column; align-items: flex-end;
+        border: none; text-align: end; text-align: center;">
+                    <span style="font-size: 2.1rem; line-height: 2.3rem;" (click)="getNewRandomQuote()" title="Click to get another quote...">
+                        <i>"{{quote.quote}}"</i>
+                    </span>
+                    <br>
+                    <span style="display:flex; flex-direction: column; align-items: flex-end; text-align: end; margin:5px 20px 5px 0; font-size: 1rem; font-weight: 300; border:none;">
+                        <a href="https://www.google.com/search?q={{quote.author}}" target="_blank">
+                            {{quote.author}}
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    Hi! Welcome to my portfolio website. I am João Victor, a software developer.
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    You can call me Jon.
+                    <br>
+                    <br>
+                    I am a Fullstack JavaScript developer with front-end emphasis.
+                    <br><br>
+                    React, Angular, Node, Social APIs, Telegram Bots and Google Apps Script are my current favorite tools to work with.
+                    <br><br>
+                    I've been coding for 3+ years. I am a big fan of practical-based approach when it comes to learning. So, I like
+                    to learn by doing things.
+                    <br><br>
+                    <a href="/projects">
+                        Clicking here
+                    </a>
+                    you will see a list of projects I worked in the past few years.
+                    <br><br>
+                    I am able to develop a fullstack system, including the server configuration in the cloud (this website, for exemple).
+                    <br><br>
+                    I am currently making my full migration from Data Analysis to Software Development.
+                    I used to work with data and dashboards, like this one: <a href="https://www.youtube.com/watch?v=xm1f4tRW0Sg" target="_blank"><i
+                            class="material-icons-two-tone md-24 mini-logo pulse">play_circle</i></a>
+                    <br><br>
+                    I like to integrate services with multiple APIs, such as getting sports data from a paid API, do some
+                    analisys and post its status via twitter using a self-made React Native mobile app, trough Twitter API (check out this
+                    one).
+                    <br><br>
+                    Furthermore, I love chatbots. I do a lot of stuff with them. You can see an exemple of ChatBots helping you with
+                    your daily todo list here. Another awsome bot remindes me everyday of my mom's medicine time. It never fails, it
+                    is a bot (go see here)
+                    <br><br>
+                    Do you have an idea for a new project?
+                    <br><br>
+                    If you want me to do it, send me a message.
+                    <br>
+                </mat-card-subtitle>
+                <!-- #STACKOVERFLOW https://stackoverflow.com/questions/40728816/how-to-put-text-on-either-side-of-a-div-html5 -->
+                <div class="div-signature">
+                    <strong><span class="red">J</span>Victor</strong>
+                    <div class="blob"></div> 12jan2021
+                    <!-- JVictor ●<b>·</b> 12 jan 2021 -->
+                </div>
+            </mat-card>
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-title class="title">
+                    I can work in the complete stack, but I feel more confortable with...
+                </mat-card-title>
+                <mat-card-subtitle class="subtitle">
+                    <div class="div-complete-stack">
+                        <div class="div-jvictor-stack-item" style="margin-right: 80%">
+                            <span class="span-jvictor-stack-text">UI/UX</span>
+                            <i class="material-icons-two-tone md-60 mini-logo">palette</i> <!-- design_services -->
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-right: 60%">
+                            <span class="span-jvictor-stack-text">WEB/MOBILE<br>PAGES</span>
+                            <i class="material-icons-two-tone md-60 mini-logo pulse-mini">desktop_windows</i>
+                            <!-- desktop_windows phone_android -->
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-right: 35%">
+                            <span class="span-jvictor-stack-text">VIEW LOGIC</span>
+                            <i class="material-icons-two-tone md-60 mini-logo pulse-mini">developer_mode</i>
+                            <!-- integration_instructions developer_mode -->
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-right: 10%">
+                            <span class="span-jvictor-stack-text">API ENDPOINTS</span>
+                            <div class="div-mini-logo-combo pulse-mini" style="display: flex; flex-direction: column; justify-content: center;
+                border-color: black;border-width: 10px; border: black;border-style: inset; width: min-content; border-width: 0;">
+                                <div style="display: flex; flex-direction: column; border-style: inset;border-color: red; border-width: 0;">
+                                    <i class="material-icons-two-tone md-48 mini-logo-combo">compare_arrows</i>
+                                    <!-- mail  http compare_arrows-->
+                                </div>
+                                <div style="display: flex; flex-direction: column; border-style: inset;border-color: blue; border-width: 0;">
+                                    <i class="material-icons-two-tone md-48 mini-logo-combo-fixed">http</i>
+                                    <!-- mail  http compare_arrows-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-left: 10%">
+                            <span class="span-jvictor-stack-text">MODEL LOGIC</span>
+                            <i class="material-icons-two-tone md-60 mini-logo">code</i>
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-left: 30%">
+                            <span class="span-jvictor-stack-text">DATABASE/FILES</span>
+                            <i class="material-icons-two-tone md-60 mini-logo">storage</i>
+                        </div>
+                        <div class="div-jvictor-stack-item" style="margin-left: 55%">
+                            <span class="span-jvictor-stack-text">SERVER<br>INFRAESTRUCTRE</span>
+                            <i class="material-icons-two-tone md-60 mini-logo"> cloud </i>
+
+                        </div>
+                    </div>
+                </mat-card-subtitle>
+                <mat-card-subtitle class="subtitle">
+                    Yep! Frontend development and API consuming.
+                    <br>
+                </mat-card-subtitle>
+                <div class="div-signature">
+                    <strong><span class="red">J</span>Victor</strong>
+                    <div class="blob"></div> 12jan2021
+                    <!-- JVictor ●<b>·</b> 12 jan 2021 -->
+                </div>
+            </mat-card>
+           
+            <mat-card class="home mat-elevation-z4">
+                <mat-card-subtitle class="subtitle">
+                    Web application built with <b>ANGULAR</b>, a framework running over <b>NODE.JS</b>, using
+                    <b>TYPESCRIPT,
+                        HTML </b>and<b> CSS</b>. In addition, used <a href="https://fontawesome.com/license"><b>FONT AWESOME</b></a>
+                    for some icons.
+                    Hosted in a Linux <b>UBUNTU</b> dedicated server at <b>DIGITALOCEAN</b> cloud infraestructure. Version control
+                    by
+                    <b>GIT</b> and
+                    <b>GITHUB</b>. Backend mainly running over <b>JSON SERVER</b> and some features via <b>GOOGLE APPS SCRIPTS</b>. Package management with <b>NPM</b>. Reverse proxy with
+                    <b>NGINX</b>, SSL certification with <b>CERTBOT</b> and Linux process management with <b>PM2</b>.
+                    <!-- 
+Aplicação web desenvolvida em <b>ANGULAR</b>, um framework que roda sob <b>NODE.JS</b>, usando
+        <b>TYPESCRIPT,
+            HTML </b>e<b> CSS</b>.
+        Hospedado em um servidor Linux <b>UBUNTU</b> na nuvem da <b>DIGITALOCEAN</b>. Controle de versão feito com
+        <b>GIT</b> e
+        <b>GITHUB</b>. Backend rodando sob <b>JSON SERVER</b>. Gerenciamento de pacotes com <b>NPM</b>. Proxy reverso
+        <b>NGINX</b>, certificação SSL com <b>CERTBOT</b> e
+        gerenciamento de processos Linux com <b>PM2</b>.
+
+        -->
+                </mat-card-subtitle>
+            </mat-card>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
