@@ -1,36 +1,36 @@
 button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .home {
-    margin-bottom: 20px;
-    border-radius: 8px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .home .title {
-    font-size: 2.2rem;
-    font-weight: light;
-    line-height: 1.2;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .home .subtitle {
-    font-size: 1.1rem;
-    margin: 10px 0 0px 0;
+  font-size: 1.1rem;
+  margin: 10px 0 0px 0;
 }
 
 .card {
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 table {
-    width: 80%;
-    align-self: center;
+  width: 80%;
+  align-self: center;
 }
 
 td {
-    width: 20%;
+  width: 20%;
 }
 
 /* OLD
@@ -44,161 +44,184 @@ td {
 */
 
 .div-project-mini-card {
-    margin-bottom: 0px;
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
 }
 
 .div-project-mini-card .title {
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 1.3;
-    transition: .1001s;
-    text-align: center;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.3;
+  transition: 0.1001s;
+  text-align: center;
 }
 
 .div-project-mini-card .subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 0px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0px;
 }
 
 .div-project-mini-card .project-description {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 0px;
-    text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .project-screenshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    width: 50%;
-    border-radius: 6px;
-    transition: transform .3s;
-    max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 50%;
+  border-radius: 6px;
+  transition: transform 0.3s;
+  max-width: 400px;
 }
 
 .project-screenshot:hover {
-    -ms-transform: scale(2.2);
-    /* IE 9 */
-    -webkit-transform: scale(2.2);
-    /* Safari 3-8 */
-    transform: scale(2.2);
-    border-radius: 8px;
+  -ms-transform: scale(2.2);
+  /* IE 9 */
+  -webkit-transform: scale(2.2);
+  /* Safari 3-8 */
+  transform: scale(2.2);
+  border-radius: 8px;
 }
 
 .mini-logo-fixed {
-    width: 1.6rem;
-    vertical-align: middle;
+  width: 1.6rem;
+  vertical-align: middle;
 }
 
 .mini-logo-github {
-    width: 1.1rem;
-    vertical-align: middle;
+  width: 1.1rem;
+  vertical-align: middle;
 }
 
 .list-item-with-icon {
-    transition: transform .1001s;
+  transition: transform 0.1001s;
 }
 
 .div-project-mini-card .title:hover {
-    -ms-transform: scale(1.05);
-    /* IE 9 */
-    -webkit-transform: scale(1.05);
-    /* Safari 3-8 */
-    transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+  transform: scale(1.05);
 }
 
 .mini-logo {
-    width: 1.6rem;
-    vertical-align: middle;
-    transition: transform .3s;
+  width: 1.6rem;
+  vertical-align: middle;
+  transition: transform 0.3s;
 }
 
 .mini-logo:hover {
-    -ms-transform: scale(1.8);
-    /* IE 9 */
-    -webkit-transform: scale(1.8);
-    /* Safari 3-8 */
-    transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  /* IE 9 */
+  -webkit-transform: scale(1.8);
+  /* Safari 3-8 */
+  transform: scale(1.8);
+}
+
+.mini-project-screenshot {
+  height: 182px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.mini-project-screenshot:hover {
+  -ms-transform: scale(1.8);
+  /* IE 9 */
+  -webkit-transform: scale(1.8);
+  /* Safari 3-8 */
+  transform: scale(1.8);
+}
+
+.mini-tech {
+  background-color: rgba(87, 87, 87, 0.959);
+  color: white;
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+  margin: 0 5px 0 5px;
 }
 
 ::ng-deep .mat-tooltip {
-    font-size: 16px !important;
-    background-color: rgba(111, 111, 111, 0.90) !important;
-    /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
+  font-size: 16px !important;
+  background-color: rgba(111, 111, 111, 0.9) !important;
+  /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
 }
 
 .techs-column-div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 10px;
 }
 
-.techs-column-div>* {
-    /* "> *" significa que todo filho deste elemento terá */
-    margin-right: 12px;
+.techs-column-div > * {
+  /* "> *" significa que todo filho deste elemento terá */
+  margin-right: 12px;
 }
 
 .topmargin3px {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 /* https://www.vinta.com.br/blog/2017/responsive-layout-flexbox */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-    margin: -10px 22px -20px -10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: -10px 22px -20px -10px;
 }
 
 .item {
-    flex-grow: 1;
-    flex-basis: 480px;
-    margin: 10px;
-    border: none;
+  flex-grow: 1;
+  flex-basis: 480px;
+  margin: 10px;
+  border: none;
 }
 
 .item:empty {
-    height: 0;
-    margin: -10px 0 -10px 0;
+  height: 0;
+  margin: -10px 0 -10px 0;
 }
 
 .item-empty {
-    flex-grow: 1;
-    flex-basis: 480px;
-    font-size: 0.01rem;
-    line-height: 0.01rem;
-    margin: 10px;
-    height: 0;
-    color: transparent;
-    margin: -20px 10px -20px 10px;
+  flex-grow: 1;
+  flex-basis: 480px;
+  font-size: 0.01rem;
+  line-height: 0.01rem;
+  margin: 10px;
+  height: 0;
+  color: transparent;
+  margin: -20px 10px -20px 10px;
 }
 
-.icone>.tooltiptext {
-    visibility: hidden;
-    width: 262px;
-    background-color: rgba(111, 111, 111, 0.90);
-    color: #fff;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px 5px 5px 5px;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    margin: 20px 15px;
-    font-size: 1rem;
+.icone > .tooltiptext {
+  visibility: hidden;
+  width: 262px;
+  background-color: rgba(111, 111, 111, 0.9);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 5px 5px 5px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  margin: 20px 15px;
+  font-size: 1rem;
 }
 
 .icone:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }

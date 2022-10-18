@@ -30,7 +30,7 @@ export class JvictorStackComponent implements OnInit {
 
   constructor(private navService: NavService) {
     navService.navData = {
-      title: 'JVictor Stack',
+      title: 'Skills',
       icon: 'settings_ethernet',
       routeUrl: 'jvictor-stack'
     }

@@ -1,5 +1,7 @@
 import { NavService } from './../../components/template/nav/nav.service';
 import { Component, OnInit } from '@angular/core';
+import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'app-portfolio-list',
@@ -9,6 +11,9 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class PortfolioListComponent implements OnInit {
+  
+  faYoutube = faYoutube
+  faGithub = faGithub
 
   TELEGRAM_PLATFORM_DESCRIPTION: string = 'Telegram Chatbot: services available via instant messages and commands. All my Telegram Bots are integrated with Google Apps Script and Google Sheet.';
   MOBILE_PLATFORM_DESCRIPTION: string = 'Mobile: mobile phone application';

@@ -15,117 +15,136 @@
 */
 
 .home {
-    margin-bottom: 0px;
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
 }
 
 .home .title {
-    font-size: 1.5rem;
-    font-weight: light;
-    line-height: 1.2;
-    margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: light;
+  line-height: 1.2;
+  margin: 0 0 10px;
 }
 
 .home .subtitle {
-    font-size: 1.1rem;
-    margin: 0px 0 -50px;
-    border: none;
+  font-size: 1.1rem;
+  margin: 0px 0 -50px;
+  border: none;
+}
+
+.new-skills-page {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.new-skills-page .title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.new-skills-page .subtitle {
+  font-size: 1.1rem;
+  margin: 10px 0 0px 0;
 }
 
 .center-horizontal {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .tech {
-    width: 50%;
-    transition: transform .1s;
+  width: 50%;
+  transition: transform 0.1s;
 }
 
 .tech:hover {
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-    -webkit-transform: scale(1.5);
-    /* Safari 3-8 */
-    transform: scale(1.01);
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.01);
 }
 
-.tech>.tooltiptext {
-    visibility: hidden;
-    width: 369px;
-    background-color: rgba(111, 111, 111, 0.90);
-    color: #fff;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px 5px 5px 5px;
-    /* Position the tooltip */
-    position: above;
-    z-index: 9999;
-    margin: 20px 15px;
-    font-size: 1rem;
-    display: unset;
+.tech > .tooltiptext {
+  visibility: hidden;
+  width: 369px;
+  background-color: rgba(111, 111, 111, 0.9);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 5px 5px 5px;
+  /* Position the tooltip */
+  position: above;
+  z-index: 9999;
+  margin: 20px 15px;
+  font-size: 1rem;
+  display: unset;
 }
 
 .tech:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 ::ng-deep .mat-tooltip {
-    font-size: 16px !important;
-    background-color: rgba(111, 111, 111, 0.90) !important;
-    /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
+  font-size: 16px !important;
+  background-color: rgba(111, 111, 111, 0.9) !important;
+  /* white-space: pre-line !important;  THIS TO MULTIPLE LINES */
 }
 
 .tech-ballot {
-    display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: flex-start;
-    border: none;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
 }
 
 .tech-ballot-text {
-    vertical-align: middle;
-    margin: 10px 5px 10px 10px;
-    border: none;
+  vertical-align: middle;
+  margin: 10px 5px 10px 10px;
+  border: none;
 }
 
 .mini-logo {
-    width: 1.8rem;
-    margin: 0px 0px 0 0;
-    vertical-align: middle;
-    transition: transform .3s;
-    border-radius: 2px;
+  width: 1.8rem;
+  margin: 0px 0px 0 0;
+  vertical-align: middle;
+  transition: transform 0.3s;
+  border-radius: 2px;
 }
 
 .mini-logo:hover {
-    -ms-transform: scale(1.6);
-    /* IE 9 */
-    -webkit-transform: scale(1.6);
-    /* Safari 3-8 */
-    transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  /* IE 9 */
+  -webkit-transform: scale(1.6);
+  /* Safari 3-8 */
+  transform: scale(1.6);
 }
 
 .techs-column-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.techs-column-div>* {
-    /* "> *" significa que todo filho deste elemento terá */
-    margin-right: 16px;
+.techs-column-div > * {
+  /* "> *" significa que todo filho deste elemento terá */
+  margin-right: 16px;
 }
 
 /* 
@@ -134,32 +153,32 @@ https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/
 */
 
 body {
-    padding: 2em;
-    font: 1em/1.5 'Open Sans', sans-serif;
-    color: #333;
+  padding: 2em;
+  font: 1em/1.5 "Open Sans", sans-serif;
+  color: #333;
 }
 
 blockquote {
-    font: 2em 'Berkshire Swash', cursive;
-    margin: 0;
-    column-span: all;
-    text-align: center;
+  font: 2em "Berkshire Swash", cursive;
+  margin: 0;
+  column-span: all;
+  text-align: center;
 }
 
 .techs-container {
-    /*
+  /*
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
     margin: -10px 22px 0 -10px;
     */
-    max-width: 600px;
-    margin: 0 auto;
-    line-break: auto;
-    column-width: 13em;
-    column-gap: 2em;
-    column-rule: 0px solid #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-break: auto;
+  column-width: 13em;
+  column-gap: 2em;
+  column-rule: 0px solid #ccc;
 }
 
 /*
@@ -168,17 +187,17 @@ https://www.donarmuseum.nl/spelers/
 */
 
 ul {
-    line-height: 150%;
-    list-style: square inside;
-    padding-left: 1em;
-    margin: -0px;
+  line-height: 150%;
+  list-style: square inside;
+  padding-left: 1em;
+  margin: -0px;
 }
 
 li {
-    list-style-type: square;
-    display: list-item;
-    border: none;
-    text-align: -webkit-match-parent;
+  list-style-type: square;
+  display: list-item;
+  border: none;
+  text-align: -webkit-match-parent;
 }
 
 /* 
@@ -189,88 +208,88 @@ https://css-tricks.com/filling-space-last-row-flexbox/
 */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-    margin: -10px 22px 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: -10px 22px 0 -10px;
 }
 
 .item {
-    flex-grow: 1;
-    flex-basis: 480px;
-    margin: 10px;
-    border: none;
+  flex-grow: 1;
+  flex-basis: 480px;
+  margin: 10px;
+  border: none;
 }
 
 .item:empty {
-    height: 0;
-    margin: -10px 0 -10px 0;
+  height: 0;
+  margin: -10px 0 -10px 0;
 }
 
 .item-empty {
-    flex-grow: 1;
-    flex-basis: 480px;
-    font-size: 0.01rem;
-    line-height: 0.01rem;
-    margin: 10px;
-    height: 0;
-    color: transparent;
-    margin: -20px 10px -20px 10px;
+  flex-grow: 1;
+  flex-basis: 480px;
+  font-size: 0.01rem;
+  line-height: 0.01rem;
+  margin: 10px;
+  height: 0;
+  color: transparent;
+  margin: -20px 10px -20px 10px;
 }
 
 .tech-container {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 5px;
-    margin: 0px 22px 0 10px;
-    align-items: center;
-    border: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 5px;
+  margin: 0px 22px 0 10px;
+  align-items: center;
+  border: none;
 }
 
 .tech-item {
-    flex-grow: 1;
-    flex-basis: 218px;
-    height: 46px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /*
+  flex-grow: 1;
+  flex-basis: 218px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*
     */
-    margin: 0px 5px;
-    border: none;
+  margin: 0px 5px;
+  border: none;
 }
 
 .tech-item:empty {
-    height: 0;
-    margin: -10px 0 -10px 0;
+  height: 0;
+  margin: -10px 0 -10px 0;
 }
 
 .tech-item-empty {
-    flex-grow: 1;
-    flex-basis: 218px;
-    /*
+  flex-grow: 1;
+  flex-basis: 218px;
+  /*
     */
-    font-size: 0.01rem;
-    line-height: 0.01rem;
-    margin: 10px;
-    height: 0;
-    color: transparent;
-    margin: -20px 10px -20px 10px;
-    border: none;
+  font-size: 0.01rem;
+  line-height: 0.01rem;
+  margin: 10px;
+  height: 0;
+  color: transparent;
+  margin: -20px 10px -20px 10px;
+  border: none;
 }
 
 .blob {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 18%;
-    height: 6px;
-    width: 6px;
-    border: none;
-    z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 18%;
+  height: 6px;
+  width: 6px;
+  border: none;
+  z-index: 10;
 }
 
 .font-awe-icon {
-    color: black;
-    margin: -2px 11px 0 2px
+  color: black;
+  margin: -2px 11px 0 2px;
 }
