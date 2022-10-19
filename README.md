@@ -2,6 +2,9 @@
 
 Personal page that functions as a portfolio, gathering basic professional informations (projects, resume, skills...) with also some built-in small applications.
 
+### Language
+English
+
 ## Techs
 - [Angular](https://angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
