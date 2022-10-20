@@ -1,6 +1,6 @@
 # portfolio
 
-Personal page that functions as a portfolio, gathering basic professional informations (projects, resume, skills...) with also some built-in small applications.
+Personal page that functions as a portfolio, gathering basic professional informations (projects, resume, skills...) with also some built-in small applications (demos).
 
 ### Language
 English
@@ -13,7 +13,7 @@ English
 - [Telegram Bot API](https://core.telegram.org/bots/api)
 - [Google Apps Script](https://www.google.com/script/start/)
 
-## Demos
+## Small applications (demos)
 - Quotes robot - this is a simple app that saves quotes trough a Telegram chatbot message
 - Socket IO - online users
 - Countdown Timer
