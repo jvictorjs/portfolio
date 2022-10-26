@@ -37,7 +37,7 @@ export class ProjectsTableComponent implements AfterViewInit, OnInit {
   TELEGRAM_DESCRIPTION: string = "The Telegram Bot API - Allows you to create and manage Chatbots. Just simple to interact with text messages and chat buttons as we use it on a daily basis."
   GOOGLE_SHEETS_DESCRIPTION: string = "Google Sheets - Easy way to explore and organize data. Integrated With Google Apps Scripts you can automate workflows and boost productivity."
   GOOGLE_APPS_DESCRIPTION: string = "Google Apps Script - A modern JavaScript cloud-based platform to build solutions integrating all Google Services and external APIs."
-  DIGITALOCEAN_DESCRIPTION: string = "Digital Ocean - One of the best cloud infraestructure provider in the world."
+  DIGITALOCEAN_DESCRIPTION: string = "Digital Ocean - One of the best cloud infrastructure provider in the world."
   TWITTER_API_DESCRIPTION: string = "Twitter API - The Twitter API enables programmatic access to Twitter in unique and advanced ways. Use it to analyze, learn from, and interact with Tweets, Direct Messages, users, and other key Twitter resources."
 
   ngOnInit() {

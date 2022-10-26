@@ -17,7 +17,7 @@ English
 
 ## Small applications (demos)
 
-- Quotes robot - this is a simple app that saves quotes trough a Telegram chatbot message
+- Quotes robot - this is a simple app that saves quotes through a Telegram chatbot message
 - Socket IO - online users
 - Countdown Timer
 - Audio App
@@ -28,7 +28,7 @@ and more...
 ## It is online!
 
 [portfolio.jvictor.com.br](https://portfolio.jvictor.com.br/)
->Web application built with <b>ANGULAR</b>, a framework running over <b>NODE.JS</b>, using <b>TYPESCRIPT, HTML </b>and<b> CSS</b>. In addition, used <a href="https://fontawesome.com/license"><b>FONT AWESOME</b></a> for some icons. Hosted in a Linux <b>UBUNTU</b> dedicated server at <b>DIGITALOCEAN</b> cloud infraestructure. Version control by <b>GIT</b> and <b>GITHUB</b>. Backend mainly running over <b>JSON SERVER</b> and some features via <b>GOOGLE APPS SCRIPTS</b>. Package management with <b>NPM</b>. Reverse proxy with <b>NGINX</b>, SSL certification with <b>CERTBOT</b> and Linux process management with <b>PM2</b>.
+>Web application built with <b>ANGULAR</b>, a framework running over <b>NODE.JS</b>, using <b>TYPESCRIPT, HTML </b>and<b> CSS</b>. In addition, used <a href="https://fontawesome.com/license"><b>FONT AWESOME</b></a> for some icons. Hosted in a Linux <b>UBUNTU</b> dedicated server at <b>DIGITALOCEAN</b> cloud infrastructure. Version control by <b>GIT</b> and <b>GITHUB</b>. Backend mainly running over <b>JSON SERVER</b> and some features via <b>GOOGLE APPS SCRIPTS</b>. Package management with <b>NPM</b>. Reverse proxy with <b>NGINX</b>, SSL certification with <b>CERTBOT</b> and Linux process management with <b>PM2</b>.
 
 ## Installation steps - frontend:
 
